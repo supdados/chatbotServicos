@@ -1,0 +1,489 @@
+{
+  "id": "20250519_132627_22892bf9",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-19T13:26:29.673162",
+      "pergunta_original": "como posso consultar segunda via do meu iptu?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 60 - Serviço: Emitir Segunda via do Título de Eleitor. Descrição: Solicitação da emissão da segunda via do título de eleitor, quando não há mudança nas informações do cadastro.. Órgão: TRE-RJ. Tags: título eleitoral, documento, eleições, segunda via. Sinônimos: reenvio do título, duplicata eleitoral, documento de votação. URL: https://www.rj.gov.br/servico/emitir-segunda-via-do-titulo-de-eleitor158.",
+          "distancia": 0.9027437567710876
+        },
+        {
+          "descricao": "ID: 44 - Serviço: Consultar pagamentos de IPVA. Descrição: O serviço permite a consulta pública aos pagamentos de IPVA.. Órgão: SEFAZ. Tags: IPVA, pagamentos, consulta, tributos. Sinônimos: verificar pagamento IPVA, status de pagamento, confirmação de quitação. URL: https://www.rj.gov.br/servico/consultar-pagamentos-de-ipva116.",
+          "distancia": 0.9730345010757446
+        },
+        {
+          "descricao": "ID: 49 - Serviço: Emitir a 2ª Via do CPF. Descrição: Impressão da segunda via do CPF em casos de perda, roubo ou após atualização dos dados na Receita Federal, como nome, endereços, etc.. Órgão: RF. Tags: CPF, documento, segunda via, Receita Federal. Sinônimos: reenvio de CPF, reimpressão do cadastro, certidão CPF digital. URL: https://www.rj.gov.br/servico/emitir-2a-via-de-cpf147.",
+          "distancia": 0.9765790700912476
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Emitir Segunda via do Título de Eleitor",
+          "timestamp": "2025-05-19T13:26:46.242870"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T13:27:05.496297",
+      "pergunta_original": "qro segunda via",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 60 - Serviço: Emitir Segunda via do Título de Eleitor. Descrição: Solicitação da emissão da segunda via do título de eleitor, quando não há mudança nas informações do cadastro.. Órgão: TRE-RJ. Tags: título eleitoral, documento, eleições, segunda via. Sinônimos: reenvio do título, duplicata eleitoral, documento de votação. URL: https://www.rj.gov.br/servico/emitir-segunda-via-do-titulo-de-eleitor158.",
+          "distancia": 0.87529456615448
+        },
+        {
+          "descricao": "ID: 192 - Serviço: Requerimento Administrativo GRH - 2ª Via de Contracheque. Descrição: Solicitação de 2ª via de contracheque. Exclusivo para períodos anteriores a 24 meses.. Órgão: PRODERJ. Tags: contracheque, segunda via, PRODERJ, servidores. Sinônimos: reenvio de holerite, duplicata de pagamento, comprovante de rendimentos. URL: https://www.rj.gov.br/servico/requerimento-administrativo-grh-2a-via-de-contracheque191.",
+          "distancia": 0.8870614767074585
+        },
+        {
+          "descricao": "ID: 49 - Serviço: Emitir a 2ª Via do CPF. Descrição: Impressão da segunda via do CPF em casos de perda, roubo ou após atualização dos dados na Receita Federal, como nome, endereços, etc.. Órgão: RF. Tags: CPF, documento, segunda via, Receita Federal. Sinônimos: reenvio de CPF, reimpressão do cadastro, certidão CPF digital. URL: https://www.rj.gov.br/servico/emitir-2a-via-de-cpf147.",
+          "distancia": 0.8997755646705627
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T13:27:30.841690",
+      "pergunta_original": "onde posso ir pra matricular meu filho na escola?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 64 - Serviço: Solicitar transferência escolar para rede SEEDUC. Descrição: Possibilidade de pedir transferência de escola durante todo o ano letivo (até 45 dias antes do término) através do site Matrícula Fácil.. Órgão: SEEDUC. Tags: educação, transferência, matrícula, escola. Sinônimos: mudança de unidade escolar, troca de instituição de ensino, solicitação de rematrícula. URL: https://www.rj.gov.br/servico/transferir-matricula-facil79.",
+          "distancia": 0.9796693325042725
+        },
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.9824460744857788
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T13:28:04.032104",
+      "pergunta_original": "matricula no ensino publico",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.983630895614624
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Consultar Matrícula Fácil",
+          "timestamp": "2025-05-19T13:28:13.750336"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T13:39:12.115339",
+      "pergunta_original": "fui roubado",
+      "pergunta_reformulada": "Consultar as opções de registro de ocorrência de roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 32 - Serviço: Fazer registro online de crime. Descrição: Permite você registrar online a ocorrência crime.. Órgão: SEPOL. Tags: crime, registro online, ocorrência, segurança. Sinônimos: boletim eletrônico, denúncia digital, ocorrência virtual. URL: https://www.rj.gov.br/servico/fazer-registro-online-de-crime72.",
+          "distancia": 0.9319307208061218
+        },
+        {
+          "descricao": "ID: 56 - Serviço: Comunicar Outras Ocorrências. Descrição: Permite que você registre outras ocorrências.. Órgão: SEPOL. Tags: ocorrências, registro, segurança, online. Sinônimos: relatar incidentes, comunicação de eventos, registro geral de ocorrências. URL: https://www.rj.gov.br/servico/comunicar-outras-ocorrencias463.",
+          "distancia": 0.9629046320915222
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Fazer registro online de crime",
+          "timestamp": "2025-05-19T13:41:58.655943"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T13:54:41.453383",
+      "pergunta_original": "documento do carro",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 196 - Serviço: Solicitar Alteração de Dados (por erros cometidos pelo usuário). Descrição: Permite você solicitar corrigir erros cometidos pelo usuário na documentação ou troca de proprietário, com a emissão de um novo Certificado de Registro de Veículo (CRV).. Órgão: DETRAN. Tags: correção, documentação, veículo, CRV. Sinônimos: retificação de dados, correção de registros, ajuste cadastral. URL: https://www.rj.gov.br/servico/solicitar-alteracao-de-dados-por-erros-cometidos-pelo-usuario171.",
+          "distancia": 0.946345329284668
+        },
+        {
+          "descricao": "ID: 182 - Serviço: Solicitar Baixa de Veículo. Descrição: Permite você solicitar a emissão de uma certidão, onde consta que o veículo foi retirado de circulação, pois não possui mais condições de trafegar. Isso ocorre se o veículo estiver: irrecuperável, definitivamente desmontado, sinistrado com laudo de perda total e vendido ou leiloado como sucata.. Órgão: DETRAN. Tags: baixa, veículo, desmontagem, documento. Sinônimos: cancelamento de registro, certidão de baixa, veículo inutilizado. URL: https://www.rj.gov.br/servico/solicitar-baixa-de-veiculo23.",
+          "distancia": 0.9472389221191406
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:25:19.318347",
+      "pergunta_original": "segunda via da identidade",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.8209589719772339
+        },
+        {
+          "descricao": "ID: 5 - Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136.",
+          "distancia": 0.8597067594528198
+        },
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.883720338344574
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:27:15.735865",
+      "pergunta_original": "sou jovem de baixa renda, como posso obter beneficios?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.9324949979782104
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:28:07.162158",
+      "pergunta_original": "sou jovem de baixa renda, como posso obter beneficios?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.9324949979782104
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:29:10.168394",
+      "pergunta_original": "sou jovem de baixa renda, como posso obter beneficios?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.932449996471405
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:30:38.105990",
+      "pergunta_original": "fui roubado, o que devo fazer?",
+      "pergunta_reformulada": "Consultar as orientações para registrar um boletim de ocorrência após um roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 32 - Serviço: Fazer registro online de crime. Descrição: Permite você registrar online a ocorrência crime.. Órgão: SEPOL. Tags: crime, registro online, ocorrência, segurança. Sinônimos: boletim eletrônico, denúncia digital, ocorrência virtual. URL: https://www.rj.gov.br/servico/fazer-registro-online-de-crime72.",
+          "distancia": 0.8664329051971436
+        },
+        {
+          "descricao": "ID: 12 - Serviço: Fazer Boletim de Registro de Acidente de Trânsito sem Vítimas (e-Brat). Descrição: Permite você fazer o registro de acidentes de trânsito sem vítimas (e-Brat).. Órgão: SEPM. Tags: acidente, trânsito, e-brat, registro. Sinônimos: registro eletrônico de acidente, boletim de ocorrência digital, BRAT online. URL: https://www.rj.gov.br/servico/fazer-o-boletim-de-registro-de-acidente-de-transito-sem-vitimas-e-brat159.",
+          "distancia": 0.9126903414726257
+        },
+        {
+          "descricao": "ID: 140 - Serviço: Verificar orientações - Liberação de Veículos Apreendidos (rebocados). Descrição: Permite você verificar as orientações para o processo de liberação de veículos apreendidos.. Órgão: DETRAN. Tags: veículo, apreensão, liberação, orientações. Sinônimos: recuperar carro rebocado, procedimentos de liberação, guia de desapreensão. URL: https://www.rj.gov.br/servico/verificar-orientacoes-liberacao-de-veiculos-apreendidos-rebocados16.",
+          "distancia": 0.9298219084739685
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:33:05.838676",
+      "pergunta_original": "fui roubado, o que devo fazer?",
+      "pergunta_reformulada": "Consultar os procedimentos a serem seguidos após um roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 140 - Serviço: Verificar orientações - Liberação de Veículos Apreendidos (rebocados). Descrição: Permite você verificar as orientações para o processo de liberação de veículos apreendidos.. Órgão: DETRAN. Tags: veículo, apreensão, liberação, orientações. Sinônimos: recuperar carro rebocado, procedimentos de liberação, guia de desapreensão. URL: https://www.rj.gov.br/servico/verificar-orientacoes-liberacao-de-veiculos-apreendidos-rebocados16.",
+          "distancia": 0.9334452152252197
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:33:38.244207",
+      "pergunta_original": "fui roubado, o que devo fazer?",
+      "pergunta_reformulada": "Consultar as orientações para registrar um boletim de ocorrência após um roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 32 - Serviço: Fazer registro online de crime. Descrição: Permite você registrar online a ocorrência crime.. Órgão: SEPOL. Tags: crime, registro online, ocorrência, segurança. Sinônimos: boletim eletrônico, denúncia digital, ocorrência virtual. URL: https://www.rj.gov.br/servico/fazer-registro-online-de-crime72.",
+          "distancia": 0.8666004538536072
+        },
+        {
+          "descricao": "ID: 12 - Serviço: Fazer Boletim de Registro de Acidente de Trânsito sem Vítimas (e-Brat). Descrição: Permite você fazer o registro de acidentes de trânsito sem vítimas (e-Brat).. Órgão: SEPM. Tags: acidente, trânsito, e-brat, registro. Sinônimos: registro eletrônico de acidente, boletim de ocorrência digital, BRAT online. URL: https://www.rj.gov.br/servico/fazer-o-boletim-de-registro-de-acidente-de-transito-sem-vitimas-e-brat159.",
+          "distancia": 0.9129087924957275
+        },
+        {
+          "descricao": "ID: 140 - Serviço: Verificar orientações - Liberação de Veículos Apreendidos (rebocados). Descrição: Permite você verificar as orientações para o processo de liberação de veículos apreendidos.. Órgão: DETRAN. Tags: veículo, apreensão, liberação, orientações. Sinônimos: recuperar carro rebocado, procedimentos de liberação, guia de desapreensão. URL: https://www.rj.gov.br/servico/verificar-orientacoes-liberacao-de-veiculos-apreendidos-rebocados16.",
+          "distancia": 0.9299570918083191
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:34:58.414301",
+      "pergunta_original": "fui assaltado, o que devo fazer?",
+      "pergunta_reformulada": "Consultar as orientações para reportar um assalto e buscar assistência.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 109 - Serviço: Fazer denúncia - Disque Denúncia. Descrição: O Disque Denúncia é uma central de atendimento especializada em atender a população que vivencia ou presencia ações criminosas. As denúncias são anônimas e os relatos recebidos através das ligações são repassados às autoridades competentes com rapidez e eficácia. As ligações para o Disque-Denúncia não são rastreadas ou gravadas. Ao ligar para o (21) 2253-1177, você receberá uma senha. Esta será a sua referência se precisar acompanhar o andamento da investigação, ou trazer novas informações sobre o caso.. Órgão: SEPOL. Tags: denúncia, segurança, anonimato, crimes. Sinônimos: canal de denúncias, relatar crimes, central de emergência. URL: https://www.rj.gov.br/servico/fazer-denuncia-disque-denuncia120.",
+          "distancia": 0.9816322326660156
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:36:00.798874",
+      "pergunta_original": "preciso fazer a segunda via de documentos por causa de um assalto, quais servicos devo utilizar?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 49 - Serviço: Emitir a 2ª Via do CPF. Descrição: Impressão da segunda via do CPF em casos de perda, roubo ou após atualização dos dados na Receita Federal, como nome, endereços, etc.. Órgão: RF. Tags: CPF, documento, segunda via, Receita Federal. Sinônimos: reenvio de CPF, reimpressão do cadastro, certidão CPF digital. URL: https://www.rj.gov.br/servico/emitir-2a-via-de-cpf147.",
+          "distancia": 0.7317872047424316
+        },
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.766451895236969
+        },
+        {
+          "descricao": "ID: 5 - Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136.",
+          "distancia": 0.798227846622467
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:37:12.025289",
+      "pergunta_original": "qro consultar a matricula do meu neto na escola, mas não sei como",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.8262573480606079
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:37:51.052505",
+      "pergunta_original": "estou perdido e nao sei para onde ir",
+      "pergunta_reformulada": "Consultar opções de orientação ou assistência para encontrar o caminho.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:38:16.647634",
+      "pergunta_original": "estou perdido e nao sei para onde ir para conseguir declarar meu sispatri",
+      "pergunta_reformulada": "Consultar onde declarar meu Sispatri.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 1 - Serviço: Acessar SISPATRI - Declaração Patrimonial. Descrição: Permite você acessar o Sistema para Declaração Patrimonial para Servidores, na qual viabiliza a entrega eletrônica da Declaração de bens e valores pelos servidores do poder executivo estadual.. Órgão: CGE. Tags: sispatri, declaração patrimonial, servidores, bens, sistema. Sinônimos: Declaração de Bens, Sistema Patrimonial, Entrega Eletrônica de Declaração. URL: https://www.rj.gov.br/servico/acessar-sispatri-declaracao-patrimonial-2023169.",
+          "distancia": 0.7860333919525146
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:39:23.708423",
+      "pergunta_original": "estou com problemas com a cebrae mas nao sei o que fazer",
+      "pergunta_reformulada": "Consultar suporte para resolver problemas com o Sebrae.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 161 - Serviço: Enviar Dúvidas sobre Declarações Fiscais. Descrição: Permite você enviar dúvidas técnico-operacionais que ainda não foram respondidas sobre Declarações Fiscais.. Órgão: SEFAZ. Tags: dúvidas, fiscal, declarações, SEFAZ. Sinônimos: suporte tributário, consultoria fiscal, esclarecimentos fiscais. URL: https://www.rj.gov.br/servico/enviar-duvidas-sobre-declaracoes-fiscais145.",
+          "distancia": 0.9617915749549866
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:40:26.380380",
+      "pergunta_original": "ouvidoria",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 185 - Serviço: Acessar Ouvidoria. Descrição: Permite você fazer elogios, reclamações, solicitações, sugestões ou denúncias sobre os serviços prestados pela SECID.. Órgão: SECID. Tags: ouvidoria, feedback, reclamação, canal. Sinônimos: canal de comunicação, registro de manifestações, sugestões institucionais. URL: https://www.rj.gov.br/servico/acessar-ouvidoria32.",
+          "distancia": 0.9291456937789917
+        },
+        {
+          "descricao": "ID: 81 - Serviço: Falar com a Ouvidoria. Descrição: Canal para sugestões, elogios, pedidos, reclamações e denúncias sobre serviços da Polícia Militar.. Órgão: SEPM. Tags: ouvidoria, PMERJ, reclamação, feedback. Sinônimos: canal de comunicação, registro de feedback, contato institucional. URL: https://www.rj.gov.br/servico/falar-com-a-ouvidoria32.",
+          "distancia": 0.9958267211914062
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:40:53.193259",
+      "pergunta_original": "como entro em contato com o governo do estado?",
+      "pergunta_reformulada": "Consultar os canais de contato do governo do estado.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 185 - Serviço: Acessar Ouvidoria. Descrição: Permite você fazer elogios, reclamações, solicitações, sugestões ou denúncias sobre os serviços prestados pela SECID.. Órgão: SECID. Tags: ouvidoria, feedback, reclamação, canal. Sinônimos: canal de comunicação, registro de manifestações, sugestões institucionais. URL: https://www.rj.gov.br/servico/acessar-ouvidoria32.",
+          "distancia": 0.98710036277771
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar Ouvidoria",
+          "timestamp": "2025-05-19T14:41:12.979283"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:43:44.839294",
+      "pergunta_original": "i need help with making a new identity card",
+      "pergunta_reformulada": "Consultar sobre o processo para obter um novo cartão de identidade.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.8645403385162354
+        },
+        {
+          "descricao": "ID: 143 - Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193.",
+          "distancia": 0.892047643661499
+        },
+        {
+          "descricao": "ID: 68 - Serviço: Agendar o atendimento da Carteira de Identidade Nacional (CIN). Descrição: Agendamento prévio para marcar Posto, dia e horário para solicitar a Carteira de Identidade Nacional.. Órgão: DETRAN. Tags: CIN, agendamento, documento, identidade. Sinônimos: marcar emissão de RG, agendar CIN, marcar atendimento para identidade. URL: https://www.rj.gov.br/servico/agendar-o-atendimento-da-carteira-de-identidade-nacional-cin140.",
+          "distancia": 0.914171576499939
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:45:08.189941",
+      "pergunta_original": "i need help with making a new identity card",
+      "pergunta_reformulada": "Consultar sobre como solicitar um novo cartão de identidade.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.9263889789581299
+        },
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.9359976053237915
+        },
+        {
+          "descricao": "ID: 143 - Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193.",
+          "distancia": 0.9380950331687927
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:46:32.896450",
+      "pergunta_original": "preciso fazer a carteira de identidade do meu sobrinho, qual é o caminho das pedras?",
+      "pergunta_reformulada": "Consultar o procedimento para emitir a carteira de identidade do meu sobrinho.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.9012729525566101
+        },
+        {
+          "descricao": "ID: 143 - Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193.",
+          "distancia": 0.9281935691833496
+        },
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.9308938980102539
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:49:30.080386",
+      "pergunta_original": "preciso fazer a carteira de identidade do meu sobrinho, qual é o caminho das pedras?",
+      "pergunta_reformulada": "Consultar o procedimento necessário para a emissão da carteira de identidade do meu sobrinho.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.8988951444625854
+        },
+        {
+          "descricao": "ID: 143 - Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193.",
+          "distancia": 0.927804708480835
+        },
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.9356869459152222
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T14:55:56.709049",
+      "pergunta_original": "preciso fazer a carteira de identidade do meu sobrinho, qual é o caminho das pedras?",
+      "pergunta_reformulada": "Consultar o procedimento para emitir a carteira de identidade do meu sobrinho.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.9012729525566101
+        },
+        {
+          "descricao": "ID: 143 - Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193.",
+          "distancia": 0.9281935691833496
+        },
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.9308938980102539
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-19T13:26:27.958254"
+}

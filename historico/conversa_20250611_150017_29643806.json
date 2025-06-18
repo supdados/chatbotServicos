@@ -1,0 +1,120 @@
+{
+  "id": "20250611_150017_29643806",
+  "interacoes": [
+    {
+      "timestamp": "2025-06-11T15:00:19.115845",
+      "pergunta_original": "onde posso tirar a segunda via da identidade?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 5-Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. "
+        },
+        {
+          "descricao": "ID: 36-Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. "
+        },
+        {
+          "descricao": "ID: 80-Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. "
+        },
+        {
+          "descricao": "ID: 75-Serviço: Solicitar 1ª via da Carteira de Identidade Nacional (CIN). Descrição: Primeira emissão da Carteira de Identidade Civil nacional gratuita, com CPF como identificador único.. Órgão: DETRAN. Tags: CIN, documento, identidade, primeira via. Sinônimos: RG nacional, carteira única de identificação, documento civil federal. "
+        },
+        {
+          "descricao": "ID: 60-Serviço: Emitir Segunda via do Título de Eleitor. Descrição: Solicitação da emissão da segunda via do título de eleitor, quando não há mudança nas informações do cadastro.. Órgão: TRE-RJ. Tags: título eleitoral, documento, eleições, segunda via. Sinônimos: reenvio do título, duplicata eleitoral, documento de votação. "
+        },
+        {
+          "descricao": "ID: 49-Serviço: Emitir a 2ª Via do CPF. Descrição: Impressão da segunda via do CPF em casos de perda, roubo ou após atualização dos dados na Receita Federal, como nome, endereços, etc.. Órgão: RF. Tags: CPF, documento, segunda via, Receita Federal. Sinônimos: reenvio de CPF, reimpressão do cadastro, certidão CPF digital. "
+        },
+        {
+          "descricao": "ID: 135-Serviço: Comunicar extravio, roubo ou furto da Carteira de Identidade. Descrição: Você pode comunicar ao Detran o extravio, roubo ou furto da sua Carteira de Identidade, a fim de que esta informação fique registrada na base de dados de pessoas civilmente identificadas no estado do Rio de Janeiro.. Órgão: DETRAN. Tags: CIN, documento, roubo, comunicação. Sinônimos: registrar perda de identidade, comunicação de furto, bloqueio de documento. "
+        },
+        {
+          "descricao": "ID: 19-Serviço: Emitir a 2ª via de Renach (Registro Nacional de Condutores Habilitados). Descrição: Impressão da segunda via do histórico de habilitação, emitido pelo Detran. Com informações sobre dados pessoais, categoria, pontuação por infrações e cursos realizados pelos motoristas.. Órgão: DETRAN. Tags: Renach, CNH, histórico, motorista. Sinônimos: segunda via do histórico de habilitação, registro nacional de condutores, documento do motorista. "
+        },
+        {
+          "descricao": "ID: 101-Serviço: Solicitar segunda via do histórico escolar. Descrição: É quando um aluno, ativo ou inativo, solicita à unidade escolar que estudou a segunda via do seu histórico escolar.. Órgão: SEEDUC. Tags: histórico, escola, documento, reemissão. Sinônimos: reenvio de histórico, duplicata acadêmica, registro escolar. "
+        },
+        {
+          "descricao": "ID: 68-Serviço: Agendar o atendimento da Carteira de Identidade Nacional (CIN). Descrição: Agendamento prévio para marcar Posto, dia e horário para solicitar a Carteira de Identidade Nacional.. Órgão: DETRAN. Tags: CIN, agendamento, documento, identidade. Sinônimos: marcar emissão de RG, agendar CIN, marcar atendimento para identidade. "
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Emitir a 2ª via de Renach (Registro Nacional de Condutores Habilitados)",
+          "timestamp": "2025-06-11T15:04:42.810741"
+        },
+        {
+          "servico": "Solicitar segunda via do histórico escolar",
+          "timestamp": "2025-06-11T15:04:47.939170"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-06-11T15:13:41.958029",
+      "pergunta_original": "onde posso tirar a segunda via da identidade?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136."
+        },
+        {
+          "descricao": "Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184."
+        },
+        {
+          "descricao": "Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163."
+        },
+        {
+          "descricao": "Serviço: Solicitar 1ª via da Carteira de Identidade Nacional (CIN). Descrição: Primeira emissão da Carteira de Identidade Civil nacional gratuita, com CPF como identificador único.. Órgão: DETRAN. Tags: CIN, documento, identidade, primeira via. Sinônimos: RG nacional, carteira única de identificação, documento civil federal. URL: https://www.rj.gov.br/servico/solicitar-1a-via-da-carteira-de-identidade-nacional-cin33."
+        },
+        {
+          "descricao": "Serviço: Comunicar extravio, roubo ou furto da Carteira de Identidade. Descrição: Você pode comunicar ao Detran o extravio, roubo ou furto da sua Carteira de Identidade, a fim de que esta informação fique registrada na base de dados de pessoas civilmente identificadas no estado do Rio de Janeiro.. Órgão: DETRAN. Tags: CIN, documento, roubo, comunicação. Sinônimos: registrar perda de identidade, comunicação de furto, bloqueio de documento. URL: https://www.rj.gov.br/servico/comunicar-perda-ou-roubo-de-carteira-de-identidade163."
+        },
+        {
+          "descricao": "Serviço: Agendar o atendimento da Carteira de Identidade Nacional (CIN). Descrição: Agendamento prévio para marcar Posto, dia e horário para solicitar a Carteira de Identidade Nacional.. Órgão: DETRAN. Tags: CIN, agendamento, documento, identidade. Sinônimos: marcar emissão de RG, agendar CIN, marcar atendimento para identidade. URL: https://www.rj.gov.br/servico/agendar-o-atendimento-da-carteira-de-identidade-nacional-cin140."
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Solicitar 1ª via da Carteira de Identidade Nacional (CIN)",
+          "timestamp": "2025-06-11T15:17:16.118192"
+        },
+        {
+          "servico": "Solicitar 2ª via da Carteira de Identidade Nacional (CIN)",
+          "timestamp": "2025-06-11T15:18:06.701596"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-06-11T15:19:22.078001",
+      "pergunta_original": "gostaria de realizar a troca da minha identidade antiga pela nova, onde posso ver informações a cerca disso?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136."
+        },
+        {
+          "descricao": "Serviço: Solicitar 1ª via da Carteira de Identidade Nacional (CIN). Descrição: Primeira emissão da Carteira de Identidade Civil nacional gratuita, com CPF como identificador único.. Órgão: DETRAN. Tags: CIN, documento, identidade, primeira via. Sinônimos: RG nacional, carteira única de identificação, documento civil federal. URL: https://www.rj.gov.br/servico/solicitar-1a-via-da-carteira-de-identidade-nacional-cin33."
+        },
+        {
+          "descricao": "Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163."
+        },
+        {
+          "descricao": "Serviço: Solicitar orientação para o cadastro de Identidade Civil. Descrição: Receba orientações para agendar o cadastro da identidade que será emitida presencialmente em uma unidade de atendimento do Poupa Tempo RJ.. Órgão: DETRAN. Tags: CIN, documento, orientação, cadastro. Sinônimos: guia de emissão, procedimentos para identidade, agendamento CIN. URL: https://www.rj.gov.br/servico/solicitar-orientacao-para-o-cadastro-de-identidade-civil193."
+        },
+        {
+          "descricao": "Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184."
+        },
+        {
+          "descricao": "Serviço: Alterar dados cadastrais do CPF. Descrição: Atualização das informações cadastradas no CPF. Isso geralmente acontece quando há mudança de nome (por casamento, divórcio), inclusão ou exclusão de nome social, corrigir algum dado errado, colocar o número do título de eleitor ou mudança de endereço.. Órgão: RF. Tags: CPF, cadastro, atualização, documento. Sinônimos: modificar CPF, atualizar registro, corrigir dados pessoais. URL: https://www.rj.gov.br/servico/alterar-dados-cadastrais-do-cpf44."
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-06-11T15:00:17.570244"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "20250520_130019_88c6a095",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-20T13:00:28.126717",
+      "pergunta_original": "emitir segunda via identidade",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 59 - Serviço: Emitir Certidão de Nada Consta de Infrações de Trânsito - CNH. Descrição: Permite solicitar emissão de Certidão de Nada Consta de Infração de Trânsito, Multa, Pontuação, Suspensão do Direito de Dirigir e Cassação da CNH.. Órgão: DETRAN. Tags: certidão, CNH, trânsito, regularidade. Sinônimos: documento de ausência de multas, certificado de bom condutor, atestado de infrações. URL: https://www.rj.gov.br/servico/emitir-certidao-de-nada-consta-de-infraces-de-transito-cnh-127.",
+          "distancia": 0.675588846206665
+        },
+        {
+          "descricao": "ID: 35 - Serviço: Emitir Extrato de Contribuição (CNIS). Descrição: O Extrato de Contribuição (CNIS), também conhecido como Extrato Previdenciário, é um documento que apresenta o histórico de todas as contribuições à Previdência Social brasileira do cidadão. Ele informa todos os vínculos, remunerações e contribuições previdenciárias do cidadão.. Órgão: INSS. Tags: CNIS, previdência, extrato, contribuições. Sinônimos: histórico contributivo, extrato previdenciário, registro de contribuições. URL: https://www.rj.gov.br/servico/emitir-extrato-de-contribuicao-cnis84.",
+          "distancia": 0.6951167583465576
+        },
+        {
+          "descricao": "ID: 18 - Serviço: Acessar Contracheques. Descrição: Permite o servidor acessar seu contracheques.. Órgão: FLXIII. Tags: contracheque, servidor, holerite, financeiro. Sinônimos: consultar remuneração, acesso a vencimentos, demonstrativo de pagamento. URL: https://www.rj.gov.br/servico/acessar-contracheques818.",
+          "distancia": 0.6960019469261169
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T13:05:45.178448",
+      "pergunta_original": "emitir segunda via identidade",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 59 - Serviço: Emitir Certidão de Nada Consta de Infrações de Trânsito - CNH. Descrição: Permite solicitar emissão de Certidão de Nada Consta de Infração de Trânsito, Multa, Pontuação, Suspensão do Direito de Dirigir e Cassação da CNH.. Órgão: DETRAN. Tags: certidão, CNH, trânsito, regularidade. Sinônimos: documento de ausência de multas, certificado de bom condutor, atestado de infrações. URL: https://www.rj.gov.br/servico/emitir-certidao-de-nada-consta-de-infraces-de-transito-cnh-127.",
+          "distancia": 0.675588846206665
+        },
+        {
+          "descricao": "ID: 35 - Serviço: Emitir Extrato de Contribuição (CNIS). Descrição: O Extrato de Contribuição (CNIS), também conhecido como Extrato Previdenciário, é um documento que apresenta o histórico de todas as contribuições à Previdência Social brasileira do cidadão. Ele informa todos os vínculos, remunerações e contribuições previdenciárias do cidadão.. Órgão: INSS. Tags: CNIS, previdência, extrato, contribuições. Sinônimos: histórico contributivo, extrato previdenciário, registro de contribuições. URL: https://www.rj.gov.br/servico/emitir-extrato-de-contribuicao-cnis84.",
+          "distancia": 0.6951167583465576
+        },
+        {
+          "descricao": "ID: 18 - Serviço: Acessar Contracheques. Descrição: Permite o servidor acessar seu contracheques.. Órgão: FLXIII. Tags: contracheque, servidor, holerite, financeiro. Sinônimos: consultar remuneração, acesso a vencimentos, demonstrativo de pagamento. URL: https://www.rj.gov.br/servico/acessar-contracheques818.",
+          "distancia": 0.6960019469261169
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T13:12:32.922346",
+      "pergunta_original": "emitir segunda via identidade",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 59 - Serviço: Emitir Certidão de Nada Consta de Infrações de Trânsito - CNH. Descrição: Permite solicitar emissão de Certidão de Nada Consta de Infração de Trânsito, Multa, Pontuação, Suspensão do Direito de Dirigir e Cassação da CNH.. Órgão: DETRAN. Tags: certidão, CNH, trânsito, regularidade. Sinônimos: documento de ausência de multas, certificado de bom condutor, atestado de infrações. URL: https://www.rj.gov.br/servico/emitir-certidao-de-nada-consta-de-infraces-de-transito-cnh-127.",
+          "distancia": 0.675588846206665
+        },
+        {
+          "descricao": "ID: 35 - Serviço: Emitir Extrato de Contribuição (CNIS). Descrição: O Extrato de Contribuição (CNIS), também conhecido como Extrato Previdenciário, é um documento que apresenta o histórico de todas as contribuições à Previdência Social brasileira do cidadão. Ele informa todos os vínculos, remunerações e contribuições previdenciárias do cidadão.. Órgão: INSS. Tags: CNIS, previdência, extrato, contribuições. Sinônimos: histórico contributivo, extrato previdenciário, registro de contribuições. URL: https://www.rj.gov.br/servico/emitir-extrato-de-contribuicao-cnis84.",
+          "distancia": 0.6951167583465576
+        },
+        {
+          "descricao": "ID: 18 - Serviço: Acessar Contracheques. Descrição: Permite o servidor acessar seu contracheques.. Órgão: FLXIII. Tags: contracheque, servidor, holerite, financeiro. Sinônimos: consultar remuneração, acesso a vencimentos, demonstrativo de pagamento. URL: https://www.rj.gov.br/servico/acessar-contracheques818.",
+          "distancia": 0.6960019469261169
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T13:13:44.196617",
+      "pergunta_original": "emitir segunda via identidade",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 59 - Serviço: Emitir Certidão de Nada Consta de Infrações de Trânsito - CNH. Descrição: Permite solicitar emissão de Certidão de Nada Consta de Infração de Trânsito, Multa, Pontuação, Suspensão do Direito de Dirigir e Cassação da CNH.. Órgão: DETRAN. Tags: certidão, CNH, trânsito, regularidade. Sinônimos: documento de ausência de multas, certificado de bom condutor, atestado de infrações. URL: https://www.rj.gov.br/servico/emitir-certidao-de-nada-consta-de-infraces-de-transito-cnh-127.",
+          "distancia": 0.675588846206665
+        },
+        {
+          "descricao": "ID: 35 - Serviço: Emitir Extrato de Contribuição (CNIS). Descrição: O Extrato de Contribuição (CNIS), também conhecido como Extrato Previdenciário, é um documento que apresenta o histórico de todas as contribuições à Previdência Social brasileira do cidadão. Ele informa todos os vínculos, remunerações e contribuições previdenciárias do cidadão.. Órgão: INSS. Tags: CNIS, previdência, extrato, contribuições. Sinônimos: histórico contributivo, extrato previdenciário, registro de contribuições. URL: https://www.rj.gov.br/servico/emitir-extrato-de-contribuicao-cnis84.",
+          "distancia": 0.6951167583465576
+        },
+        {
+          "descricao": "ID: 18 - Serviço: Acessar Contracheques. Descrição: Permite o servidor acessar seu contracheques.. Órgão: FLXIII. Tags: contracheque, servidor, holerite, financeiro. Sinônimos: consultar remuneração, acesso a vencimentos, demonstrativo de pagamento. URL: https://www.rj.gov.br/servico/acessar-contracheques818.",
+          "distancia": 0.6960019469261169
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-20T13:00:19.488174"
+}

@@ -1,0 +1,678 @@
+/* Variáveis de cores e configurações */
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-gradient: linear-gradient(135deg, #f6f8fc 0%, #ffffff 100%);
+    --text-color: #1e293b;
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-700: #334155;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
+  }
+  
+  /* Reset básico */
+  * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo global do body */
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Classe para elementos acessíveis somente para leitores de tela */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .logo-text {
+    font-weight: 700;
+    font-size: 28px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+  }
+  
+  .logo-separator {
+    color: var(--gray-700);
+    opacity: 0.5;
+  }
+  
+  .logo-subtitle {
+    font-weight: 500;
+    color: var(--gray-700);
+    font-size: 16px;
+  }
+  
+  /* Tela de introdução */
+  .intro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg-gradient);
+    z-index: 1000;
+  }
+  
+  .intro-container.hidden {
+    display: none;
+  }
+  
+  .intro-content {
+    width: 100%;
+    max-width: 720px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 48px;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+  }
+  
+  .intro-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Botão primário */
+  .btn-primario {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 24px;
+  }
+  
+  .btn-primario:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  /* Estilos para o container de feedback e botões de feedback */
+.feedback-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Aumentado de 8px para melhor espaçamento */
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--gray-200);
+    position: relative;
+    min-height: 44px; /* Altura fixa para manter consistência */
+  }
+  
+  .btn-feedback {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Adicionado */
+    width: 44px; /* Largura fixa */
+    height: 44px; /* Altura fixa */
+  }
+  
+  .btn-feedback img {
+    width: 28px;  /* Aumentado de 20px */
+    height: 28px; /* Aumentado de 20px */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-feedback:hover {
+    transform: scale(1.2);
+  }
+  
+  .btn-feedback:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  
+  .btn-feedback.selected {
+    transform: scale(1.2);
+  }
+
+  .btn-feedback.hidden {
+    width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+  }
+  
+  .feedback-message {
+    font-size: 14px;
+    color: var(--text-color);
+    position: absolute;
+    left: 56px; /* Ajustado para ficar após o botão */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap; /* Mantém o texto em uma linha */
+  }
+
+  .feedback-message.visible {
+    opacity: 1;
+  }
+
+  /* Estilos para o botão "Novo Chat" */
+.btn-novo-chat {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .btn-novo-chat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99,102,241,0.2);
+  }
+  /* Container do chat */
+  .chat-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    background: white;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    padding: 24px;
+    background: white;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  
+  /* Histórico de mensagens */
+  .historico {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Mensagens */
+  .mensagem {
+    max-width: 80%;
+    margin-bottom: 24px;
+    animation: fadeScale 0.3s ease;
+    word-wrap: break-word;
+  }
+  
+  .pergunta {
+    margin-left: auto;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    padding: 16px 24px;
+    border-radius: 20px;
+    border-bottom-right-radius: 4px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .resposta {
+    background: var(--gray-100);
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid var(--gray-200);
+  }
+  
+  /* Área de entrada */
+  .entrada {
+    padding: 24px;
+    background: white;
+    border-top: 1px solid var(--gray-200);
+    display: flex;
+    gap: 16px;
+  }
+  
+  .entrada input[type="text"] {
+    flex: 1;
+    padding: 16px 24px;
+    border: 2px solid var(--gray-200);
+    border-radius: 100px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    background: var(--gray-50);
+  }
+  
+  .entrada input[type="text"]:focus {
+    border-color: var(--primary-color);
+    background: white;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    outline: none;
+  }
+  
+  .entrada button {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .entrada button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  }
+  
+  /* Botão de acesso do serviço (agora como <button>) */
+  .botao-acesso {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    align-self: end;
+    width: 100%;
+    margin-top: auto;
+    padding: 12px 24px;
+    text-align: center;
+  }
+  
+  .botao-acesso:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .botao-acesso:focus {
+    outline: none;
+  }
+  
+  /* Estilos para os serviços */
+.servicos-relacionados {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.servicos-relacionados h4 {
+  color: var(--gray-700);
+  margin-bottom: 16px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.servicos-secundarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.servicos-secundarios-grid:has(:only-child) {
+  grid-template-columns: minmax(0, 500px); /* Limita a largura máxima */
+  justify-content: center;
+}
+
+.servico-item {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 180px; /* Reduzido de 220px */
+  gap: 8px; /* Reduzido de 12px */
+  background: white;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: 16px;
+  padding: 20px; /* Reduzido de 24px */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+              0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.servico-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05),
+              0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  border-color: var(--primary-color);
+}
+
+.servico-principal {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.1),
+              0 4px 6px -2px rgba(99, 102, 241, 0.05);
+  position: relative;
+  overflow: hidden;
+  min-height: 200px; /* Reduzido de 250px */
+}
+
+.servico-principal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+}
+
+.servico-secundario {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+}
+
+/* Responsividade para os serviços */
+@media (max-width: 640px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+  .servicos-secundarios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos adicionais para formatação do serviço */
+.servico-item h3 {
+  color: var(--primary-color);
+  font-size: 1.15em; /* Reduzido de 1.25em */
+  font-weight: 600;
+  line-height: 1.4;
+  height: auto;
+  min-height: 2.4em; /* Reduzido de 2.8em */
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+}
+
+.orgao-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-700);
+  font-size: 0.9em; /* Reduzido de 0.95em */
+  font-weight: 500;
+  margin: 0;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orgao-text::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.descricao-text {
+  color: var(--text-color);
+  font-size: 0.9em; /* Reduzido de 0.95em */
+  line-height: 1.5; /* Reduzido de 1.6 */
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: auto;
+  min-height: 4.2em; /* Reduzido de 4.8em */
+  opacity: 0.9;
+}
+
+.descricao-escolha {
+  padding: 1rem;
+  padding-top: 0rem;
+  line-height: 1.5;
+}
+
+.botao-acesso {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: white;
+  font-weight: 600;
+  font-size: 0.9em; /* Reduzido de 0.95em */
+  padding: 12px 24px; /* Reduzido de 14px 28px */
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px; /* Reduzido de 16px */
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
+}
+
+.botao-acesso:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 16px -4px rgba(99, 102, 241, 0.3);
+}
+
+.botao-acesso::after {
+  content: '→';
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.botao-acesso:hover::after {
+  transform: translateX(4px);
+}
+
+/* Grid de serviços com melhor espaçamento */
+.servicos-grid {
+  display: grid;
+  gap: 16px; /* Reduzido de 24px */
+  margin-top: 24px;
+}
+
+.servicos-secundarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; /* Reduzido de 24px */
+  align-items: stretch;
+}
+
+.servicos-secundarios-grid:has(:only-child) {
+  grid-template-columns: minmax(0, 600px);
+  justify-content: center;
+}
+
+/* Cabeçalho da seção de serviços relacionados */
+.servicos-relacionados h4 {
+  color: var(--gray-700);
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.servicos-relacionados h4::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+}
+
+/* Estilo comum para cabeçalhos de seção */
+.secao-header {
+  color: var(--gray-700);
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secao-header::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
+}
+
+/* Ajuste para o cabeçalho de serviços relacionados */
+.servicos-relacionados h4 {
+  /* Remove os estilos antigos e usa a nova classe */
+  color: var(--gray-700);
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Animações */
+  @keyframes fadeScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+  
+  /* Efeito de digitação */
+  .typing-dots::after {
+    content: '';
+    animation: typingDots 1.5s infinite;
+  }
+  
+  @keyframes typingDots {
+    0% { content: ''; }
+    25% { content: '.'; }
+    50% { content: '..'; }
+    75% { content: '...'; }
+    100% { content: ''; }
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .intro-content {
+      padding: 32px;
+    }
+    
+    .chat-container {
+      margin: 0;
+      height: 100vh;
+      border-radius: 0;
+    }
+  
+    .mensagem {
+      max-width: 90%;
+    }
+  }

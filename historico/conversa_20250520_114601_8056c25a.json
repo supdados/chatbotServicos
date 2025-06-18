@@ -1,0 +1,143 @@
+{
+  "id": "20250520_114601_8056c25a",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-20T11:46:09.992839",
+      "pergunta_original": "matricula escolar",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 97 - Serviço: Emitir boletos das Taxas de Serviços do Detran/RJ. Descrição: Permite você emitir boletos referentes aos serviços solicitados junto ao DETRAN-RJ, como DUDA, GRD, GRT e GRM.. Órgão: DETRAN. Tags: boletos, taxas, pagamento, serviços. Sinônimos: GRD online, documentos de cobrança, pagamento de serviços veiculares. URL: https://www.rj.gov.br/servico/emitir-boletos-das-taxas-de-servicos-do-detranrj88.",
+          "distancia": 0.692608118057251
+        },
+        {
+          "descricao": "ID: 63 - Serviço: Portal de Compras Públicas. Descrição: Portal moderno e dinâmico com informações sobre contratações públicas de toda a administração estadual, garantindo transparência e acesso a dados de licitações.. Órgão: SEPLAG. Tags: licitações, transparência, compras, governo. Sinônimos: sistema de contratações, portal de licitações, dados públicos. URL: https://www.rj.gov.br/servico/acessar-portal-de-compras-siga1440.",
+          "distancia": 0.7378023266792297
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:29:23.559350",
+      "pergunta_original": "Preciso acompanhar a matricula de meu filho na escola publica",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 97 - Serviço: Emitir boletos das Taxas de Serviços do Detran/RJ. Descrição: Permite você emitir boletos referentes aos serviços solicitados junto ao DETRAN-RJ, como DUDA, GRD, GRT e GRM.. Órgão: DETRAN. Tags: boletos, taxas, pagamento, serviços. Sinônimos: GRD online, documentos de cobrança, pagamento de serviços veiculares. URL: https://www.rj.gov.br/servico/emitir-boletos-das-taxas-de-servicos-do-detranrj88.",
+          "distancia": 0.8543355464935303
+        },
+        {
+          "descricao": "ID: 63 - Serviço: Portal de Compras Públicas. Descrição: Portal moderno e dinâmico com informações sobre contratações públicas de toda a administração estadual, garantindo transparência e acesso a dados de licitações.. Órgão: SEPLAG. Tags: licitações, transparência, compras, governo. Sinônimos: sistema de contratações, portal de licitações, dados públicos. URL: https://www.rj.gov.br/servico/acessar-portal-de-compras-siga1440.",
+          "distancia": 0.8757127523422241
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:33:24.055693",
+      "pergunta_original": "onde devo ir para emitir boletos para o detran?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 96 - Serviço: Solicitar Riocard Escolar. Descrição: Solicitação de cartão gratuidade para transporte trajeto escola/casa.. Órgão: SEEDUC. Tags: transporte, estudante, gratuidade, cartão. Sinônimos: passe escolar, vale-transporte estudantil, benefício educacional. URL: https://www.rj.gov.br/servico/solicitar-riocard-escolar159.",
+          "distancia": 0.7556281685829163
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:37:54.920841",
+      "pergunta_original": "onde posso ir para conseguir a segunda via da minha identidade?",
+      "pergunta_reformulada": "Consultar onde emitir a segunda via do RG.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:38:39.494681",
+      "pergunta_original": "onde posso ir para conseguir a segunda via da minha identidade?",
+      "pergunta_reformulada": "Onde posso acessar o serviço de segunda via do RG?",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 59 - Serviço: Emitir Certidão de Nada Consta de Infrações de Trânsito - CNH. Descrição: Permite solicitar emissão de Certidão de Nada Consta de Infração de Trânsito, Multa, Pontuação, Suspensão do Direito de Dirigir e Cassação da CNH.. Órgão: DETRAN. Tags: certidão, CNH, trânsito, regularidade. Sinônimos: documento de ausência de multas, certificado de bom condutor, atestado de infrações. URL: https://www.rj.gov.br/servico/emitir-certidao-de-nada-consta-de-infraces-de-transito-cnh-127.",
+          "distancia": 0.9760755300521851
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:40:56.414077",
+      "pergunta_original": "i need the identity",
+      "tipo": "saudacao",
+      "resposta": "Este não é apenas um cumprimento. [CONTINUAR]"
+    },
+    {
+      "timestamp": "2025-05-20T12:42:48.780165",
+      "pergunta_original": "i need to consultate my sons public school registration",
+      "pergunta_reformulada": "Verifique o registro de matrícula do aluno na escola.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 97 - Serviço: Emitir boletos das Taxas de Serviços do Detran/RJ. Descrição: Permite você emitir boletos referentes aos serviços solicitados junto ao DETRAN-RJ, como DUDA, GRD, GRT e GRM.. Órgão: DETRAN. Tags: boletos, taxas, pagamento, serviços. Sinônimos: GRD online, documentos de cobrança, pagamento de serviços veiculares. URL: https://www.rj.gov.br/servico/emitir-boletos-das-taxas-de-servicos-do-detranrj88.",
+          "distancia": 0.5876267552375793
+        },
+        {
+          "descricao": "ID: 192 - Serviço: Requerimento Administrativo GRH - 2ª Via de Contracheque. Descrição: Solicitação de 2ª via de contracheque. Exclusivo para períodos anteriores a 24 meses.. Órgão: PRODERJ. Tags: contracheque, segunda via, PRODERJ, servidores. Sinônimos: reenvio de holerite, duplicata de pagamento, comprovante de rendimentos. URL: https://www.rj.gov.br/servico/requerimento-administrativo-grh-2a-via-de-contracheque191.",
+          "distancia": 0.6286323070526123
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:47:09.656571",
+      "pergunta_original": "i need to consultate my sons public school registration",
+      "pergunta_reformulada": "Verificar o registro escolar do meu filho.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 100 - Serviço: Acessar Portal SIAFE-RIO. Descrição: Permite você acessar o Sistema Integrado de Gestão Orçamentária, Financeira e Contábil do Rio de Janeiro (SIAFE-RIO), que é o principal sistema utilizado para registro, acompanhamento e controle da execução orçamentária, financeira e patrimonial do Governo do Estado do Rio de Janeiro.. Órgão: SEFAZ. Tags: gestão, finanças, orçamento, contabilidade. Sinônimos: sistema financeiro, controle orçamentário, plataforma de gestão pública. URL: https://www.rj.gov.br/servico/acessar-portal-siafe-rio309.",
+          "distancia": 0.910089373588562
+        },
+        {
+          "descricao": "ID: 97 - Serviço: Emitir boletos das Taxas de Serviços do Detran/RJ. Descrição: Permite você emitir boletos referentes aos serviços solicitados junto ao DETRAN-RJ, como DUDA, GRD, GRT e GRM.. Órgão: DETRAN. Tags: boletos, taxas, pagamento, serviços. Sinônimos: GRD online, documentos de cobrança, pagamento de serviços veiculares. URL: https://www.rj.gov.br/servico/emitir-boletos-das-taxas-de-servicos-do-detranrj88.",
+          "distancia": 0.9205081462860107
+        },
+        {
+          "descricao": "ID: 192 - Serviço: Requerimento Administrativo GRH - 2ª Via de Contracheque. Descrição: Solicitação de 2ª via de contracheque. Exclusivo para períodos anteriores a 24 meses.. Órgão: PRODERJ. Tags: contracheque, segunda via, PRODERJ, servidores. Sinônimos: reenvio de holerite, duplicata de pagamento, comprovante de rendimentos. URL: https://www.rj.gov.br/servico/requerimento-administrativo-grh-2a-via-de-contracheque191.",
+          "distancia": 0.9293726682662964
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-20T12:53:59.625334",
+      "pergunta_original": "i need to consultate my sons public school registration",
+      "pergunta_reformulada": "Verificar o registro escolar do aluno.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 97 - Serviço: Emitir boletos das Taxas de Serviços do Detran/RJ. Descrição: Permite você emitir boletos referentes aos serviços solicitados junto ao DETRAN-RJ, como DUDA, GRD, GRT e GRM.. Órgão: DETRAN. Tags: boletos, taxas, pagamento, serviços. Sinônimos: GRD online, documentos de cobrança, pagamento de serviços veiculares. URL: https://www.rj.gov.br/servico/emitir-boletos-das-taxas-de-servicos-do-detranrj88.",
+          "distancia": 0.7591981887817383
+        },
+        {
+          "descricao": "ID: 192 - Serviço: Requerimento Administrativo GRH - 2ª Via de Contracheque. Descrição: Solicitação de 2ª via de contracheque. Exclusivo para períodos anteriores a 24 meses.. Órgão: PRODERJ. Tags: contracheque, segunda via, PRODERJ, servidores. Sinônimos: reenvio de holerite, duplicata de pagamento, comprovante de rendimentos. URL: https://www.rj.gov.br/servico/requerimento-administrativo-grh-2a-via-de-contracheque191.",
+          "distancia": 0.7593681812286377
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-20T11:46:01.613844"
+}

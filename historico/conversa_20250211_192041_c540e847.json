@@ -1,0 +1,31 @@
+{
+  "id": "20250211_192041_c540e847",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:20:41.689584",
+      "pergunta_original": "Consultar as notas escolares",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": 0.8633344173431396,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 61 - Serviço: Consultar situação do aluno - ENEM/ENCCEJA. Descrição: Consulta dos resultados do exame ENCCEJA ou ENEM, realizado pelo aluno.. Órgão: SEEDUC. Tags: ENEM, ENCCEJA, educação, resultados. Sinônimos: verificar desempenho, consultar notas, acesso a resultados educacionais. URL: https://www.rj.gov.br/servico/consultar-situacao-do-aluno-enemencceja2.",
+          "distancia": 0.9253459572792053,
+          "clicado": false
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar Boletim Escolar Online",
+          "timestamp": "2025-02-11T19:20:47.484187"
+        }
+      ],
+      "feedback": "like",
+      "feedback_timestamp": "2025-02-11T19:20:46.164297"
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:20:41.689573"
+}

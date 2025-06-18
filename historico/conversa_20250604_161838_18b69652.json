@@ -1,0 +1,33 @@
+{
+  "id": "20250604_161838_18b69652",
+  "interacoes": [
+    {
+      "timestamp": "2025-06-04T16:19:09.830141",
+      "pergunta_original": "tive problemas com meu medico onde devo ir pra processa-lo?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 46 - Serviço: Acompanhar uma reclamação. Descrição: Permite que você acompanhe a sua reclamação.. Órgão: PROCON. Tags: reclamação, acompanhamento, PROCON, consumidor. Sinônimos: status de reclamação, monitorar denúncia, consultar andamento. URL: https://www.rj.gov.br/servico/acompanhar-uma-reclamacao584.",
+          "distancia": 0.34186092019081116
+        },
+        {
+          "descricao": "ID: 136 - Serviço: Consultar Processo no Sistema UPO. Descrição: Permite você consultar seu processo no Sistema UPO.. Órgão: DETRO. Tags: processo, UPO, consulta, DETRO. Sinônimos: acompanhamento processual, sistema UPO, verificar andamento. URL: https://www.rj.gov.br/servico/consultar-processo-no-sistema-upo1936.",
+          "distancia": 0.32156991958618164
+        },
+        {
+          "descricao": "ID: 8 - Serviço: Reclamar no Procon Online. Descrição: O Procon-RJ tem como objetivo a Proteção e Defesa do Consumidor. Aqui você pode fazer sua reclamação online.. Órgão: PROCON. Tags: consumidor, reclamação, direitos, procon. Sinônimos: reclamação consumerista, defesa do consumidor online, canal de denúncias Procon. URL: https://www.rj.gov.br/servico/reclamar-no-procon-online3.",
+          "distancia": 0.3179473876953125
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Consultar Processo no Sistema UPO",
+          "timestamp": "2025-06-04T16:20:41.575625"
+        }
+      ],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-06-04T16:18:38.156094"
+}

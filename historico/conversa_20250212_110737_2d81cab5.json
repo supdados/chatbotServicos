@@ -1,0 +1,68 @@
+{
+  "id": "20250212_110737_2d81cab5",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-12T11:07:40.671802",
+      "pergunta_original": "oi oi, td bem?",
+      "tipo": "saudacao",
+      "resposta": "Olá! Este é um chat de serviços do Governo do RJ. Como posso ajudar você hoje?"
+    },
+    {
+      "timestamp": "2025-02-12T11:07:46.123299",
+      "pergunta_original": "empresa",
+      "pergunta_reformulada": "Consultar informações sobre empresas.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 123 - Serviço: Vínculo empresarial. Descrição: Você poderá pesquisar se há registro do seus dados vinculados a alguma empresa.. Órgão: JUCERJA. Tags: empresa, vinculação, registro, JUCERJA. Sinônimos: consulta empresarial, vínculo societário, relação comercial. URL: https://www.rj.gov.br/servico/vinculo-empresarial393.",
+          "distancia": 0.8371607065200806
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Vínculo empresarial",
+          "timestamp": "2025-02-12T11:08:01.107608"
+        }
+      ],
+      "feedback": "like",
+      "tipo": "consulta",
+      "feedback_timestamp": "2025-02-12T11:08:07.272440"
+    },
+    {
+      "timestamp": "2025-02-12T11:09:14.037694",
+      "pergunta_original": "oi como vc ta? quero ver minhas notas da escola",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": 0.9577290415763855
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-02-12T11:09:34.617467",
+      "pergunta_original": "como tirar segunda vida da minha identidade?",
+      "pergunta_reformulada": "Consultar o procedimento para obter a segunda via da minha identidade.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.7235117554664612
+        },
+        {
+          "descricao": "ID: 5 - Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136.",
+          "distancia": 0.7774293422698975
+        },
+        {
+          "descricao": "ID: 49 - Serviço: Emitir a 2ª Via do CPF. Descrição: Impressão da segunda via do CPF em casos de perda, roubo ou após atualização dos dados na Receita Federal, como nome, endereços, etc.. Órgão: RF. Tags: CPF, documento, segunda via, Receita Federal. Sinônimos: reenvio de CPF, reimpressão do cadastro, certidão CPF digital. URL: https://www.rj.gov.br/servico/emitir-2a-via-de-cpf147.",
+          "distancia": 0.7999618053436279
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-02-12T11:07:37.911187"
+}

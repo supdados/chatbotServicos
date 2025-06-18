@@ -1,0 +1,29 @@
+{
+  "id": "20250211_194025_e2fdd022",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:40:25.617551",
+      "pergunta_original": "to fazendo concurso publico",
+      "pergunta_reformulada": "Consultar informações sobre concursos públicos disponíveis.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 198 - Serviço: Concursos em Andamento. Descrição: Permite acesso aos concursos do CEPERJ em andamento.. Órgão: CEPERJ. Tags: concursos, CEPERJ, andamento, processos seletivos. Sinônimos: editais abertos, seleções públicas, concursos vigentes. URL: https://www.rj.gov.br/servico/concursos-em-andamento1214.",
+          "distancia": 0.828150749206543
+        },
+        {
+          "descricao": "ID: 197 - Serviço: Acessar informações sobre Mobilidade Interna: Baixadas Litorâneas. Descrição: Permite você acessar informações sobre a seleção para secretário escolar.. Órgão: SEEDUC. Tags: mobilidade, concurso, educação, SEEDUC. Sinônimos: processo seletivo interno, concursos internos, oportunidades educacionais. URL: https://www.rj.gov.br/servico/acessar-informacoes-sobre-mobilidade-interna-baixadas-litoraneas111.",
+          "distancia": 0.8576185703277588
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar informações sobre Mobilidade Interna: Baixadas Litorâneas",
+          "timestamp": "2025-02-11T19:41:44.802990"
+        }
+      ],
+      "feedback": "like",
+      "feedback_timestamp": "2025-02-11T19:41:43.794456"
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:40:25.617541"
+}

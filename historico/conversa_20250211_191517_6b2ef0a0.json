@@ -1,0 +1,55 @@
+{
+  "id": "20250211_191517_6b2ef0a0",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:15:17.377308",
+      "pergunta_original": "plataforma dados rj",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 187 - Serviço: Solicitar acesso à Plataforma Dados RJ. Descrição: Esse serviço permite que o demandante solicite acesso à Plataforma Dados RJ.. Órgão: SETD. Tags: dados abertos, plataforma, acesso, transparência. Sinônimos: solicitação de credencial, acesso a dados públicos, registro na plataforma. URL: https://www.rj.gov.br/servico/solicitar-acesso-a-plataforma-dados-rj70.",
+          "distancia": 0.5652207136154175,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 69 - Serviço: Acessar o Portal Mais Trabalho RJ. Descrição: Portal para empregados e empregadores divulgarem vagas e apresentarem currículos.. Órgão: SETRAB. Tags: emprego, currículo, vagas, portal. Sinônimos: portal de oportunidades, sistema de empregos, plataforma trabalhista. URL: https://www.rj.gov.br/servico/acessar-ao-portal-mais-trabalho-rj1728.",
+          "distancia": 0.8878182172775269,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 63 - Serviço: Portal de Compras Públicas. Descrição: Portal moderno e dinâmico com informações sobre contratações públicas de toda a administração estadual, garantindo transparência e acesso a dados de licitações.. Órgão: SEPLAG. Tags: licitações, transparência, compras, governo. Sinônimos: sistema de contratações, portal de licitações, dados públicos. URL: https://www.rj.gov.br/servico/acessar-portal-de-compras-siga1440.",
+          "distancia": 0.9079018831253052,
+          "clicado": false
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null
+    },
+    {
+      "timestamp": "2025-02-11T19:16:54.863696",
+      "pergunta_original": "acho que fiquei com nota ruim na escola, como vejo isso?",
+      "pergunta_reformulada": "Consultar as notas escolares.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": null,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 61 - Serviço: Consultar situação do aluno - ENEM/ENCCEJA. Descrição: Consulta dos resultados do exame ENCCEJA ou ENEM, realizado pelo aluno.. Órgão: SEEDUC. Tags: ENEM, ENCCEJA, educação, resultados. Sinônimos: verificar desempenho, consultar notas, acesso a resultados educacionais. URL: https://www.rj.gov.br/servico/consultar-situacao-do-aluno-enemencceja2.",
+          "distancia": null,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 101 - Serviço: Solicitar segunda via do histórico escolar. Descrição: É quando um aluno, ativo ou inativo, solicita à unidade escolar que estudou a segunda via do seu histórico escolar.. Órgão: SEEDUC. Tags: histórico, escola, documento, reemissão. Sinônimos: reenvio de histórico, duplicata acadêmica, registro escolar. URL: https://www.rj.gov.br/servico/segunda-via-do-historico-escolar62.",
+          "distancia": null,
+          "clicado": false
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "feedback_timestamp": "2025-02-11T19:17:47.801520"
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:15:17.377302"
+}

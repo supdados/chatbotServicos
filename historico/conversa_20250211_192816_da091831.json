@@ -1,0 +1,56 @@
+{
+  "id": "20250211_192816_da091831",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:28:16.840584",
+      "pergunta_original": "sispatri",
+      "pergunta_reformulada": "Consultar informações sobre o Sispatri.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 1 - Serviço: Acessar SISPATRI - Declaração Patrimonial. Descrição: Permite você acessar o Sistema para Declaração Patrimonial para Servidores, na qual viabiliza a entrega eletrônica da Declaração de bens e valores pelos servidores do poder executivo estadual.. Órgão: CGE. Tags: sispatri, declaração patrimonial, servidores, bens, sistema. Sinônimos: Declaração de Bens, Sistema Patrimonial, Entrega Eletrônica de Declaração. URL: https://www.rj.gov.br/servico/acessar-sispatri-declaracao-patrimonial-2023169.",
+          "distancia": 0.7437970638275146,
+          "clicado": false
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar SISPATRI - Declaração Patrimonial",
+          "timestamp": "2025-02-11T19:28:24.270290"
+        }
+      ],
+      "feedback": "like",
+      "feedback_timestamp": "2025-02-11T19:28:23.304776"
+    },
+    {
+      "timestamp": "2025-02-11T19:28:47.439740",
+      "pergunta_original": "acho que fiquei com nota ruim na escola, como vejo isso?",
+      "pergunta_reformulada": "Consultar as notas escolares.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": 0.8645662665367126,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 61 - Serviço: Consultar situação do aluno - ENEM/ENCCEJA. Descrição: Consulta dos resultados do exame ENCCEJA ou ENEM, realizado pelo aluno.. Órgão: SEEDUC. Tags: ENEM, ENCCEJA, educação, resultados. Sinônimos: verificar desempenho, consultar notas, acesso a resultados educacionais. URL: https://www.rj.gov.br/servico/consultar-situacao-do-aluno-enemencceja2.",
+          "distancia": 0.9346821308135986,
+          "clicado": false
+        },
+        {
+          "descricao": "ID: 101 - Serviço: Solicitar segunda via do histórico escolar. Descrição: É quando um aluno, ativo ou inativo, solicita à unidade escolar que estudou a segunda via do seu histórico escolar.. Órgão: SEEDUC. Tags: histórico, escola, documento, reemissão. Sinônimos: reenvio de histórico, duplicata acadêmica, registro escolar. URL: https://www.rj.gov.br/servico/segunda-via-do-historico-escolar62.",
+          "distancia": 0.9469489455223083,
+          "clicado": false
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar Boletim Escolar Online",
+          "timestamp": "2025-02-11T19:28:56.072159"
+        }
+      ],
+      "feedback": "dislike",
+      "feedback_timestamp": "2025-02-11T19:28:59.523228"
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:28:16.840571"
+}

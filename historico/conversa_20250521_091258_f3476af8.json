@@ -1,0 +1,86 @@
+{
+  "id": "20250521_091258_f3476af8",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-21T09:13:05.425726",
+      "pergunta_original": "como faço para marcar a segunda via da identidade?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 80 - Serviço: Entrega da Carteira de Identidade. Descrição: Retirada ou autorização para terceiros retirarem sua Carteira de Identidade.. Órgão: DETRAN. Tags: CIN, documento, retirada, identidade. Sinônimos: buscar RG, recebimento de identidade, autorização de retirada. URL: https://www.rj.gov.br/servico/retirar-carteira-de-identidade163.",
+          "distancia": 0.7333612442016602
+        },
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.7300050258636475
+        },
+        {
+          "descricao": "ID: 5 - Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136.",
+          "distancia": 0.7101130485534668
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:15:08.773624",
+      "pergunta_original": "como faço para solicitar a segunda via da identidade?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 36 - Serviço: Solicitar 2ª via da Carteira de Identidade Simplificada (solicitação online). Descrição: É a solicitação online de reimpressão da última via da Carteira de Identidade desde que tenha sido impressa pelo Detran-RJ a partir de 05 de abril de 2019.. Órgão: DETRAN. Tags: 2ª via, identidade simplificada, documento, RG. Sinônimos: reimpressão de RG, emissão simplificada, segunda via de identidade rápida. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade-online-simplificada184.",
+          "distancia": 0.7571018934249878
+        },
+        {
+          "descricao": "ID: 75 - Serviço: Solicitar 1ª via da Carteira de Identidade Nacional (CIN). Descrição: Primeira emissão da Carteira de Identidade Civil nacional gratuita, com CPF como identificador único.. Órgão: DETRAN. Tags: CIN, documento, identidade, primeira via. Sinônimos: RG nacional, carteira única de identificação, documento civil federal. URL: https://www.rj.gov.br/servico/solicitar-1a-via-da-carteira-de-identidade-nacional-cin33.",
+          "distancia": 0.7339626550674438
+        },
+        {
+          "descricao": "ID: 5 - Serviço: Solicitar 2ª via da Carteira de Identidade Nacional (CIN). Descrição: Modalidade, mediante pagamento de taxa, destinada aos cidadãos que já tiveram a Carteira Nacional (CIN) emitida no Estado do Rio de Janeiro - pelo Detran-RJ - ou por qualquer outro Estado da Federação.. Órgão: DETRAN. Tags: CIN, 2ª via, documento, identidade, RG. Sinônimos: segunda via de identidade, CPF como documento, carteira nacional de identificação, RG nacional. URL: https://www.rj.gov.br/servico/solicitar-2a-via-de-carteira-de-identidade136.",
+          "distancia": 0.7317050695419312
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:19:20.873067",
+      "pergunta_original": "fui roubado e nao sei como conseguir emitir novos documentos",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 55 - Serviço: Emitir ID Jovem. Descrição: Documento que possibilita ao jovem de baixa renda acesso a benefícios como meia entrada em eventos e desconto em transporte interestadual.. Órgão: SG/RP. Tags: ID Jovem, benefícios, documento, estudante. Sinônimos: carteira jovem, identidade estudantil, cartão de benefício social. URL: https://www.rj.gov.br/servico/emitir-id-jovem26.",
+          "distancia": 0.7288517951965332
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:20:54.173803",
+      "pergunta_original": "fui roubado e nao sei qual caminho tomar para conseguir meus documentos novamente",
+      "pergunta_reformulada": "Verificar o procedimento para emissão de documentos em caso de roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 121 - Serviço: Emitir DARJ. Descrição: Permite você emitir o Documento de Arrecadação do Estado do Rio de Janeiro (DARJ), utilizado para recolhimento de impostos e taxas dos moradores do estado do Rio de Janeiro (exceto IPVA).. Órgão: SEFAZ. Tags: DARJ, impostos, pagamento, SEFAZ. Sinônimos: documento de arrecadação, guia tributária, pagamento de taxas. URL: https://www.rj.gov.br/servico/emitir-darj312.",
+          "distancia": 0.7303974032402039
+        },
+        {
+          "descricao": "ID: 106 - Serviço: Emitir Certidão de Antecedentes Criminais. Descrição: Esse documento revela se há registros de crimes associados ao nome de uma pessoa, com base nas informações da Polícia Federal.. Órgão: PF. Tags: certidão, antecedentes, PF, documento. Sinônimos: histórico criminal, certificado de não criminoso, registro policial. URL: https://www.rj.gov.br/servico/emitir-certidao-de-antecedentes-criminais70.",
+          "distancia": 0.7072170972824097
+        },
+        {
+          "descricao": "ID: 72 - Serviço: Emitir Certidão Quitação Eleitoral. Descrição: Documento que comprova o cumprimento de obrigações eleitorais, substituindo comprovantes de votação.. Órgão: TSE. Tags: certidão, eleições, documento, regularidade. Sinônimos: atestado eleitoral, comprovante de votação, certificado de quitação. URL: https://www.rj.gov.br/servico/emitir-certidao-de-quitacao-eleitoral180.",
+          "distancia": 0.7064372301101685
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-21T09:12:58.413637"
+}

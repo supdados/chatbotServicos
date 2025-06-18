@@ -1,0 +1,109 @@
+{
+  "id": "20250211_201319_7238c8d5",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T20:13:19.423810",
+      "pergunta_original": "noticias",
+      "pergunta_reformulada": "Consultar as últimas notícias.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null
+    },
+    {
+      "timestamp": "2025-02-11T20:13:37.024044",
+      "pergunta_original": "quero reclamar da professora do meu filho",
+      "pergunta_reformulada": "Consultar o procedimento para registrar uma reclamação sobre a professora do meu filho.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 46 - Serviço: Acompanhar uma reclamação. Descrição: Permite que você acompanhe a sua reclamação.. Órgão: PROCON. Tags: reclamação, acompanhamento, PROCON, consumidor. Sinônimos: status de reclamação, monitorar denúncia, consultar andamento. URL: https://www.rj.gov.br/servico/acompanhar-uma-reclamacao584.",
+          "distancia": 0.9657799601554871
+        },
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.998757004737854
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null
+    },
+    {
+      "timestamp": "2025-02-11T20:13:55.989185",
+      "pergunta_original": "ouvidoria",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 185 - Serviço: Acessar Ouvidoria. Descrição: Permite você fazer elogios, reclamações, solicitações, sugestões ou denúncias sobre os serviços prestados pela SECID.. Órgão: SECID. Tags: ouvidoria, feedback, reclamação, canal. Sinônimos: canal de comunicação, registro de manifestações, sugestões institucionais. URL: https://www.rj.gov.br/servico/acessar-ouvidoria32.",
+          "distancia": 0.9294127225875854
+        },
+        {
+          "descricao": "ID: 81 - Serviço: Falar com a Ouvidoria. Descrição: Canal para sugestões, elogios, pedidos, reclamações e denúncias sobre serviços da Polícia Militar.. Órgão: SEPM. Tags: ouvidoria, PMERJ, reclamação, feedback. Sinônimos: canal de comunicação, registro de feedback, contato institucional. URL: https://www.rj.gov.br/servico/falar-com-a-ouvidoria32.",
+          "distancia": 0.9961817264556885
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar Ouvidoria",
+          "timestamp": "2025-02-11T20:14:08.092248"
+        },
+        {
+          "servico": "Falar com a Ouvidoria",
+          "timestamp": "2025-02-11T20:14:26.324347"
+        }
+      ],
+      "feedback": "like",
+      "feedback_timestamp": "2025-02-11T20:15:11.824532"
+    },
+    {
+      "timestamp": "2025-02-11T20:15:24.097151",
+      "pergunta_original": "quero procurar emprego",
+      "pergunta_reformulada": "Consultar oportunidades de emprego disponíveis.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 26 - Serviço: Encontrar vagas de emprego (IMO). Descrição: A intermediação de mão-de-obra (IMO), conhecido como balcão de emprego é um serviço que ajuda as pessoas a encontrarem empregos e oportunidades profissionais.. Órgão: SETRAB. Tags: emprego, vagas, intermediação, oportunidades. Sinônimos: balcão de empregos, intermediação profissional, busca de oportunidades de trabalho. URL: https://www.rj.gov.br/servico/encontrar-vagas-de-emprego-imo194.",
+          "distancia": 0.8738658428192139
+        },
+        {
+          "descricao": "ID: 69 - Serviço: Acessar o Portal Mais Trabalho RJ. Descrição: Portal para empregados e empregadores divulgarem vagas e apresentarem currículos.. Órgão: SETRAB. Tags: emprego, currículo, vagas, portal. Sinônimos: portal de oportunidades, sistema de empregos, plataforma trabalhista. URL: https://www.rj.gov.br/servico/acessar-ao-portal-mais-trabalho-rj1728.",
+          "distancia": 0.9593769907951355
+        },
+        {
+          "descricao": "ID: 95 - Serviço: Acessar Lista de Vagas de Emprego. Descrição: Permite você acessar lista de vagas de emprego disponibilizadas pelo SINE/RJ no Estado do Rio de Janeiro.. Órgão: SETRAB. Tags: emprego, vagas, SINE, oportunidades. Sinônimos: buscar trabalho, oferta de empregos, mercado de trabalho. URL: https://www.rj.gov.br/servico/acessar-lista-de-vagas-de-emprego-da-setrab1710.",
+          "distancia": 0.9635205864906311
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null
+    },
+    {
+      "timestamp": "2025-02-11T20:16:17.493314",
+      "pergunta_original": "to procurando emprego",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 26 - Serviço: Encontrar vagas de emprego (IMO). Descrição: A intermediação de mão-de-obra (IMO), conhecido como balcão de emprego é um serviço que ajuda as pessoas a encontrarem empregos e oportunidades profissionais.. Órgão: SETRAB. Tags: emprego, vagas, intermediação, oportunidades. Sinônimos: balcão de empregos, intermediação profissional, busca de oportunidades de trabalho. URL: https://www.rj.gov.br/servico/encontrar-vagas-de-emprego-imo194.",
+          "distancia": 0.9524902105331421
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null
+    },
+    {
+      "timestamp": "2025-02-11T20:16:30.129969",
+      "pergunta_original": "to querendo trabalho",
+      "pergunta_reformulada": "Consultar oportunidades de trabalho disponíveis.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 26 - Serviço: Encontrar vagas de emprego (IMO). Descrição: A intermediação de mão-de-obra (IMO), conhecido como balcão de emprego é um serviço que ajuda as pessoas a encontrarem empregos e oportunidades profissionais.. Órgão: SETRAB. Tags: emprego, vagas, intermediação, oportunidades. Sinônimos: balcão de empregos, intermediação profissional, busca de oportunidades de trabalho. URL: https://www.rj.gov.br/servico/encontrar-vagas-de-emprego-imo194.",
+          "distancia": 0.9465711712837219
+        },
+        {
+          "descricao": "ID: 69 - Serviço: Acessar o Portal Mais Trabalho RJ. Descrição: Portal para empregados e empregadores divulgarem vagas e apresentarem currículos.. Órgão: SETRAB. Tags: emprego, currículo, vagas, portal. Sinônimos: portal de oportunidades, sistema de empregos, plataforma trabalhista. URL: https://www.rj.gov.br/servico/acessar-ao-portal-mais-trabalho-rj1728.",
+          "distancia": 0.9997270107269287
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T20:13:19.423783"
+}

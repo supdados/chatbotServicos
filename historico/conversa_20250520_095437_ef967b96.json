@@ -1,0 +1,18 @@
+{
+  "id": "20250520_095437_ef967b96",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-20T09:54:41.418723",
+      "pergunta_original": "aaaa",
+      "tipo": "saudacao",
+      "resposta": "Este é um chat de serviços do Governo do RJ. Apenas uma saudação é considerada, como \"oi\", \"olá\", \"bom dia\", \"boa tarde\" ou \"boa noite\". Apenas uma saudação é permitida."
+    },
+    {
+      "timestamp": "2025-05-20T09:57:34.427363",
+      "pergunta_original": "ola",
+      "tipo": "saudacao",
+      "resposta": "Sim, \"ola\" é APENAS uma saudação. Este é um chat de serviços do Governo do RJ. Posso ajudar com o que precisar!"
+    }
+  ],
+  "timestamp_inicio": "2025-05-20T09:54:37.220432"
+}

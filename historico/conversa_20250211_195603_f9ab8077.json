@@ -1,0 +1,51 @@
+{
+  "id": "20250211_195603_f9ab8077",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:56:03.883768",
+      "pergunta_original": "como posso ver minhas notas escolares?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": 0.7802300453186035
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Acessar Boletim Escolar Online",
+          "timestamp": "2025-02-11T19:56:08.652846"
+        }
+      ],
+      "feedback": "like",
+      "contexto_relacionado": false,
+      "feedback_timestamp": "2025-02-11T19:56:12.809851"
+    },
+    {
+      "timestamp": "2025-02-11T19:56:31.716170",
+      "pergunta_original": "sispatri",
+      "pergunta_reformulada": "Consultar informações sobre o Sispatri.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 1 - Serviço: Acessar SISPATRI - Declaração Patrimonial. Descrição: Permite você acessar o Sistema para Declaração Patrimonial para Servidores, na qual viabiliza a entrega eletrônica da Declaração de bens e valores pelos servidores do poder executivo estadual.. Órgão: CGE. Tags: sispatri, declaração patrimonial, servidores, bens, sistema. Sinônimos: Declaração de Bens, Sistema Patrimonial, Entrega Eletrônica de Declaração. URL: https://www.rj.gov.br/servico/acessar-sispatri-declaracao-patrimonial-2023169.",
+          "distancia": 0.7437970638275146
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": "like",
+      "contexto_relacionado": false,
+      "feedback_timestamp": "2025-02-11T19:56:38.793216"
+    },
+    {
+      "timestamp": "2025-02-11T19:56:58.880645",
+      "pergunta_original": "qual foi a primeira pergunta q eu te fiz?",
+      "pergunta_reformulada": "Verificar a primeira pergunta que eu fiz.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "contexto_relacionado": false
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:56:03.883754",
+  "contexto_atual": null
+}

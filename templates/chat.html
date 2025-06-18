@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot de Serviços</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Tela de introdução -->
+  <div id="intro-container" class="intro-container">
+    <div class="intro-content">
+      <div class="logo-container">
+        <span class="logo-text">RJ</span>
+        <span class="logo-separator">·</span>
+        <span class="logo-subtitle">Assistente Virtual</span>
+      </div>
+      <h1>Bem-vindo ao Assistente Virtual do RJ</h1>
+      <p>
+        Aqui você pode tirar dúvidas e encontrar serviços públicos do Governo do Rio de Janeiro.
+        Experimente perguntar como emitir documentos, pagar impostos, consultar boletim escolar e muito mais!
+      </p>
+      <button id="btn-comecar" class="btn-primario">Começar</button>
+    </div>
+  </div>
+
+  <!-- Container do chat (inicialmente oculto) -->
+  <div id="chat-container" class="chat-container hidden" aria-live="polite">
+    <header class="chat-header">
+      <div class="logo-container">
+        <span class="logo-text">RJ</span>
+        <span class="logo-separator">·</span>
+        <span class="logo-subtitle">Assistente Virtual</span>
+      </div>
+      <!-- Novo Botão "Novo Chat" no canto superior direito -->
+      <button id="novo-chat" class="btn-novo-chat" aria-label="Iniciar novo chat">Novo Chat</button>
+    </header>
+    
+    <main id="historico" class="historico" aria-label="Histórico de conversa" role="log">
+      <!-- Mensagem inicial de boas-vindas (opcional) -->
+      <div class="mensagem resposta introducao fade-in">
+        <p>Olá! Estou pronto para ajudá-lo a encontrar serviços do Governo do RJ.</p>
+      </div>
+    </main>
+    
+    <footer class="entrada">
+      <label for="pergunta" class="sr-only">Digite sua pergunta</label>
+      <input 
+        type="text" 
+        id="pergunta" 
+        placeholder="Ex: Como consultar minhas notas escolares?" 
+        aria-label="Campo para digitar sua pergunta"
+      >
+      <button id="btn-enviar" aria-label="Enviar pergunta">Enviar</button>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

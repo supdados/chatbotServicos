@@ -1,0 +1,114 @@
+{
+  "id": "20250519_150659_9804ea0c",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-19T15:07:00.939328",
+      "pergunta_original": "onde posso reclamar da prefeitura?",
+      "pergunta_reformulada": "Consultar o canal de reclamações da prefeitura.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 185 - Serviço: Acessar Ouvidoria. Descrição: Permite você fazer elogios, reclamações, solicitações, sugestões ou denúncias sobre os serviços prestados pela SECID.. Órgão: SECID. Tags: ouvidoria, feedback, reclamação, canal. Sinônimos: canal de comunicação, registro de manifestações, sugestões institucionais. URL: https://www.rj.gov.br/servico/acessar-ouvidoria32.",
+          "distancia": 0.9000396728515625
+        },
+        {
+          "descricao": "ID: 46 - Serviço: Acompanhar uma reclamação. Descrição: Permite que você acompanhe a sua reclamação.. Órgão: PROCON. Tags: reclamação, acompanhamento, PROCON, consumidor. Sinônimos: status de reclamação, monitorar denúncia, consultar andamento. URL: https://www.rj.gov.br/servico/acompanhar-uma-reclamacao584.",
+          "distancia": 0.9229658246040344
+        },
+        {
+          "descricao": "ID: 81 - Serviço: Falar com a Ouvidoria. Descrição: Canal para sugestões, elogios, pedidos, reclamações e denúncias sobre serviços da Polícia Militar.. Órgão: SEPM. Tags: ouvidoria, PMERJ, reclamação, feedback. Sinônimos: canal de comunicação, registro de feedback, contato institucional. URL: https://www.rj.gov.br/servico/falar-com-a-ouvidoria32.",
+          "distancia": 0.9781531095504761
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:10:22.348583",
+      "pergunta_original": "onde posso reclamar da prefeitura?",
+      "pergunta_reformulada": "Consultar os canais de reclamação da prefeitura.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 46 - Serviço: Acompanhar uma reclamação. Descrição: Permite que você acompanhe a sua reclamação.. Órgão: PROCON. Tags: reclamação, acompanhamento, PROCON, consumidor. Sinônimos: status de reclamação, monitorar denúncia, consultar andamento. URL: https://www.rj.gov.br/servico/acompanhar-uma-reclamacao584.",
+          "distancia": 0.8949098587036133
+        },
+        {
+          "descricao": "ID: 185 - Serviço: Acessar Ouvidoria. Descrição: Permite você fazer elogios, reclamações, solicitações, sugestões ou denúncias sobre os serviços prestados pela SECID.. Órgão: SECID. Tags: ouvidoria, feedback, reclamação, canal. Sinônimos: canal de comunicação, registro de manifestações, sugestões institucionais. URL: https://www.rj.gov.br/servico/acessar-ouvidoria32.",
+          "distancia": 0.9008255004882812
+        },
+        {
+          "descricao": "ID: 81 - Serviço: Falar com a Ouvidoria. Descrição: Canal para sugestões, elogios, pedidos, reclamações e denúncias sobre serviços da Polícia Militar.. Órgão: SEPM. Tags: ouvidoria, PMERJ, reclamação, feedback. Sinônimos: canal de comunicação, registro de feedback, contato institucional. URL: https://www.rj.gov.br/servico/falar-com-a-ouvidoria32.",
+          "distancia": 0.9774631261825562
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:13:26.192635",
+      "pergunta_original": "Estou com um problema com a pressao da agua da minha residencia, com quem posso entrar em contato para resolver?",
+      "pergunta_reformulada": "Consultar um serviço de encanamento para resolver o problema de pressão da água na minha residência.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:14:43.801302",
+      "pergunta_original": "agua",
+      "pergunta_reformulada": "Consultar disponibilidade de água potável.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:14:58.068326",
+      "pergunta_original": "conta de luz",
+      "pergunta_reformulada": "Consultar a fatura da conta de luz.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:15:08.269330",
+      "pergunta_original": "escola",
+      "pergunta_reformulada": "Consultar opções de escolas na sua região.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:15:25.942326",
+      "pergunta_original": "como checar matricola meu filho",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.7932541370391846
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-19T15:17:59.634450",
+      "pergunta_original": "como checar matricola meu filho",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.7932541370391846
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-19T15:06:59.613723"
+}

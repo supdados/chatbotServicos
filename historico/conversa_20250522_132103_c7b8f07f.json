@@ -1,0 +1,169 @@
+{
+  "id": "20250522_132103_c7b8f07f",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-22T13:21:28.865049",
+      "pergunta_original": "sispatri",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 1 - Serviço: Acessar SISPATRI - Declaração Patrimonial. Descrição: Permite você acessar o Sistema para Declaração Patrimonial para Servidores, na qual viabiliza a entrega eletrônica da Declaração de bens e valores pelos servidores do poder executivo estadual.. Órgão: CGE. Tags: sispatri, declaração patrimonial, servidores, bens, sistema. Sinônimos: Declaração de Bens, Sistema Patrimonial, Entrega Eletrônica de Declaração. URL: https://www.rj.gov.br/servico/acessar-sispatri-declaracao-patrimonial-2023169.",
+          "distancia": 0.46672362089157104
+        },
+        {
+          "descricao": "ID: 195 - Serviço: Acessar Sispass - Autorização para Criação Amadorista de Passeriformes. Descrição: Permite você acessar Sispass, que é um sistema de gestão de criadores amadores de tipos de aves silvestres.. Órgão: INEA. Tags: Sispass, aves, criação amadora, meio ambiente. Sinônimos: registro de avicultura, autorização para criação de pássaros, sistema de aves silvestres. URL: https://www.rj.gov.br/servico/acessar-sispass-autorizacao-para-criacao-amadorista-de-passeriformes840.",
+          "distancia": 0.40135645866394043
+        },
+        {
+          "descricao": "ID: 79 - Serviço: Cadastrar Transportadores Agropecuário. Descrição: Cadastro de veículos e motoristas para transporte de animais agropecuários.. Órgão: SEAPPA. Tags: agropecuária, transporte, cadastro, animais. Sinônimos: registro de transportador rural, credenciamento pecuário, autorização para transporte animal. URL: https://www.rj.gov.br/servico/cadastro-de-veiculo-e-motorista-transportador-de-animais-seappa154.",
+          "distancia": 0.2871231436729431
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:24:01.793918",
+      "pergunta_original": "quero consultar o boletim do meu filho, pra onde eu vou?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 2 - Serviço: Acessar Boletim Escolar Online. Descrição: É uma plataforma digital onde os alunos da escola pública estadual podem ver suas notas e frequência sempre que quiserem.. Órgão: SEEDUC. Tags: boletim, notas, frequência, aluno, escola. Sinônimos: boletim escolar, notas escolares, resultados escolares, desempenho do aluno. URL: https://www.rj.gov.br/servico/acessar-boletim-online190.",
+          "distancia": 0.5259970426559448
+        },
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.46673303842544556
+        },
+        {
+          "descricao": "ID: 13 - Serviço: Consultar Boletim de Registro de Acidente de Trânsito sem Vítimas (e-Brat). Descrição: Permite que você acompanhe o boletim de registro de acidente de trânsito sem vítimas (e-BRAT).. Órgão: SEPM. Tags: consulta, acidente, e-brat, trânsito. Sinônimos: acompanhamento de BRAT, consultar registro de acidente, status de ocorrência de trânsito. URL: https://www.rj.gov.br/servico/consultar-boletim-de-registro-de-acidente-de-transito-sem-vitimas-e-brat48.",
+          "distancia": 0.45372968912124634
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:26:59.973313",
+      "pergunta_original": "onde posso acompanhar a matricula do meu sobrinho no colegio?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.49056872725486755
+        },
+        {
+          "descricao": "ID: 46 - Serviço: Acompanhar uma reclamação. Descrição: Permite que você acompanhe a sua reclamação.. Órgão: PROCON. Tags: reclamação, acompanhamento, PROCON, consumidor. Sinônimos: status de reclamação, monitorar denúncia, consultar andamento. URL: https://www.rj.gov.br/servico/acompanhar-uma-reclamacao584.",
+          "distancia": 0.44441521167755127
+        },
+        {
+          "descricao": "ID: 98 - Serviço: Solicitar declaração escolar do aluno. Descrição: É quando o aluno matriculado ou não, solicita alguma Declaração à escola, para informar qualquer situação em relação à vida escolar.. Órgão: SEEDUC. Tags: declaração, escola, documento, estudante. Sinônimos: atestado escolar, comprovante de matrícula, certificado acadêmico. URL: https://www.rj.gov.br/servico/solicitar-declaracao-escolar-do-aluno-seeduc145.",
+          "distancia": 0.43277525901794434
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:29:21.416732",
+      "pergunta_original": "Estou procurando um serviço online para acessar um arquivo de manifesto digital. Onde posso encontrar essa opção no site do governo?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 108 - Serviço: Consultar e recuperar arquivo de Manifesto Eletrônico de Documentos Fiscais (MDF-e). Descrição: Permite você consultar ou recuperar, utilizando a chave de acesso, os arquivos de Manifesto Eletrônico de Documentos Fiscais (MDFe).. Órgão: SEFAZ. Tags: MDF-e, documentos fiscais, SEFAZ, consulta. Sinônimos: manifesto digital, recuperar arquivo fiscal, acesso MDFe. URL: https://www.rj.gov.br/servico/consultar-e-recuperar-arquivo-de-manifesto-eletronico-de-documentos-fiscais-mdf-e352.",
+          "distancia": 0.5599889755249023
+        },
+        {
+          "descricao": "ID: 45 - Serviço: Acessar o Diário Oficial Digital. Descrição: Permite a qualquer cidadão o acesso ao Diário Oficial do Estado do Rio de Janeiro gratuitamente, bem como a consulta às edições anteriores. A IOERJ é responsável pela publicação, guarda e manutenção do DOERJ.. Órgão: IOERJ. Tags: diário oficial, publicações, leis, IOERJ. Sinônimos: DOERJ, diário eletrônico, publicações oficiais. URL: https://www.rj.gov.br/servico/acessar-o-diario-oficial-do-digital-da-ioerj78.",
+          "distancia": 0.43630528450012207
+        },
+        {
+          "descricao": "ID: 142 - Serviço: Consultar e recuperar arquivo de Documento Fiscal Eletrônico. Descrição: Permite você consultar ou recuperar, utilizando a chave de acesso, os arquivos dos Documentos Fiscais Eletrônicos (NF-e, NFC-e, CT-e, CT-e OS, NF3e).. Órgão: SEFAZ. Tags: documento fiscal, eletrônico, SEFAZ, consulta. Sinônimos: recuperar NF-e, acesso a CT-e, arquivos fiscais. URL: https://www.rj.gov.br/servico/consultar-e-recuperar-arquivo-de-documento-fiscal-eletronico44.",
+          "distancia": 0.4298190474510193
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:32:41.029534",
+      "pergunta_original": "Eu preciso de informações sobre como proceder para retirar um veículo que foi apreendido. Onde posso encontrar isso?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 140 - Serviço: Verificar orientações - Liberação de Veículos Apreendidos (rebocados). Descrição: Permite você verificar as orientações para o processo de liberação de veículos apreendidos.. Órgão: DETRAN. Tags: veículo, apreensão, liberação, orientações. Sinônimos: recuperar carro rebocado, procedimentos de liberação, guia de desapreensão. URL: https://www.rj.gov.br/servico/verificar-orientacoes-liberacao-de-veiculos-apreendidos-rebocados16.",
+          "distancia": 0.5840319395065308
+        },
+        {
+          "descricao": "ID: 182 - Serviço: Solicitar Baixa de Veículo. Descrição: Permite você solicitar a emissão de uma certidão, onde consta que o veículo foi retirado de circulação, pois não possui mais condições de trafegar. Isso ocorre se o veículo estiver: irrecuperável, definitivamente desmontado, sinistrado com laudo de perda total e vendido ou leiloado como sucata.. Órgão: DETRAN. Tags: baixa, veículo, desmontagem, documento. Sinônimos: cancelamento de registro, certidão de baixa, veículo inutilizado. URL: https://www.rj.gov.br/servico/solicitar-baixa-de-veiculo23.",
+          "distancia": 0.48633506894111633
+        },
+        {
+          "descricao": "ID: 48 - Serviço: Consultar Multas do Veículo. Descrição: Consulta para verificar se existem multas de trânsito em um veículo.. Órgão: DETRAN. Tags: multas, veículo, trânsito, consulta. Sinônimos: infrações de trânsito, consultar penalidades, verificar autuações. URL: https://www.rj.gov.br/servico/consultar-multas-do-veiculo4.",
+          "distancia": 0.4393673241138458
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:38:41.359840",
+      "pergunta_original": "Gostaria de cancelar a venda de meu veiculo",
+      "pergunta_reformulada": "Cancelar a venda do veículo.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:40:29.580564",
+      "pergunta_original": "cancelar intensao de venda",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 37 - Serviço: Cancelar Intenção de venda (ATPVe). Descrição: Permite você cancelar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) em casos de cancelamento de venda ou de emissão do mesmo com dados errados por responsabilidade exclusiva do cliente.. Órgão: DETRAN. Tags: ATPV-e, veículo, cancelamento, transferência. Sinônimos: revogar transferência, anular venda de carro, cancelar transação veicular. URL: https://www.rj.gov.br/servico/cancelar-intencao-de-venda-atpve109.",
+          "distancia": 0.5299274325370789
+        },
+        {
+          "descricao": "ID: 117 - Serviço: Cancelar Comunicação de venda de veículo. Descrição: Permite você solicitar o cancelamento da Comunicação de Venda devido a devolução do veículo do comprador para o vendedor.. Órgão: DETRAN. Tags: cancelamento, veículo, venda, transação. Sinônimos: anular transferência, revogar comunicação, estorno de venda. URL: https://www.rj.gov.br/servico/cancelar-comunicacao-de-venda-de-veiculo5.",
+          "distancia": 0.49331560730934143
+        },
+        {
+          "descricao": "ID: 180 - Serviço: Solicitar Cancelamento da Inscrição Estadual. Descrição: Permite você solicitar cancelamento da Inscrição Estadual de uma empresa no portal da Secretaria de Estado e Fazenda (SEFAZ).. Órgão: SEFAZ. Tags: inscrição estadual, cancelamento, empresa, tributário. Sinônimos: encerramento cadastral, baixa empresarial, suspensão de registro. URL: https://www.rj.gov.br/servico/solicitar-cancelamento-da-inscricao-estadual67.",
+          "distancia": 0.3926283121109009
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-22T13:43:06.114185",
+      "pergunta_original": "quero parar a transferencia do meu carro para o comprador, como faço isso?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 117 - Serviço: Cancelar Comunicação de venda de veículo. Descrição: Permite você solicitar o cancelamento da Comunicação de Venda devido a devolução do veículo do comprador para o vendedor.. Órgão: DETRAN. Tags: cancelamento, veículo, venda, transação. Sinônimos: anular transferência, revogar comunicação, estorno de venda. URL: https://www.rj.gov.br/servico/cancelar-comunicacao-de-venda-de-veiculo5.",
+          "distancia": 0.578072190284729
+        },
+        {
+          "descricao": "ID: 37 - Serviço: Cancelar Intenção de venda (ATPVe). Descrição: Permite você cancelar a Autorização para Transferência de Propriedade do Veículo (ATPV-e) em casos de cancelamento de venda ou de emissão do mesmo com dados errados por responsabilidade exclusiva do cliente.. Órgão: DETRAN. Tags: ATPV-e, veículo, cancelamento, transferência. Sinônimos: revogar transferência, anular venda de carro, cancelar transação veicular. URL: https://www.rj.gov.br/servico/cancelar-intencao-de-venda-atpve109.",
+          "distancia": 0.5352779626846313
+        },
+        {
+          "descricao": "ID: 169 - Serviço: Comunicar venda de veículo. Descrição: Permite você comunicar a venda de um veículo para isentar o antigo proprietário de responsabilidade a partir da data da venda.. Órgão: DETRAN. Tags: veículo, venda, transferência, responsabilidade. Sinônimos: registrar transferência, comunicação de alienação, isenção de proprietário. URL: https://www.rj.gov.br/servico/comunicar-venda-de-veiculo98.",
+          "distancia": 0.52260422706604
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-22T13:21:03.372414"
+}

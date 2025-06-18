@@ -1,0 +1,20 @@
+{
+  "id": "20250519_152155_55edefe4",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-19T15:21:57.364977",
+      "pergunta_original": "matricula",
+      "pergunta_reformulada": "Consultar a matrícula.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 193 - Serviço: Consultar Matrícula Fácil. Descrição: Permite você consultar a matrícula do aluno.. Órgão: SEEDUC. Tags: matrícula, educação, consulta, aluno. Sinônimos: verificar inscrição, consultar registro escolar, acesso acadêmico. URL: https://www.rj.gov.br/servico/consultar-matricula-facil19.",
+          "distancia": 0.7230682969093323
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-19T15:21:55.142731"
+}

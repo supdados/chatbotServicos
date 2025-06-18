@@ -1,0 +1,52 @@
+{
+  "id": "20250212_111626_08b8f089",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-12T11:16:29.937452",
+      "pergunta_original": "como acessar meus processos?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 136 - Serviço: Consultar Processo no Sistema UPO. Descrição: Permite você consultar seu processo no Sistema UPO.. Órgão: DETRO. Tags: processo, UPO, consulta, DETRO. Sinônimos: acompanhamento processual, sistema UPO, verificar andamento. URL: https://www.rj.gov.br/servico/consultar-processo-no-sistema-upo1936.",
+          "distancia": 0.9353904724121094
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-02-12T11:17:00.961667",
+      "pergunta_original": "processos sei",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 84 - Serviço: Acessar Portal SEI. Descrição: Acesso ao Sistema Eletrônico de Informações para gestão de processos.. Órgão: SETD. Tags: SEI-RJ, portal, processos, gestão. Sinônimos: sistema eletrônico, plataforma de documentos, acesso administrativo. URL: https://www.rj.gov.br/servico/acessar-portal-sei186.",
+          "distancia": 0.8014111518859863
+        },
+        {
+          "descricao": "ID: 4 - Serviço: Cadastrar usuário externo SEI-RJ. Descrição: O cadastro de usuário externo permite a inclusão de documentos em processos e assinatura de contratos, convênios, termos, acordos e outros instrumentos congêneres celebrados com o órgão por meio do SEI-RJ. O cadastro também pode ser requerido para acesso a processos categorizados como restritos ou sigilosos.. Órgão: SETD. Tags: sei-rj, usuário externo, cadastro, processos, documentos. Sinônimos: registro SEI, acesso externo, sistema eletrônico de informações, assinatura digital. URL: https://www.rj.gov.br/servico/cadastrar-usuario-externo-sei-rj30.",
+          "distancia": 0.860795259475708
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-02-12T11:17:28.344985",
+      "pergunta_original": "sou deficiente e queria tirar um documento",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 182 - Serviço: Solicitar Baixa de Veículo. Descrição: Permite você solicitar a emissão de uma certidão, onde consta que o veículo foi retirado de circulação, pois não possui mais condições de trafegar. Isso ocorre se o veículo estiver: irrecuperável, definitivamente desmontado, sinistrado com laudo de perda total e vendido ou leiloado como sucata.. Órgão: DETRAN. Tags: baixa, veículo, desmontagem, documento. Sinônimos: cancelamento de registro, certidão de baixa, veículo inutilizado. URL: https://www.rj.gov.br/servico/solicitar-baixa-de-veiculo23.",
+          "distancia": 0.9972007274627686
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-02-12T11:16:26.436403"
+}

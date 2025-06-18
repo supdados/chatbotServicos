@@ -1,0 +1,102 @@
+{
+  "id": "20250521_095050_7f5d2d00",
+  "interacoes": [
+    {
+      "timestamp": "2025-05-21T09:50:59.457001",
+      "pergunta_original": "fui roubado e nao sei como fazer para conseguir fazer meus documentos",
+      "pergunta_reformulada": "Verificar meus documentos após roubo.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:52:45.973192",
+      "pergunta_original": "fui roubado e nao sei como fazer para conseguir fazer meus documentos",
+      "pergunta_reformulada": "Verificar como obter documentos após roubo.",
+      "servicos_encontrados": [],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:54:19.640088",
+      "pergunta_original": "fui roubado e nao sei como fazer para conseguir fazer meus documentos",
+      "pergunta_reformulada": "Verificar como obter documentos após roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 123 - Serviço: Vínculo empresarial. Descrição: Você poderá pesquisar se há registro do seus dados vinculados a alguma empresa.. Órgão: JUCERJA. Tags: empresa, vinculação, registro, JUCERJA. Sinônimos: consulta empresarial, vínculo societário, relação comercial. URL: https://www.rj.gov.br/servico/vinculo-empresarial393.",
+          "distancia": 0.7101732492446899
+        },
+        {
+          "descricao": "ID: 190 - Serviço: Acessar Hemorio. Descrição: Permite você se informar sobre doação de sangue, cursos, hematologia e suas doenças no portal do Hemorio.. Órgão: SES. Tags: Hemorio, sangue, saúde, doação. Sinônimos: banco de sangue, informações hematológicas, campanhas de doação. URL: https://www.rj.gov.br/servico/acessar-hemorio544.",
+          "distancia": 0.6731849312782288
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:56:51.984535",
+      "pergunta_original": "fui roubado e nao sei como fazer para conseguir fazer meus documentos",
+      "pergunta_reformulada": "Verificar como obter documentos após roubo.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 123 - Serviço: Vínculo empresarial. Descrição: Você poderá pesquisar se há registro do seus dados vinculados a alguma empresa.. Órgão: JUCERJA. Tags: empresa, vinculação, registro, JUCERJA. Sinônimos: consulta empresarial, vínculo societário, relação comercial. URL: https://www.rj.gov.br/servico/vinculo-empresarial393.",
+          "distancia": 0.7101732492446899
+        },
+        {
+          "descricao": "ID: 190 - Serviço: Acessar Hemorio. Descrição: Permite você se informar sobre doação de sangue, cursos, hematologia e suas doenças no portal do Hemorio.. Órgão: SES. Tags: Hemorio, sangue, saúde, doação. Sinônimos: banco de sangue, informações hematológicas, campanhas de doação. URL: https://www.rj.gov.br/servico/acessar-hemorio544.",
+          "distancia": 0.6731849312782288
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:58:21.010353",
+      "pergunta_original": "fui roubado e nao sei como fazer para conseguir fazer meus documentos",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 123 - Serviço: Vínculo empresarial. Descrição: Você poderá pesquisar se há registro do seus dados vinculados a alguma empresa.. Órgão: JUCERJA. Tags: empresa, vinculação, registro, JUCERJA. Sinônimos: consulta empresarial, vínculo societário, relação comercial. URL: https://www.rj.gov.br/servico/vinculo-empresarial393.",
+          "distancia": 0.687544584274292
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:58:58.411977",
+      "pergunta_original": "matricula",
+      "pergunta_reformulada": "Verificar matrícula.",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 123 - Serviço: Vínculo empresarial. Descrição: Você poderá pesquisar se há registro do seus dados vinculados a alguma empresa.. Órgão: JUCERJA. Tags: empresa, vinculação, registro, JUCERJA. Sinônimos: consulta empresarial, vínculo societário, relação comercial. URL: https://www.rj.gov.br/servico/vinculo-empresarial393.",
+          "distancia": 0.688877522945404
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    },
+    {
+      "timestamp": "2025-05-21T09:59:46.399202",
+      "pergunta_original": "consultar situação do meu filho na escola",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 188 - Serviço: Consultar Lista de Postos do Detran/RJ. Descrição: Permite você consultar a relação de postos para serviços de veículos.. Órgão: DETRAN. Tags: postos, veículos, atendimento, DETRAN. Sinônimos: locais de atendimento, unidades DETRAN, endereços de serviços. URL: https://www.rj.gov.br/servico/consultar-lista-de-postos-do-detranrj169.",
+          "distancia": 0.6610686779022217
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-05-21T09:50:50.668098"
+}

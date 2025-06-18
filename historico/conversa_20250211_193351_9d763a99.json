@@ -1,0 +1,29 @@
+{
+  "id": "20250211_193351_9d763a99",
+  "interacoes": [
+    {
+      "timestamp": "2025-02-11T19:33:51.617518",
+      "pergunta_original": "como tiro meus exames?",
+      "pergunta_reformulada": "Como acessar os resultados dos meus exames?",
+      "servicos_encontrados": [
+        {
+          "descricao": "ID: 6 - Serviço: Consultar Resultado de Exames do Rio Imagem. Descrição: Permite você consultar resultados dos exames realizados no Rio Imagem.. Órgão: SES. Tags: exames, resultados, saúde, imagem, laudo. Sinônimos: laudos médicos, resultados de exames de imagem, consultar exames radiológicos. URL: https://www.rj.gov.br/servico/consultar-resultado-de-exames-do-rio-imagem502.",
+          "distancia": 0.8539688587188721
+        },
+        {
+          "descricao": "ID: 61 - Serviço: Consultar situação do aluno - ENEM/ENCCEJA. Descrição: Consulta dos resultados do exame ENCCEJA ou ENEM, realizado pelo aluno.. Órgão: SEEDUC. Tags: ENEM, ENCCEJA, educação, resultados. Sinônimos: verificar desempenho, consultar notas, acesso a resultados educacionais. URL: https://www.rj.gov.br/servico/consultar-situacao-do-aluno-enemencceja2.",
+          "distancia": 0.9039345979690552
+        }
+      ],
+      "servicos_clicados": [
+        {
+          "servico": "Consultar Resultado de Exames do Rio Imagem",
+          "timestamp": "2025-02-11T19:34:17.604445"
+        }
+      ],
+      "feedback": "like",
+      "feedback_timestamp": "2025-02-11T19:34:23.295821"
+    }
+  ],
+  "timestamp_inicio": "2025-02-11T19:33:51.617510"
+}
