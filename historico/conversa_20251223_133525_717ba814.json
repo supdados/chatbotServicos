@@ -1,0 +1,22 @@
+{
+  "id": "20251223_133525_717ba814",
+  "interacoes": [
+    {
+      "timestamp": "2025-12-23T13:36:00.714211",
+      "pergunta_original": "Gostaria de tirar minha carta de direção, como posso fazer isso?",
+      "pergunta_reformulada": null,
+      "servicos_encontrados": [
+        {
+          "descricao": "Serviço: Solicitar Alteração de Dados da CNH. Descrição: Permite você solicitar a emissão de uma nova Carteira Nacional de Habilitação, quando: - Quiser alterar dados, tais como o estado civil, que implica na mudança do nome. - Quiser incluir ou retirar a observação de atividade remunerada. - Verificar dados incorretos em documentos fornecidos por você na emissão da Carteira Nacional de Habilitação.. Órgão: DETRAN. Tags: CNH, atualização, dados cadastrais, documento. Sinônimos: mudança de estado civil, correção de dados, renovação de habilitação. URL: https://www.rj.gov.br/servico/solicitar-alteracao-de-dados-da-cnh118."
+        },
+        {
+          "descricao": "Serviço: Solicitar Autorização para Conduzir Ciclomotor / ACC - 1a Habilitação. Descrição: Permite você solicitar a emissão da autorização para conduzir ciclomotor se estiver apto nos exames de avaliação.. Órgão: DETRAN. Tags: ciclomotor, habilitação, ACC, autorização. Sinônimos: permissão para moto, licença ciclomotor, primeira habilitação. URL: https://www.rj.gov.br/servico/solicitar-autorizacao-para-conduzir-ciclomotor-acc-1a-habilitacao91."
+        }
+      ],
+      "servicos_clicados": [],
+      "feedback": null,
+      "tipo": "consulta"
+    }
+  ],
+  "timestamp_inicio": "2025-12-23T13:35:25.592596"
+}

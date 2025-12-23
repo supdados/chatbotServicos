@@ -1,10 +1,30 @@
 from langchain_ollama.llms import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage
+from langchain.document_loaders import DirectoryLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 import ollama
 import numpy as np
 import json
 import faiss
 import time
+
+DATA = "servicos"
+
+def carregarDocumentos():
+    loader = DirectoryLoader("servicos", glob='*.md')
+    doc = loader.load()
+    return doc
+
+def dividirTexto(docs: list):
+    divisor = RecursiveCharacterTextSplitter(
+        chunk_size = 1000,
+        chunk_overlap=500,
+        length_function = len,
+        add_start_index=True
+    )
+    chunks = divisor.split_documents(docs)
+    return chunks
 
 def pesquisar(embedded, embedding, newdict, index):
     matrix=np.empty((0,len(newdict[0]["embedding"])), dtype="float32")
@@ -33,41 +53,17 @@ def retirarServicos():
 
 def fazerPergunta(embedding, newdict,index, pergunta,modelo, verbose= False):
     model = OllamaLLM(model=modelo)
-    template = """
-    Você é um atendente do orgão responsável por auxiliar os cidadãos do Estado do Rio de Janeiro à encontrar os serviços que mais se encaixam em suas demandas.
-    
-    Se for uma demanda ilegal ou que foge das atribuições do Estado do Rio de Janeiro ou se nenhum serviço for interessante o suficiente.
-    retorne algo neste estilo:
-        Ids: 
-        Texto: Não posso auxiliar com essas demandas, por favor tente reescrever sua pergunta para que eu possa ajudar.
-
-    os serviços disponíveis são: {servicos}
-
-    aqui está a consulta: {consulta}
-    
-    retorne a resposta com a seguinte formatação:
-        Ids: (Ids dos servicos que mais se encaixam na consulta caso existam separados por ;)
-        Texto: (Um texto que correlaciona os serviços mais relacionados com a consulta, esse texto deve ter uma breve explicação dos serviços escolhidos e não devem apresentar os IDs destes.)
-    """
-    prompt = ChatPromptTemplate.from_template(template)    
+    chat_history = []
+    template = "        Você é um chatbot que tem como função ajudar os cidadãos do Estado do Rio de Janeiro a entender e achar os melhores serviços para a situação sendo trazida. Seja amigavel, mas não enrole muito com a resposta.  Caso a solicitação seja relacionado a emergências de teor policial ou de saúde retorne para entrar em contato com o 190. Fora essas situações responda diretamente a pergunta do usuário."
+    prompt = ChatPromptTemplate.from_messages([("system", template), MessagesPlaceholder(variable_name="chat_history"),("human", "{pergunta}")])    
     chain = prompt | model
     while True:
-        aux = input("Realize uma consulta: ") if pergunta == None else pergunta
-        normal = pesquisar(aux, embedding, newdict, index)
+        aux = input("cidadão: ") if pergunta == None else pergunta
+        result = chain.invoke({"pergunta":aux, "chat_history":chat_history})
+        chat_history.append(HumanMessage(content=aux))
+        chat_history.append(AIMessage(content=result))
         if verbose:
-            print(normal[0])
-            print(normal[1])
-        ids = []
-        servicos = []
-        urls = []
-        for i in range(len(normal[1])):
-            print(newdict[normal[1][i]]["embedding_text"][0:25], newdict[normal[1][i]]["id"])  
-            frase , url = newdict[normal[1][i]]["embedding_text"].split("URL: ")
-            servicos.append("ID: " + str(newdict[normal[1][i]]["id"]) +' - '+ frase)
-            urls.append(url)
-        result = chain.invoke({"servicos":servicos, "consulta":aux})
-        if verbose:
-            print(result)
+            print("AI: " + result)
         else:
             return(result)
         
