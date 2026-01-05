@@ -1,13 +1,16 @@
-from langchain_ollama.llms import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import HumanMessage, AIMessage
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from google import genai
+from google.genai import types
+from dotenv import load_dotenv
 import ollama
+import os
 import numpy as np
 import json
 import faiss
 import time
+
+load_dotenv()
 
 DATA = "servicos"
 
@@ -51,23 +54,11 @@ def retirarServicos():
 
 
 
-def fazerPergunta(embedding, newdict,index, pergunta,modelo, verbose= False):
-    model = OllamaLLM(model=modelo)
-    chat_history = []
-    template = "        Você é um chatbot que tem como função ajudar os cidadãos do Estado do Rio de Janeiro a entender e achar os melhores serviços para a situação sendo trazida. Seja amigavel, mas não enrole muito com a resposta.  Caso a solicitação seja relacionado a emergências de teor policial ou de saúde retorne para entrar em contato com o 190. Fora essas situações responda diretamente a pergunta do usuário."
-    prompt = ChatPromptTemplate.from_messages([("system", template), MessagesPlaceholder(variable_name="chat_history"),("human", "{pergunta}")])    
-    chain = prompt | model
-    while True:
-        aux = input("cidadão: ") if pergunta == None else pergunta
-        result = chain.invoke({"pergunta":aux, "chat_history":chat_history})
-        chat_history.append(HumanMessage(content=aux))
-        chat_history.append(AIMessage(content=result))
-        if verbose:
-            print("AI: " + result)
-        else:
-            return(result)
-        
-        
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+chat = client.chats.create(model="gemini-2.5-flash", config=types.GenerateContentConfig(system_instruction="Você é um chatbot do Estado do Rio de Janeiro, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais. Seja o mais sucinto mais cordial nas respostas, não passe de 50 palavrasr"))
+def fazerPergunta(pergunta, verbose= False):
+    response = chat.send_message(pergunta)
+    print(response.text)
 
 def inicializarConsulta(modelo, pergunta = None, verbose = False):
     embeding = "snowflake-arctic-embed2:568m"
@@ -84,18 +75,9 @@ def inicializarConsulta(modelo, pergunta = None, verbose = False):
 
     return fazerPergunta(embeding, newdict, index, pergunta,modelo, True)
 
-servicos = retirarServicos()
+   
 while True:
-    inicio = time.perf_counter()
-    aux = inicializarConsulta("gemma3:12b", verbose=True)
-    fim = time.perf_counter()
-    print(fim - inicio)
-    print(aux)
-    for i in aux.lstrip().split("\n")[0].replace("Ids: ", "").split(";"):
-        print(i)
-        servico = i.lstrip().replace("Serviço: ", "")
-        if servico in servicos.keys():
-            print(servicos[servico])
-        else:
-            print("não encontrei")
-    
+    pergunta = input("Faça sua pergunta: ")
+    if pergunta in ['tchau', 'bye', 'sair', 'exit']:
+        break
+    fazerPergunta(pergunta=pergunta)
