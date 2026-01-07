@@ -130,6 +130,7 @@ async function mostrarResposta(data) {
   respostaDiv.className = 'mensagem resposta fade-in';
 
   // Se houver serviços encontrados
+  console.log(data)
   if (data.servicos_encontrados && data.servicos_encontrados.length > 0) {
     let htmlContent = '<div class="detalhes-servico">';
     
@@ -140,18 +141,13 @@ async function mostrarResposta(data) {
 
     // Processa o primeiro serviço (principal)
     const primeiroServico = data.servicos_encontrados[0];
-    const matchPrimeiro = primeiroServico.match(/Serviço: (.*?)\. Descrição: (.*?)\. Órgão: (.*?)\./);
-    
-    if (matchPrimeiro) {
-      const [_, nomeServico, descricao, orgao] = matchPrimeiro;
-      const url = extrairUrl(primeiroServico);
-
+    if (primeiroServico) {
       htmlContent += `
         <div class="servico-item servico-principal">
-          <h3>${nomeServico}</h3>
-          <p class="orgao-text">Órgão: ${orgao}</p>
-          <p class="descricao-text">${descricao}</p>
-          <button class="botao-acesso" onclick="registrarCliqueServico('${nomeServico}'); window.open('${url}', '_blank', 'noopener,noreferrer')">
+          <h3>${primeiroServico['titulo']}</h3>
+          <p class="orgao-text">Órgão: ${primeiroServico['descricao']}</p>
+          <p class="descricao-text">${primeiroServico['orgao']}</p>
+          <button class="botao-acesso" onclick="registrarCliqueServico('${primeiroServico['titulo']}'); window.open('${primeiroServico['urlServ']}', '_blank', 'noopener,noreferrer')">
             Acessar informações do serviço
           </button>
         </div>
@@ -167,17 +163,14 @@ async function mostrarResposta(data) {
       // Processa os serviços relacionados (2º e 3º)
       for (let i = 1; i < data.servicos_encontrados.length; i++) {
         const servicoRelacionado = data.servicos_encontrados[i];
-        const matchRelacionado = servicoRelacionado.match(/Serviço: (.*?)\. Descrição: (.*?)\. Órgão: (.*?)\./);
-        if (matchRelacionado) {
-          const [_, nomeServico, descricao, orgao] = matchRelacionado;
-          const url = extrairUrl(servicoRelacionado);
+        if (servicoRelacionado) {
 
           htmlContent += `
             <div class="servico-item servico-secundario">
-              <h3>${nomeServico}</h3>
-              <p class="orgao-text">Órgão: ${orgao}</p>
-              <p class="descricao-text">${descricao}</p>
-              <button class="botao-acesso botao-secundario" onclick="registrarCliqueServico('${nomeServico}'); window.open('${url}', '_blank', 'noopener,noreferrer')">
+              <h3>${servicoRelacionado['titulo']}</h3>
+              <p class="orgao-text">Órgão: ${servicoRelacionado['orgao']}</p>
+              <p class="descricao-text">${servicoRelacionado['descricao']}</p>
+              <button class="botao-acesso botao-secundario" onclick="registrarCliqueServico('${servicoRelacionado['titulo']}'); window.open('${servicoRelacionado['urlServ']}', '_blank', 'noopener,noreferrer')">
                 Acessar informações do serviço
               </button>
             </div>
@@ -195,7 +188,7 @@ async function mostrarResposta(data) {
     // Se não houver serviços, apenas mostra a mensagem
     respostaDiv.innerHTML = `
       <div class="detalhes-servico">
-        <h4 class="secao-header">${data.mensagem || "Desculpe, não encontrei serviços relevantes para sua consulta."}</h4>
+        
         <p class="descricao-escolha">${data.texto}</p>
       </div>
     `;
