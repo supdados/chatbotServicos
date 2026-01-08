@@ -1,4 +1,3 @@
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -14,16 +13,6 @@ import time
 load_dotenv()
 
 DATA = "servicos"
-
-def dividirTexto(docs: list):
-    divisor = RecursiveCharacterTextSplitter(
-        chunk_size = 1000,
-        chunk_overlap=500,
-        length_function = len,
-        add_start_index=True
-    )
-    chunks = divisor.split_documents(docs)
-    return chunks
 
 def pesquisar(embedded, embedding, newdict, index):
     matrix=np.empty((0,len(newdict['0']["embedding"])), dtype="float32")
@@ -97,32 +86,24 @@ buscarNaBase_funcao = {
         "properties": { 
             "pergunta": {
                 "type":'string',
-                "description":'Pergunta ou frase simplificada para pesquisar no banco de dados, não altere siglas.'
+                "description":'Pergunta ou frase simplificada para pesquisar no banco de dados, seja criativo na reescriçao, mas não altere siglas.'
                 }
                 },
                 "required":["pergunta"],
                 },
 }
 ferramentas = types.Tool(function_declarations=[buscarNaBase_funcao])
-config = types.GenerateContentConfig(tools=[ferramentas], system_instruction="Você é um chatbot do Estado do Rio de Janeiro, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais. Não responda a perguntas sem antes verificar a base de dados em caso de perguntas de cunho burocratico. Se a informação já esta carregada na conversa, não busque-a de novo na base de dados.  Seja o mais sucinto mas cordial nas respostas.")
+config = types.GenerateContentConfig(tools=[ferramentas], system_instruction="Você é um chatbot amigavel e compreensivo do Estado do Rio de Janeiro de nome Edite, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais, mas seja cordeal na recusa. Responda como se fosse uma conversa em rede social, assim seja breve mas amigavel. Utilize a função pesquisar para pesquisar infomracoes no banco de dados quando necessário. Para sua informação hoje é dia 08/01/2026, quinta-feira.")
 chat = client.chats.create(model="gemini-2.5-flash-lite", config=config)
 
 def fazerPergunta(pergunta,servicos, index, verbose= False):
-    response = chat.send_message(f"""Responda a pegunta: {pergunta}. Seguindo o Modelo:
-                                 "
-                                    <div>
-                                    <p> Este e um modelo para a resposta.</p>
-                                    <p> Multiplas linhas devem ser separados por diferentes tags p</p>
-                                    <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
-                                    </div>
-
-                                    -ids:[11, 3, 44]
-                                "
-                                 """)
-    if response.candidates[0].content.parts[0].function_call:
+    response = chat.send_message(f""" Decida se a {pergunta} deve ser pesquisada na base de dados ou não, ela não deve ser buscada se as informações necessárias para responde-la ja estão carregadas na conversa.
+                                      Faça a chamada da pesquisa no banco de dados em caso afirmativo. Retorne 1 frase explicativa da escolha e a chamada da função.""")
+    print(response.candidates)
+    if len(response.candidates[0].content.parts) > 1:
         print('entrei')
-        a, b =pesquisar(response.candidates[0].content.parts[0].function_call.args['pergunta'], "bge-m3:latest", servicos, index=index)
-        print("pergunta reformulada: ", response.candidates[0].content.parts[0].function_call.args['pergunta'])
+        a, b =pesquisar(response.candidates[0].content.parts[1].function_call.args['pergunta'], "bge-m3:latest", servicos, index=index)
+        print("pergunta reformulada: ", response.candidates[0].content.parts[1].function_call.args['pergunta'])
         servicosEscolhidos = []
         for i in b:
             escolhido = servicos[str(i)].copy() 
@@ -133,9 +114,9 @@ def fazerPergunta(pergunta,servicos, index, verbose= False):
                                      Com base nesses resultados da função pergunta: {servicosEscolhidos}, responda a pergunta: {pergunta}.
                                      Sua resposta deve seguir as seguintes regras:
                                         Deve conter até 3 serviços que são relacionados a pergunta.
-                                        Se um serviço cumpre perfeitamente a demanda do usuário retorne apenas ele.
+                                        Se um serviço cumpre de maneira mais que satisfatoria a demanda do usuário retorne apenas ele.
                                         Se nenhum atender ao usuário, retorne para ele entrar em contato com o OUVERJ.
-                                        A resposta sera em duas partes. Primeiro um texto explicando a escolha dos serviços, ele DEVE estar em html. Segundo a ULTIMA LINHA da resposta deve conter: "-ids: [ARRAY DOS SERVIÇOS UTILIZADOS NA RESPOSTA]"
+                                        A resposta sera em duas partes. Primeiro um texto explicando a escolha dos serviços. Segundo a ULTIMA LINHA da resposta deve conter: "-ids: [ARRAY DOS SERVIÇOS UTILIZADOS NA RESPOSTA]", seguindo o exemplo abaixo.
                                         Exemplo:
                                             "
                                             <div>
@@ -160,34 +141,19 @@ def fazerPergunta(pergunta,servicos, index, verbose= False):
         ids = ids.split(", ")
         return texto, ids
     else:
+        response = chat.send_message(f"""Responda a pergunta "{pergunta}" sem utilizar a função de pesquisa, 
+                                     seguindo o modelo: 
+                                     "
+                                        <div>
+                                        <p> Este e um modelo para a resposta.</p>
+                                        <p> Multiplas linhas devem ser separados por diferentes tags p</p>
+                                        <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
+                                        </div>
+                                     " """)
         texto = response.text
-        frases = texto.split('\n')
-        ids = ''
-        for i in frases:
-            if "-id" in i:
-                ids = i
-        frases.remove(ids) 
-        texto = "\n".join(frases)
-        ids = ids.split(":")[1].strip()
-        ids = ids[1:-1] if '[' in ids and ']' in ids else ids
-        ids = ids.split(", ")
+        ids = []
         return texto, ids
 
-
-def inicializarConsulta(modelo, pergunta = None, verbose = False):
-    embeding = "snowflake-arctic-embed2:568m"
-
-    doc = open("teste.json", "rb")
-    newdict = json.load(doc)
-    aux=np.empty((0,len(newdict[0]["embedding"])), dtype="float32")
-    for i in newdict:
-        aux = np.append(aux, [np.array(i["embedding"], dtype="float32")], axis=0)
-    index = faiss.IndexFlatL2(aux.shape[1])
-    print(aux.shape[1]) if verbose else ""
-    index.add(aux)
-    faiss.write_index(index, "teste.index")
-
-    return fazerPergunta(embeding, newdict, index, pergunta,modelo, True)
 
 def salvarServicos():
     servicos = retirarServicos()

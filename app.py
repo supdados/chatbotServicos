@@ -1,16 +1,12 @@
 import json
-import numpy as np
 import faiss
 import signal
-import ollama
 import sys
 import time
-from typing import List, Dict, Tuple
 import uuid
 from datetime import datetime
 from pathlib import Path
 from novoMetodo import fazerPergunta
-# Imports do LangChain
 
 from flask import Flask, request, jsonify, render_template
 
@@ -112,12 +108,9 @@ def chat():
         }
         
         texto, ids = agente_resposta(consulta) 
-        print(texto, ids, ids != [])
         if ids != []:
-            print(texto, ids, ids != [])
             servicos_encontrados = []
             for servi in ids:
-                print(servi)
                 aux = servi.lstrip()
                 servico_dict = {
                     "titulo": SERVICOS[aux]["titulo"],
@@ -127,7 +120,6 @@ def chat():
                     "url": SERVICOS[aux]["url_externo"],
                 }
                 servicos_encontrados.append(servico_dict)
-                print(servicos_encontrados)
             
             nova_interacao["servicos_encontrados"] = servicos_encontrados
             conversa["interacoes"].append(nova_interacao)
@@ -140,7 +132,6 @@ def chat():
                 'conversa_id': conversa_id
             })
         else:
-            print(texto)
             return jsonify({
                 'texto':texto,
                 'servicos_encontrados': [],
@@ -209,4 +200,4 @@ def feedback():
 def main():
     app.run(debug=True, port=5550)
 
-print("Chat iniciado. Digite 'exit' para sair.\n")
+main()
