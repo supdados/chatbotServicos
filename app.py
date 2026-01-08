@@ -77,127 +77,124 @@ def signal_handler(sig, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    @app.route('/')
+    def home():
+        return render_template('chat.html')
 
-@app.route('/')
-def home():
-    return render_template('chat.html')
-
-@app.route('/chat', methods=['POST'])
-def chat():
-    try:
-        inicio = time.perf_counter()
-        data = request.json
-        consulta = data.get('consulta', '')
-        conversa_id = data.get('conversa_id')
-        
-        if not conversa_id:
-            conversa_id = gerar_id_conversa()
-        
-        conversa = carregar_conversa(conversa_id)
-        
-        # Continua com o fluxo normal de busca de serviços
-        nova_interacao = {
-            "timestamp": datetime.now().isoformat(),
-            "pergunta_original": consulta,
-            "pergunta_reformulada": None,
-            "servicos_encontrados": [],
-            "servicos_clicados": [],
-            "feedback": None,
-            "tipo": "consulta"
-        }
-        
-        texto, ids = agente_resposta(consulta) 
-        if ids != []:
-            servicos_encontrados = []
-            for servi in ids:
-                aux = servi.lstrip()
-                servico_dict = {
-                    "titulo": SERVICOS[aux]["titulo"],
-                    "urlServ": "https://www.rj.gov.br/servico/" + SERVICOS[aux]["slug"],
-                    "descricao": SERVICOS[aux]["descricao"],
-                    "orgao": SERVICOS[aux]["orgao_sigla"],
-                    "url": SERVICOS[aux]["url_externo"],
-                }
-                servicos_encontrados.append(servico_dict)
+    @app.route('/chat', methods=['POST'])
+    def chat():
+        try:
+            inicio = time.perf_counter()
+            data = request.json
+            consulta = data.get('consulta', '')
+            conversa_id = data.get('conversa_id')
             
-            nova_interacao["servicos_encontrados"] = servicos_encontrados
-            conversa["interacoes"].append(nova_interacao)
-            salvar_conversa(conversa_id, conversa)
+            if not conversa_id:
+                conversa_id = gerar_id_conversa()
             
+            conversa = carregar_conversa(conversa_id)
+            
+            # Continua com o fluxo normal de busca de serviços
+            nova_interacao = {
+                "timestamp": datetime.now().isoformat(),
+                "pergunta_original": consulta,
+                "pergunta_reformulada": None,
+                "servicos_encontrados": [],
+                "servicos_clicados": [],
+                "feedback": None,
+                "tipo": "consulta"
+            }
+            
+            texto, ids = agente_resposta(consulta) 
+            if ids != []:
+                servicos_encontrados = []
+                for servi in ids:
+                    aux = servi.lstrip()
+                    servico_dict = {
+                        "titulo": SERVICOS[aux]["titulo"],
+                        "urlServ": "https://www.rj.gov.br/servico/" + SERVICOS[aux]["slug"],
+                        "descricao": SERVICOS[aux]["descricao"],
+                        "orgao": SERVICOS[aux]["orgao_sigla"],
+                        "url": SERVICOS[aux]["url_externo"],
+                    }
+                    servicos_encontrados.append(servico_dict)
+                
+                nova_interacao["servicos_encontrados"] = servicos_encontrados
+                conversa["interacoes"].append(nova_interacao)
+                salvar_conversa(conversa_id, conversa)
+                
+                return jsonify({
+                    'mensagem': "Encontrei os seguintes serviços que podem te ajudar:",
+                    'texto':texto,
+                    'servicos_encontrados': servicos_encontrados,
+                    'conversa_id': conversa_id
+                })
+            else:
+                return jsonify({
+                    'texto':texto,
+                    'servicos_encontrados': [],
+                    'conversa_id': conversa_id
+                })
+            
+        except Exception as e:
             return jsonify({
-                'mensagem': "Encontrei os seguintes serviços que podem te ajudar:",
-                'texto':texto,
-                'servicos_encontrados': servicos_encontrados,
-                'conversa_id': conversa_id
-            })
-        else:
-            return jsonify({
-                'texto':texto,
+                'mensagem': "Desculpe, ocorreu um erro ao processar sua solicitação. Por favor, tente novamente.",
                 'servicos_encontrados': [],
-                'conversa_id': conversa_id
+                'error': str(e)
+            }), 500
+
+    @app.route('/servico_clicado', methods=['POST'])
+    def registrar_clique():
+        try:
+            data = request.json
+            conversa_id = data.get('conversa_id')
+            servico_descricao = data.get('servico')
+            
+            if not conversa_id or not servico_descricao:
+                return jsonify({'error': 'Dados incompletos'}), 400
+                
+            conversa = carregar_conversa(conversa_id)
+            if not conversa["interacoes"]:
+                return jsonify({'error': 'Conversa não encontrada'}), 404
+                
+            # Apenas adiciona o serviço clicado ao array de servicos_clicados
+            ultima_interacao = conversa["interacoes"][-1]
+            ultima_interacao["servicos_clicados"].append({
+                "servico": servico_descricao,
+                "timestamp": datetime.now().isoformat()
             })
-        
-    except Exception as e:
-        return jsonify({
-            'mensagem': "Desculpe, ocorreu um erro ao processar sua solicitação. Por favor, tente novamente.",
-            'servicos_encontrados': [],
-            'error': str(e)
-        }), 500
-
-@app.route('/servico_clicado', methods=['POST'])
-def registrar_clique():
-    try:
-        data = request.json
-        conversa_id = data.get('conversa_id')
-        servico_descricao = data.get('servico')
-        
-        if not conversa_id or not servico_descricao:
-            return jsonify({'error': 'Dados incompletos'}), 400
             
-        conversa = carregar_conversa(conversa_id)
-        if not conversa["interacoes"]:
-            return jsonify({'error': 'Conversa não encontrada'}), 404
+            salvar_conversa(conversa_id, conversa)
+            return jsonify({'status': 'ok'})
             
-        # Apenas adiciona o serviço clicado ao array de servicos_clicados
-        ultima_interacao = conversa["interacoes"][-1]
-        ultima_interacao["servicos_clicados"].append({
-            "servico": servico_descricao,
-            "timestamp": datetime.now().isoformat()
-        })
-        
-        salvar_conversa(conversa_id, conversa)
-        return jsonify({'status': 'ok'})
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
 
-@app.route('/feedback', methods=['POST'])
-def feedback():
-    try:
-        data = request.json
-        conversa_id = data.get('conversa_id')
-        feedback_valor = data.get('feedback')  # 'like', 'dislike' ou None
-        
-        if not conversa_id:
-            return jsonify({'error': 'ID da conversa não fornecido'}), 400
+    @app.route('/feedback', methods=['POST'])
+    def feedback():
+        try:
+            data = request.json
+            conversa_id = data.get('conversa_id')
+            feedback_valor = data.get('feedback')  # 'like', 'dislike' ou None
             
-        conversa = carregar_conversa(conversa_id)
-        if not conversa["interacoes"]:
-            return jsonify({'error': 'Conversa não encontrada'}), 404
+            if not conversa_id:
+                return jsonify({'error': 'ID da conversa não fornecido'}), 400
+                
+            conversa = carregar_conversa(conversa_id)
+            if not conversa["interacoes"]:
+                return jsonify({'error': 'Conversa não encontrada'}), 404
+                
+            # Atualiza o feedback da última interação
+            ultima_interacao = conversa["interacoes"][-1]
+            ultima_interacao["feedback"] = feedback_valor
+            ultima_interacao["feedback_timestamp"] = datetime.now().isoformat()
             
-        # Atualiza o feedback da última interação
-        ultima_interacao = conversa["interacoes"][-1]
-        ultima_interacao["feedback"] = feedback_valor
-        ultima_interacao["feedback_timestamp"] = datetime.now().isoformat()
-        
-        salvar_conversa(conversa_id, conversa)
-        return jsonify({'status': 'ok'})
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+            salvar_conversa(conversa_id, conversa)
+            return jsonify({'status': 'ok'})
+            
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
 
-def main():
-    app.run(debug=True, port=5550)
-
-main()
+    return app
