@@ -1,6 +1,7 @@
 google
+google-genai
 dotenv
 ollama
 numpy
-faiss
+faiss-cpu
 flask
