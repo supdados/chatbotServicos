@@ -9,6 +9,7 @@ import numpy as np
 import json
 import faiss
 import time
+import datetime
 
 load_dotenv()
 
@@ -86,24 +87,21 @@ buscarNaBase_funcao = {
         "properties": { 
             "pergunta": {
                 "type":'string',
-                "description":'Pergunta ou frase simplificada para pesquisar no banco de dados, seja criativo na reescriçao, mas não altere siglas.'
+                "description":'Pergunta ou frase reformulada para pesquisar no banco de dados, a reescrita deve traduzir a frase para termos utilizados no Rio de janeiro e não deve ser mechido nas siglas usadas pelo usuário.'
                 }
                 },
                 "required":["pergunta"],
                 },
 }
 ferramentas = types.Tool(function_declarations=[buscarNaBase_funcao])
-config = types.GenerateContentConfig(tools=[ferramentas], system_instruction="Você é um chatbot amigavel e compreensivo do Estado do Rio de Janeiro de nome Edite, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais, mas seja cordeal na recusa. Responda como se fosse uma conversa em rede social, assim seja breve mas amigavel. Utilize a função pesquisar para pesquisar infomracoes no banco de dados quando necessário. Para sua informação hoje é dia 08/01/2026, quinta-feira.")
+config = types.GenerateContentConfig(tools=[ferramentas], system_instruction=f"Você é um chatbot amigavel e compreensivo do Estado do Rio de Janeiro de nome Edite, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais, mas seja cordeal na recusa. Responda como se fosse uma conversa em rede social, assim seja breve mas amigavel. Utilize a função pesquisar para pesquisar infomracoes no banco de dados quando necessário.")
 chat = client.chats.create(model="gemini-2.5-flash-lite", config=config)
 
 def fazerPergunta(pergunta,servicos, index, verbose= False):
-    response = chat.send_message(f""" Decida se a {pergunta} deve ser pesquisada na base de dados ou não, ela não deve ser buscada se as informações necessárias para responde-la ja estão carregadas na conversa.
+    response = chat.send_message(f""" Decida se a {pergunta} deve ser pesquisada na base de dados ou não, ela não deve ser buscada se as informações necessárias para responde-la ja estão carregadas na conversa ou se a frase do usuário não for sobre demandas por algum possivel servico.
                                       Faça a chamada da pesquisa no banco de dados em caso afirmativo. Retorne 1 frase explicativa da escolha e a chamada da função.""")
-    print(response.candidates)
     if len(response.candidates[0].content.parts) > 1:
-        print('entrei')
         a, b =pesquisar(response.candidates[0].content.parts[1].function_call.args['pergunta'], "bge-m3:latest", servicos, index=index)
-        print("pergunta reformulada: ", response.candidates[0].content.parts[1].function_call.args['pergunta'])
         servicosEscolhidos = []
         for i in b:
             escolhido = servicos[str(i)].copy() 

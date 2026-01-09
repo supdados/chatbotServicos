@@ -1,3 +1,4 @@
 servicos
 .env
 historico/*
+__pycache__
