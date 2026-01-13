@@ -10,10 +10,18 @@ import json
 import faiss
 import time
 import datetime
+import pymysql
 
 load_dotenv()
 
 DATA = "servicos"
+USER = os.getenv("DBUSER")
+PASS = os.getenv("DBPASS")
+ADDR = os.getenv("DBIPV4")
+BASE = os.getenv("DBBASE")
+
+con = pymysql.connect(host=ADDR, user=USER, password=PASS, database=BASE, cursorclass=pymysql.cursors.DictCursor)
+cur = con.cursor()
 
 def pesquisar(embedded, embedding, newdict, index):
     matrix=np.empty((0,len(newdict['0']["embedding"])), dtype="float32")
@@ -87,19 +95,49 @@ buscarNaBase_funcao = {
         "properties": { 
             "pergunta": {
                 "type":'string',
-                "description":'Pergunta ou frase reformulada para pesquisar no banco de dados, a reescrita deve traduzir a frase para termos utilizados no Rio de janeiro e não deve ser mechido nas siglas usadas pelo usuário.'
+                "description":'Pergunta ou frase reformulada para pesquisar no banco de dados, a reescrita deve traduzir a frase para termos utilizados no Rio de janeiro e não deve ser mechido nas siglas usadas pelo usuário, coloque-a também no modo imperativo.'
                 }
                 },
                 "required":["pergunta"],
                 },
 }
 ferramentas = types.Tool(function_declarations=[buscarNaBase_funcao])
-config = types.GenerateContentConfig(tools=[ferramentas], system_instruction=f"Você é um chatbot amigavel e compreensivo do Estado do Rio de Janeiro de nome Edite, seu trabalho é auxiliar os cidadãos fluminenses da melhor maneira possível. Não ajude aqueles que demandam por opiniões pessoais ou informações ilegais, mas seja cordeal na recusa. Responda como se fosse uma conversa em rede social, assim seja breve mas amigavel. Utilize a função pesquisar para pesquisar infomracoes no banco de dados quando necessário.")
+config = types.GenerateContentConfig(tools=[ferramentas], system_instruction=f"""
+    Você é um chatbot do portal de serviços do Estado do Rio de Janeiro com o nome de Edite que tem como dever encontrar os serviços que mais se adequam, quando eles existem, para as demandas dos cidadãos.
+    Para esse fim você pode utilizar a função "pesquisar" quando for necessário para achar os serviços. Evite de usar essa função quando o usuário estiver pedindo informações adicionais sobre serviços já retornados.
+    Não responda indagações que pessam opiniões pessoais, ajuda que não tenha haver com serviços disponíveis no portal ou pedidos que são contra a lei.
+    Lembre-se também que você esta representando a esfera estadual do governo, assim atribuições de municipios não são da sua ossada.
+    O dia de hoje é {datetime.datetime.today().strftime("%d/%m/%Y, %A")}.   
+    O OuveRj é disponibilizado nesse endereço: https://www.rj.gov.br/ouverj/manifestacoes
+""")
 chat = client.chats.create(model="gemini-2.5-flash-lite", config=config)
 
-def fazerPergunta(pergunta,servicos, index, verbose= False):
-    response = chat.send_message(f""" Decida se a {pergunta} deve ser pesquisada na base de dados ou não, ela não deve ser buscada se as informações necessárias para responde-la ja estão carregadas na conversa ou se a frase do usuário não for sobre demandas por algum possivel servico.
-                                      Faça a chamada da pesquisa no banco de dados em caso afirmativo. Retorne 1 frase explicativa da escolha e a chamada da função.""")
+def fazerPergunta(pergunta,servicos, index, valor, idUser, idConversa):
+    try:
+        cur.execute("SELECT arrayServicos FROM servicosRetornados WHERE idConversa = %s AND idUsuario = %s", [idConversa, idUser])
+        carregando = cur.fetchone()
+        servicosJaUsados = []
+        if carregando == None:
+            servicosJaUsados = []
+        else:
+            carregando = json.loads(carregando['arrayServicos'])
+            for i in carregando:
+                escolhido = servicos[str(i)].copy() 
+                escolhido['id'] = str(i)
+                escolhido.pop("embedding")
+                servicosJaUsados.append(escolhido)
+    except Exception as e:
+        print(e)
+        return
+    response = chat.send_message(f""" Decida se a pergunta "{pergunta}" tem sua resposta nos servicos ja carregados na conversa, disponiveis abaixo.
+                                      serviços retornados: {servicosJaUsados}
+
+                                      caso negativo decida se a pergunta faz referencia a alguma das competencias que a esfera Estadual de governo. Se sim pesquise,
+                                      Caso contrario não pesquise.
+                                      Retorne 1 frase explicativa da escolha e se necessario a chamada da função.""")
+    cur.execute("INSERT INTO historico(idUsuario, idConversa, ordemMensagem, html, dono) values (%s,%s,%s,%s,%s)", (idUser, idConversa, valor, pergunta, 0))
+    cur.connection.commit()
+    valor+=1
     if len(response.candidates[0].content.parts) > 1:
         a, b =pesquisar(response.candidates[0].content.parts[1].function_call.args['pergunta'], "bge-m3:latest", servicos, index=index)
         servicosEscolhidos = []
@@ -111,16 +149,21 @@ def fazerPergunta(pergunta,servicos, index, verbose= False):
         response = chat.send_message(f"""
                                      Com base nesses resultados da função pergunta: {servicosEscolhidos}, responda a pergunta: {pergunta}.
                                      Sua resposta deve seguir as seguintes regras:
-                                        Deve conter até 3 serviços que são relacionados a pergunta.
-                                        Se um serviço cumpre de maneira mais que satisfatoria a demanda do usuário retorne apenas ele.
-                                        Se nenhum atender ao usuário, retorne para ele entrar em contato com o OUVERJ.
-                                        A resposta sera em duas partes. Primeiro um texto explicando a escolha dos serviços. Segundo a ULTIMA LINHA da resposta deve conter: "-ids: [ARRAY DOS SERVIÇOS UTILIZADOS NA RESPOSTA]", seguindo o exemplo abaixo.
+                                        Se nenhum serviço se encaixa na demanda do usuário, não retorne nenhum deles e explique que não encontrou nenhum que se encaixe na demanda, além de direciona-lo a entrar em contato com o OuveRJ.
+                                        Se tiver serviços compativeis com a demanda do usuário, caso seja a primeria vez expressando uma demanda e que tenha serviços relevantes, retorne apenas o serviço que mais se encaixa a ela.
+                                        Caso não seja a primeira demanda com retorno relevante, retorne até 3 serviços.
+                                        Em nenhum caso deve-se retornar mais de 3 serviços.
+                                        A resposta sera em duas partes. Primeiro um texto explicando a escolha dos serviços em HTML. Segundo a ULTIMA LINHA da resposta deve conter: "-ids: [ARRAY DOS SERVIÇOS UTILIZADOS NA RESPOSTA]", seguindo o exemplo abaixo.
+                                        Não retorne os Ids dos serviços no corpo da mensgem, apenas o coloque no lugar indicado!
+                                        Nessa resposta você esta probido de utilizar a função de busca.
+                                        Não retorne os ids no corpo do html, apenas os coloque na parte reservada a eles da mensagem.
                                         Exemplo:
                                             "
                                             <div>
                                             <p> Este e um modelo para a resposta.</p>
                                             <p> Multiplas linhas devem ser separados por diferentes tags p</p>
                                             <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
+                                            <p> NÃO RESPONDA NADA SEM SER NA FORMATAÇÃO PASSADA</p>
                                             </div>
 
                                             -ids:[11, 3, 44]
@@ -129,28 +172,49 @@ def fazerPergunta(pergunta,servicos, index, verbose= False):
         texto = response.text
         frases = texto.split('\n')
         ids = ''
+        array = []
         for i in frases:
             if "-id" in i:
                 ids = i
-        frases.remove(ids) 
-        texto = "\n".join(frases)
-        ids = ids.split(":")[1].strip()
-        ids = ids[1:-1] if '[' in ids and ']' in ids else ids
-        ids = ids.split(", ")
-        return texto, ids
+            if "<" in i or len(texto) == 1:
+                array.append(i)
+        texto = "\n".join(array)
+        ids = ids.split(":")[1].strip('\n')
+        if '[' in ids and ']' in ids and "[]" not in ids:
+            ids = ids[1:-1] 
+            ids = ids.split(", ")
+        else:
+            ids = []
+        print(chat.get_history(True))
+        cur.execute("INSERT INTO servicosRetornados(idConversa, idUsuario, arrayServicos) values (%s,%s,%s)", ( idConversa, idUser, json.dumps(ids)))
+        cur.connection.commit()
+        return texto, ids, valor
     else:
-        response = chat.send_message(f"""Responda a pergunta "{pergunta}" sem utilizar a função de pesquisa, 
+        response = chat.send_message(f"""Responda a frase "{pergunta}" sem utilizar a função de pesquisa.
+                                     Se a frase não for um pedido ou algo proibido pelo prompt responda cordialmente seguindo o modelo.
+                                     Se a frase for uma pergunta e não for competencia da esfera Estadual, avise ao usuário.
+                                     Se a frase não tiver haver com um possível serviço ou não for algo relacionado a algum serviço se recuse a responder cordialmente.
+                                     Quando falando sobre serviços ja mencionados, não retorne o id deles.
+                                     lembre de basear a resposta nas mensagens trocadas durante essa conversa sem transparecer para o usuário quando necessário.
+                                     Nessa resposta você esta probido de utilizar a função de busca.
                                      seguindo o modelo: 
                                      "
                                         <div>
                                         <p> Este e um modelo para a resposta.</p>
                                         <p> Multiplas linhas devem ser separados por diferentes tags p</p>
+                                        <p> NÃO RESPONDA NADA SEM SER NA FORMATAÇÃO PASSADA</p>
                                         <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
                                         </div>
                                      " """)
-        texto = response.text
+        texto = response.text.split("\n")
+        array = []
+        for i in texto:
+            if "<" in i or len(texto) == 1:
+                array.append(i)
+        texto = "\n".join(array)
         ids = []
-        return texto, ids
+        print(chat.get_history(True))
+        return texto, ids, valor
 
 
 def salvarServicos():

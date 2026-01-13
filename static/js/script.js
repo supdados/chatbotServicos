@@ -106,6 +106,7 @@ async function enviarPergunta() {
       await mostrarResposta(data);
     }
   } catch (error) {
+    console.log(error)
     loaderDiv.remove();
     mostrarErro("Erro ao processar sua pergunta. Por favor, tente novamente.");
   }
@@ -184,6 +185,13 @@ async function mostrarResposta(data) {
 
     htmlContent += '</div>'; // Fecha detalhes-servico
     respostaDiv.innerHTML = htmlContent;
+    const response = await fetch('/escrever', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        html: htmlContent,
+      })
+    })
   } else {
     // Se não houver serviços, apenas mostra a mensagem
     respostaDiv.innerHTML = `
@@ -192,8 +200,13 @@ async function mostrarResposta(data) {
         <p class="descricao-escolha">${data.texto}</p>
       </div>
     `;
+    const response = await fetch('/escrever', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 
+        html: respostaDiv.innerHTML,
+      })})
   }
-
   historico.appendChild(respostaDiv);
   scrollHistorico();
   adicionarFeedback(respostaDiv);

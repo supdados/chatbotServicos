@@ -7,15 +7,23 @@ import uuid
 from datetime import datetime
 from pathlib import Path
 from novoMetodo import fazerPergunta
+import os
+from dotenv import load_dotenv
+import pymysql
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, session, Response, g
 
+load_dotenv()
 HISTORICO_DIR = Path("historico")
 HISTORICO_DIR.mkdir(exist_ok=True)
 
 MODELO = "gemma3:12b"
 EMBEDDING = "bge-m3:latest"
 
+USER = os.getenv("DBUSER")
+PASS = os.getenv("DBPASS")
+ADDR = os.getenv("DBIPV4")
+BASE = os.getenv("DBBASE")
 
 fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
 SERVICOS = json.load(fp)
@@ -68,7 +76,7 @@ Se NÃO for apenas uma saudação (contiver qualquer outro conteúdo): responda 
 
 """
 def agente_resposta(consulta) -> str:
-    resp, ids = fazerPergunta(consulta, SERVICOS, INDEX ) 
+    resp, ids, session['ordem'] = fazerPergunta(consulta, SERVICOS, INDEX, session['ordem'], session['USER'], session['CHAT'] ) 
     return resp, ids
 
 def signal_handler(sig, frame):
@@ -79,20 +87,45 @@ signal.signal(signal.SIGINT, signal_handler)
 
 def create_app():
     app = Flask(__name__)
+    app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+    def get_db():
+        con = pymysql.connect(host=ADDR, user=USER, password=PASS, database=BASE, cursorclass=pymysql.cursors.DictCursor)
+        cur = con.cursor()
+        if 'db' not in g:
+            g.db = cur
+        return g.db
+
     @app.route('/')
     def home():
+        if "UUID" not in session:
+            session['USER'] = str(uuid.uuid1())
+            session['CHAT'] = str(uuid.uuid1())
+            session['DATA'] = str(datetime.today().date())
+            session['ordem'] = 0
+        print(session)
         return render_template('chat.html')
+    @app.route('/escrever', methods=['POST'])
+    def escrever():
+        data = request.json
+        html = data.get("html")
+        print(html)
+        cur = get_db()
+        cur.execute("INSERT INTO historico (idUsuario, idConversa, ordemMensagem, html, dono) values (%s,%s,%s,%s,%s)", (session['USER'], session['CHAT'], session['ordem'], html, 1))
+        cur.connection.commit()
+        session['ordem'] +=1
+        return Response(status=200)
+   
 
     @app.route('/chat', methods=['POST'])
     def chat():
         try:
-            inicio = time.perf_counter()
             data = request.json
             consulta = data.get('consulta', '')
-            conversa_id = data.get('conversa_id')
-            
-            if not conversa_id:
-                conversa_id = gerar_id_conversa()
+            if not session['CHAT']:
+                session['CHAT'] = uuid.uuid1()
+                conversa_id = session['CHAT']
+            else:
+                conversa_id = session['CHAT']
             
             conversa = carregar_conversa(conversa_id)
             
@@ -108,6 +141,7 @@ def create_app():
             }
             
             texto, ids = agente_resposta(consulta) 
+            print(texto, ids, session['ordem'])
             if ids != []:
                 servicos_encontrados = []
                 for servi in ids:
@@ -125,17 +159,21 @@ def create_app():
                 conversa["interacoes"].append(nova_interacao)
                 salvar_conversa(conversa_id, conversa)
                 
+                print("cheguei ate aqui")
                 return jsonify({
                     'mensagem': "Encontrei os seguintes serviços que podem te ajudar:",
                     'texto':texto,
                     'servicos_encontrados': servicos_encontrados,
-                    'conversa_id': conversa_id
+                    'conversa_id': conversa_id,
+                    'ordem':session['ordem']
                 })
             else:
+                print("cheguei ate aqui 2")
                 return jsonify({
                     'texto':texto,
                     'servicos_encontrados': [],
-                    'conversa_id': conversa_id
+                    'conversa_id': conversa_id,
+                    'ordem':session['ordem']
                 })
             
         except Exception as e:
