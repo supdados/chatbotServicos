@@ -262,11 +262,12 @@ def mandarEmail():
     msg.add_attachment(dados, maintype = 'application', subtype='json', filename=nomeArq)
 
     with smtplib.SMTP(host, port) as emailer: 
+        emailer.connect(host, port)
+        emailer.ehlo()
         emailer.starttls()
         emailer.login(Email, password)
         emailer.send_message(msg)
     
-    print("Enviado")
 
 def atualizarJson():
     novos = retirarServicos()
@@ -275,7 +276,7 @@ def atualizarJson():
     nom1 = json.loads(json.dumps(velhos))
     nom2 = json.loads(json.dumps(novos))
     if nom1 != nom2:
-        print(datetime.datetime.today(), 'Salvei')
         salvarServicos(novos)
         mandarEmail()
         novo()
+        print(datetime.datetime.today(), 'Salvei')
