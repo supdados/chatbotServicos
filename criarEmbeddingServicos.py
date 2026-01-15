@@ -2,7 +2,6 @@ import ollama
 import json
 import faiss
 import numpy as np
-from tqdm import tqdm
 import os
 
 def antigo():
@@ -42,7 +41,6 @@ def novo():
     servicos = json.load(fp)
     fp.close()
     for i in servicos:
-        print(i," ", end="\r")
         textoEmbedding = servicos[i]['titulo'] + " " + servicos[i]['descricao']
         servicos[i]['embedding'] = ollama.embed(model="bge-m3:latest", input=textoEmbedding)['embeddings'][0]
     fp = open("servicosApiEmbedding.json", 'w', encoding="utf-8")
@@ -50,7 +48,6 @@ def novo():
     fp.close()
     aux=np.empty((0,len(servicos["0"]["embedding"])), dtype="float32")
     for i in servicos:
-        print(i)
         aux = np.append(aux, [np.array(servicos[i]["embedding"], dtype="float32")], axis=0)
 
     index = faiss.IndexFlatIP(aux.shape[1])

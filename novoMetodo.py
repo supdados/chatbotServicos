@@ -246,8 +246,6 @@ def mandarEmail():
     password = os.getenv("PSSWDSMTP")
     host = os.getenv("HOSTSMTP")
     port = os.getenv("PORTSMTP")
-   
-    print(Email, password, host, port)
 
     msg = EmailMessage()
     msg['Subject'] = "Arquivo com os serviços do Portal rj.gov"
@@ -280,3 +278,5 @@ def atualizarJson():
         mandarEmail()
         novo()
         print(datetime.datetime.today(), 'Salvei')
+    else:
+        print(datetime.datetime.today(), 'Não salvei')
