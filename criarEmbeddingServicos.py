@@ -3,6 +3,7 @@ import json
 import faiss
 import numpy as np
 from tqdm import tqdm
+import os
 
 def antigo():
     doc = open("chat3/servicos-com-embeddings.json", "rb")
@@ -35,8 +36,8 @@ def antigo():
     index.add(aux)
     faiss.write_index(index, "chat3/teste.index")
 
-
 def novo():
+    os.remove("servicosApi.index")
     fp = open("servicosApi.json", 'r', encoding="utf-8")
     servicos = json.load(fp)
     fp.close()
@@ -54,8 +55,7 @@ def novo():
 
     index = faiss.IndexFlatIP(aux.shape[1])
     index.add(aux)
-    faiss.write_index(index, "testeApiServ.index")
-
+    faiss.write_index(index, "servicosApi.index")
 
 def salvarUmEmbedding(servico):
     fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")

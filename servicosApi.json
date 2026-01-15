@@ -16,7 +16,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 20,
         "servicosUnidade": [],
-        "total_avaliacao": 3.17,
+        "total_avaliacao": 3.1,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -1888,7 +1888,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 3.0,
+        "total_avaliacao": 3.08,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -3798,7 +3798,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 1.92,
+        "total_avaliacao": 2.04,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -4283,7 +4283,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 2.96,
+        "total_avaliacao": 2.83,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -4453,7 +4453,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 2.62,
+        "total_avaliacao": 2.44,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -4662,7 +4662,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 4.0,
+        "total_avaliacao": 2.5,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -4741,7 +4741,7 @@
         "tipo_tempo": "Dias úteis",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 2.29,
+        "total_avaliacao": 2.5,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -5950,7 +5950,7 @@
         "cod_poupatempo": "",
         "natureza_servico": null,
         "aplicativo": true,
-        "updated_at": "2025-02-17T16:17:58.172664-03:00"
+        "updated_at": "2026-01-14T10:53:41.712706-03:00"
     },
     "62": {
         "id": 91,
@@ -6301,7 +6301,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 1.44,
+        "total_avaliacao": 1.4,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -6377,7 +6377,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 0,
+        "total_avaliacao": 1.5,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -7128,7 +7128,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 2.36,
+        "total_avaliacao": 2.5,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -11080,7 +11080,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 3.0,
+        "total_avaliacao": 2.0,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -14444,7 +14444,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 2.56,
+        "total_avaliacao": 2.71,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -15910,7 +15910,7 @@
         "tipo_tempo": "Dias úteis",
         "setor_id": 106,
         "servicosUnidade": [],
-        "total_avaliacao": 2.0,
+        "total_avaliacao": 1.93,
         "orgao_sigla": "SEEDUC",
         "orgao_slug": "secretaria-de-estado-de-educacao-do-rio-de-janeiro34",
         "orgao_nome": "Secretaria de Estado de Educação do Rio de Janeiro",
@@ -16756,7 +16756,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 71,
         "servicosUnidade": [],
-        "total_avaliacao": 3.12,
+        "total_avaliacao": 3.11,
         "orgao_sigla": "SEFAZ",
         "orgao_slug": "secretaria-de-estado-de-fazenda35",
         "orgao_nome": "Secretaria de Estado de Fazenda",
@@ -22844,7 +22844,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 71,
         "servicosUnidade": [],
-        "total_avaliacao": 3.92,
+        "total_avaliacao": 3.98,
         "orgao_sigla": "SEFAZ",
         "orgao_slug": "secretaria-de-estado-de-fazenda35",
         "orgao_nome": "Secretaria de Estado de Fazenda",
@@ -24984,9 +24984,9 @@
                 "conteudo_presencial": null
             }
         ],
-        "acesso_externo": true,
-        "url_externo": "https://portal.fazenda.rj.gov.br/dec/",
-        "integrado_form_flow": false,
+        "acesso_externo": false,
+        "url_externo": "https://www.rj.gov.br/workspace/formularios/suporte-contribuinte-sefaz15",
+        "integrado_form_flow": true,
         "publico_especifico": [
             "Cidadão",
             "Empresa"
@@ -30607,7 +30607,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 110,
         "servicosUnidade": [],
-        "total_avaliacao": 2.0,
+        "total_avaliacao": 1.5,
         "orgao_sigla": "SEPOL",
         "orgao_slug": "secretaria-de-estado-de-policia-civil38",
         "orgao_nome": "Secretaria de Estado de Polícia Civil",
@@ -38543,7 +38543,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 112,
         "servicosUnidade": [],
-        "total_avaliacao": 1.0,
+        "total_avaliacao": 3.0,
         "orgao_sigla": "SES",
         "orgao_slug": "secretaria-de-estado-de-saude40",
         "orgao_nome": "Secretaria de Estado de Saúde",
@@ -41680,7 +41680,7 @@
         "tipo_tempo": "Horas",
         "setor_id": 101,
         "servicosUnidade": [],
-        "total_avaliacao": 3.28,
+        "total_avaliacao": 3.32,
         "orgao_sigla": "PROCON",
         "orgao_slug": "protecao-e-defesa-do-consumidor29",
         "orgao_nome": "Proteção e Defesa do Consumidor",
@@ -44034,7 +44034,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 113,
         "servicosUnidade": [],
-        "total_avaliacao": 3.43,
+        "total_avaliacao": 3.12,
         "orgao_sigla": "SEDSODH",
         "orgao_slug": "subsecretaria-de-estado-de-desenvolvimento-social-e-direitos-humanos-do-rj41",
         "orgao_nome": "Secretaria de Estado de Desenvolvimento Social e Direitos Humanos do RJ",
@@ -63384,7 +63384,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 100,
         "servicosUnidade": [],
-        "total_avaliacao": 0,
+        "total_avaliacao": 5.0,
         "orgao_sigla": "PGE",
         "orgao_slug": "procuradoria-geral-do-estado28",
         "orgao_nome": "Procuradoria Geral do Estado",
@@ -111921,7 +111921,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 141,
         "servicosUnidade": [],
-        "total_avaliacao": 3.62,
+        "total_avaliacao": 3.68,
         "orgao_sigla": "SETRAB",
         "orgao_slug": "setrabsecretaria-de-estado-de-trabalho-e-renda186",
         "orgao_nome": "Secretaria de Estado de Trabalho e Renda",
@@ -138770,7 +138770,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 153,
         "servicosUnidade": [],
-        "total_avaliacao": 1.0,
+        "total_avaliacao": 2.5,
         "orgao_sigla": "IOERJ",
         "orgao_slug": "ioerjimprensa-oficial-do-estado-do-rio-de-janeiro88",
         "orgao_nome": "Imprensa Oficial do Estado do Rio de Janeiro",
@@ -152243,7 +152243,7 @@
         "tipo_tempo": "Horas",
         "setor_id": 71,
         "servicosUnidade": [],
-        "total_avaliacao": 2.11,
+        "total_avaliacao": 2.21,
         "orgao_sigla": "SEFAZ",
         "orgao_slug": "secretaria-de-estado-de-fazenda35",
         "orgao_nome": "Secretaria de Estado de Fazenda",
@@ -152542,7 +152542,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 253,
         "servicosUnidade": [],
-        "total_avaliacao": 3.17,
+        "total_avaliacao": 3.1,
         "orgao_sigla": "SMASDH",
         "orgao_slug": "smasdhsecretaria-municipal-de-assistencia-de-social-e-direitos-humanos176",
         "orgao_nome": "Secretaria Municipal de Assistência de Social e Direitos Humanos",
@@ -153106,7 +153106,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 254,
         "servicosUnidade": [],
-        "total_avaliacao": 4.3,
+        "total_avaliacao": 4.32,
         "orgao_sigla": "MS",
         "orgao_slug": "msministerio-da-saude104",
         "orgao_nome": "Ministério da Saúde",
@@ -156693,7 +156693,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 253,
         "servicosUnidade": [],
-        "total_avaliacao": 3.76,
+        "total_avaliacao": 3.77,
         "orgao_sigla": "SMASDH",
         "orgao_slug": "smasdhsecretaria-municipal-de-assistencia-de-social-e-direitos-humanos176",
         "orgao_nome": "Secretaria Municipal de Assistência de Social e Direitos Humanos",
@@ -160775,7 +160775,7 @@
         "tipo_tempo": "Horas",
         "setor_id": 242,
         "servicosUnidade": [],
-        "total_avaliacao": 0,
+        "total_avaliacao": 1.0,
         "orgao_sigla": "JUCERJA",
         "orgao_slug": "junta-comercial-do-estado-do-rio-de-janeiro25",
         "orgao_nome": "Junta Comercial do Estado do Rio de Janeiro",
@@ -166079,6 +166079,11 @@
                 "id": 2380,
                 "slug": "cadastrar-ponto-focal-da-rede-rj-digital68",
                 "titulo": "Cadastro de Ponto Focal na Rede de Qualidade"
+            },
+            {
+                "id": 5049,
+                "slug": "descadastro-dos-operadores-nas-ferramentas-do-portal-unico152",
+                "titulo": "Descadastro dos operadores nas Ferramentas do Portal Único"
             }
         ],
         "created_at": "2024-03-11T17:03:28.312719-03:00",
@@ -167988,7 +167993,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 2.15,
+        "total_avaliacao": 2.2,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -170248,7 +170253,7 @@
         "tipo_tempo": "Dias úteis",
         "setor_id": 106,
         "servicosUnidade": [],
-        "total_avaliacao": 2.0,
+        "total_avaliacao": 2.12,
         "orgao_sigla": "SEEDUC",
         "orgao_slug": "secretaria-de-estado-de-educacao-do-rio-de-janeiro34",
         "orgao_nome": "Secretaria de Estado de Educação do Rio de Janeiro",
@@ -177880,7 +177885,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 2.33,
+        "total_avaliacao": 2.0,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -178559,7 +178564,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 2.25,
+        "total_avaliacao": 2.35,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -178850,7 +178855,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 4.0,
+        "total_avaliacao": 3.9,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -179246,7 +179251,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 1.5,
+        "total_avaliacao": 1.89,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -179343,7 +179348,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 82,
         "servicosUnidade": [],
-        "total_avaliacao": 1.0,
+        "total_avaliacao": 2.6,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -180180,14 +180185,20 @@
                 "icone": "comunicacao"
             }
         ],
-        "servicos_relacionados": [],
+        "servicos_relacionados": [
+            {
+                "id": 4805,
+                "slug": "cadastro-de-usuario-das-ferramentas-do-portal-unico-rj-digital75",
+                "titulo": "Cadastro dos operadores nas Ferramentas do Portal Único"
+            }
+        ],
         "created_at": "2024-07-31T16:55:01.450240-03:00",
         "servico_digital": false,
         "poupatempo": false,
         "cod_poupatempo": "",
         "natureza_servico": null,
         "aplicativo": true,
-        "updated_at": "2025-07-28T17:28:06.038232-03:00"
+        "updated_at": "2026-01-08T12:46:55.808343-03:00"
     },
     "2128": {
         "id": 5050,
@@ -187507,7 +187518,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 2.45,
+        "total_avaliacao": 2.57,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -202540,7 +202551,7 @@
         "tipo_tempo": "Dias corridos",
         "setor_id": 106,
         "servicosUnidade": [],
-        "total_avaliacao": 2.29,
+        "total_avaliacao": 2.16,
         "orgao_sigla": "SEEDUC",
         "orgao_slug": "secretaria-de-estado-de-educacao-do-rio-de-janeiro34",
         "orgao_nome": "Secretaria de Estado de Educação do Rio de Janeiro",
@@ -203045,7 +203056,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 307,
         "servicosUnidade": [],
-        "total_avaliacao": 3.06,
+        "total_avaliacao": 3.1,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -204028,7 +204039,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 160,
         "servicosUnidade": [],
-        "total_avaliacao": 2.67,
+        "total_avaliacao": 3.25,
         "orgao_sigla": "SEAP",
         "orgao_slug": "seapsecretaria-de-administracao-penitenciaria96",
         "orgao_nome": "Secretaria de Estado de Administração Penitenciária",
@@ -204385,69 +204396,6 @@
         "updated_at": "2025-06-23T17:46:08.153664-03:00"
     },
     "2404": {
-        "id": 5361,
-        "slug": "portal-de-dados-abertos-do-rj-seplag172",
-        "agendavel": false,
-        "online": true,
-        "titulo": "Portal de Dados Abertos do RJ - SEPLAG",
-        "descricao": "<p>O <strong>Portal de Dados Abertos do Estado do Rio de Janeiro</strong> coloca dados públicos em formato aberto à disposição dos cidadãos, garantindo <strong>transparência</strong> e promovendo o <strong>uso de dados para o aprimoramento de políticas públicas</strong>.</p>",
-        "requisitos": "<p>acesso à Internet</p>",
-        "publico": "<p>Todo Cidadão.</p>",
-        "informacoes_extra": "",
-        "custo": "Gratuito",
-        "tempo": null,
-        "tempo_online": null,
-        "tempo_total": 0,
-        "tipo_tempo": "Horas",
-        "setor_id": 109,
-        "servicosUnidade": [],
-        "total_avaliacao": 0,
-        "orgao_sigla": "SEPLAG",
-        "orgao_slug": "secretaria-de-estado-de-planejamento-e-gestao37",
-        "orgao_nome": "Secretaria de Estado de Planejamento e Gestão",
-        "jornada": [],
-        "acesso_externo": true,
-        "url_externo": "https://dadosabertos.rj.gov.br/dataset/?organization=seplag",
-        "integrado_form_flow": false,
-        "publico_especifico": [
-            "Cidadão",
-            "Servidor",
-            "Empresa",
-            "Gestão Pública"
-        ],
-        "categoria_slug": [
-            "cidadania-e-direitos"
-        ],
-        "subcategoria_slug": [
-            "informaces6"
-        ],
-        "solicitacao_simples": false,
-        "descricao_solicitacao": "",
-        "nivel": "Bronze",
-        "categoria_items": [
-            {
-                "slug": "cidadania-e-direitos",
-                "titulo": "Cidadania e Direitos",
-                "icone": "cidadania"
-            }
-        ],
-        "subcategoria_items": [
-            {
-                "slug": "informaces6",
-                "titulo": "Informações",
-                "icone": "comunicacao"
-            }
-        ],
-        "servicos_relacionados": [],
-        "created_at": "2025-05-21T13:12:10.353929-03:00",
-        "servico_digital": true,
-        "poupatempo": false,
-        "cod_poupatempo": "",
-        "natureza_servico": null,
-        "aplicativo": true,
-        "updated_at": "2025-05-21T13:12:10.353985-03:00"
-    },
-    "2405": {
         "id": 5363,
         "slug": "3a-conferencia-de-tic-do-governo-do-estado-do-rj28",
         "agendavel": false,
@@ -204508,7 +204456,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-28T17:28:09.997995-03:00"
     },
-    "2406": {
+    "2405": {
         "id": 5365,
         "slug": "formulario-de-avaliacao-adequacao-a-lgpd23",
         "agendavel": false,
@@ -204569,7 +204517,7 @@
         "aplicativo": true,
         "updated_at": "2025-08-06T15:10:40.685400-03:00"
     },
-    "2407": {
+    "2406": {
         "id": 5366,
         "slug": "emitir-primeira-ou-segunda-via-da-carteira-de-identidade-nacional145",
         "agendavel": false,
@@ -204586,7 +204534,7 @@
         "tipo_tempo": "Dias úteis",
         "setor_id": 25,
         "servicosUnidade": [],
-        "total_avaliacao": 3.84,
+        "total_avaliacao": 3.83,
         "orgao_sigla": "DETRAN",
         "orgao_slug": "departamento-de-transito-do-estado-do-rio-de-janeiro10",
         "orgao_nome": "Departamento de Trânsito do Estado do Rio de Janeiro",
@@ -204663,7 +204611,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-22T15:10:12.740037-03:00"
     },
-    "2408": {
+    "2407": {
         "id": 5368,
         "slug": "letalidade-violenta-ispconecta111",
         "agendavel": false,
@@ -204733,7 +204681,7 @@
         "aplicativo": false,
         "updated_at": "2025-06-30T15:02:41.931081-03:00"
     },
-    "2409": {
+    "2408": {
         "id": 5371,
         "slug": "termo-de-adesao-bolsa-atleta-rj95",
         "agendavel": false,
@@ -204793,7 +204741,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-02T00:01:30.762681-03:00"
     },
-    "2410": {
+    "2409": {
         "id": 5372,
         "slug": "oportunidades-de-invenstimento119",
         "agendavel": false,
@@ -204871,7 +204819,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-03T13:15:48.666184-03:00"
     },
-    "2411": {
+    "2410": {
         "id": 5373,
         "slug": "abertura-de-pleito-de-incentivo-fiscal182",
         "agendavel": false,
@@ -204944,7 +204892,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-05T17:14:42.744284-03:00"
     },
-    "2412": {
+    "2411": {
         "id": 5374,
         "slug": "solicitar-reuniao-junto-a-dirif40",
         "agendavel": true,
@@ -205017,7 +204965,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-05T17:14:59.315774-03:00"
     },
-    "2413": {
+    "2412": {
         "id": 5375,
         "slug": "tirar-duvidas-sobre-incentivos-fiscais192",
         "agendavel": true,
@@ -205090,7 +205038,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-05T17:11:18.449857-03:00"
     },
-    "2414": {
+    "2413": {
         "id": 5376,
         "slug": "emissao-de-greincentivos52",
         "agendavel": false,
@@ -205163,7 +205111,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-04T08:57:36.999500-03:00"
     },
-    "2415": {
+    "2414": {
         "id": 5377,
         "slug": "venda-de-areas-disponiveis-em-distritos-industriais6",
         "agendavel": false,
@@ -205236,7 +205184,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-05T17:15:35.284354-03:00"
     },
-    "2416": {
+    "2415": {
         "id": 5378,
         "slug": "abertura-de-processo-de-aquisicao90",
         "agendavel": false,
@@ -205309,7 +205257,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-05T17:15:16.276658-03:00"
     },
-    "2417": {
+    "2416": {
         "id": 5379,
         "slug": "atendimento-especializado-no-hospital-universitario-pedro-ernesto200",
         "agendavel": false,
@@ -205397,7 +205345,7 @@
         "aplicativo": false,
         "updated_at": "2025-07-04T16:11:18.708263-03:00"
     },
-    "2418": {
+    "2417": {
         "id": 5380,
         "slug": "consultar-informacoes-sobre-bolsas-e-auxilios-faperj45",
         "agendavel": false,
@@ -205457,7 +205405,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-10T09:15:24.918710-03:00"
     },
-    "2419": {
+    "2418": {
         "id": 5385,
         "slug": "agenersa-na-rua58",
         "agendavel": false,
@@ -205530,7 +205478,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-14T15:43:20.763161-03:00"
     },
-    "2420": {
+    "2419": {
         "id": 5386,
         "slug": "carta-de-servicos168",
         "agendavel": false,
@@ -205603,7 +205551,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-14T16:02:47.235475-03:00"
     },
-    "2421": {
+    "2420": {
         "id": 5387,
         "slug": "central-de-ajuda-atendimento-ao-contribuinte141",
         "agendavel": false,
@@ -205663,7 +205611,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-28T17:28:10.871784-03:00"
     },
-    "2422": {
+    "2421": {
         "id": 5388,
         "slug": "inscricao-para-a-6a-conferencia-estadual-das-cidades-do-rio-de-janeiro154",
         "agendavel": false,
@@ -205735,7 +205683,7 @@
         "aplicativo": true,
         "updated_at": "2025-07-24T15:37:12.892721-03:00"
     },
-    "2423": {
+    "2422": {
         "id": 5389,
         "slug": "questionario-de-maturidade-em-protecao-de-dados-pessoais-lgpd167",
         "agendavel": false,
@@ -205806,7 +205754,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-29T15:22:14.956680-03:00"
     },
-    "2424": {
+    "2423": {
         "id": 5390,
         "slug": "rj-casamentos191",
         "agendavel": false,
@@ -205876,7 +205824,7 @@
         "aplicativo": true,
         "updated_at": "2025-08-29T17:58:21.059265-03:00"
     },
-    "2425": {
+    "2424": {
         "id": 5395,
         "slug": "registro-publico-de-empresas-mercantis2",
         "agendavel": false,
@@ -205983,73 +205931,7 @@
         "aplicativo": true,
         "updated_at": "2025-08-27T09:34:04.303163-03:00"
     },
-    "2426": {
-        "id": 5399,
-        "slug": "consulta-publica-do-portal-de-dados-abertos120",
-        "agendavel": false,
-        "online": true,
-        "titulo": "Consulta Pública do Portal de Dados Abertos",
-        "descricao": "<p>Dados abertos são informações públicas que o governo disponibiliza na internet de forma <strong>gratuita, transparente e sem restrições de uso</strong>.</p>\r\n\r\n<p>Eles podem ser baixados, usados e compartilhados por qualquer pessoa, sem necessidade de pedir autorização.</p>\r\n\r\n<p>A Consulta Pública do Portal de Dados Abertos visa coletar as demandas mais prioritárias para o Cidadão (com 16 anos ou mais).</p>\r\n\r\n<p>As informações serão utilizadas para a estratégia de publicação dos Dados Abertos.</p>",
-        "requisitos": "<p>Ser cadastrado na plataforma Gov.Br</p>\r\n\r\n<p><a href=\"http://acesso.gov.br\">Acesso Gov.Br</a></p>",
-        "publico": "<p>Cidadão interessado em fornecer informações para a priorização da publicação de Dados Abertos pelo Governo do Rio de Janeiro.</p>",
-        "informacoes_extra": "<p>Não há.</p>",
-        "custo": "Gratuito",
-        "tempo": 0,
-        "tempo_online": 0,
-        "tempo_total": 0,
-        "tipo_tempo": "Horas",
-        "setor_id": 210,
-        "servicosUnidade": [],
-        "total_avaliacao": 0,
-        "orgao_sigla": "SETD",
-        "orgao_slug": "setdsecretaria-de-transformacao-digital91",
-        "orgao_nome": "Secretaria de Estado de Transformação Digital",
-        "jornada": [],
-        "acesso_externo": false,
-        "url_externo": "https://www.rj.gov.br/workspace/formularios/consulta-publica-dados-abertos95",
-        "integrado_form_flow": true,
-        "publico_especifico": [
-            "Cidadão"
-        ],
-        "categoria_slug": [
-            "ciencia-tecnologia-e-inovacao"
-        ],
-        "subcategoria_slug": [
-            "informaces36"
-        ],
-        "solicitacao_simples": false,
-        "descricao_solicitacao": "",
-        "nivel": "Bronze",
-        "categoria_items": [
-            {
-                "slug": "ciencia-tecnologia-e-inovacao",
-                "titulo": "Ciência, Tecnologia e Inovação",
-                "icone": "ciencia_tec_ino"
-            }
-        ],
-        "subcategoria_items": [
-            {
-                "slug": "informaces36",
-                "titulo": "Informações",
-                "icone": "comunicacao"
-            }
-        ],
-        "servicos_relacionados": [
-            {
-                "id": 5399,
-                "slug": "consulta-publica-do-portal-de-dados-abertos120",
-                "titulo": "Consulta Pública do Portal de Dados Abertos"
-            }
-        ],
-        "created_at": "2025-09-03T16:45:43.026355-03:00",
-        "servico_digital": true,
-        "poupatempo": false,
-        "cod_poupatempo": "",
-        "natureza_servico": null,
-        "aplicativo": true,
-        "updated_at": "2025-09-10T13:13:16.005172-03:00"
-    },
-    "2427": {
+    "2425": {
         "id": 5402,
         "slug": "solicitar-selo-empresa-amiga-da-mulher101",
         "agendavel": false,
@@ -206156,7 +206038,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-01T09:56:22.189355-03:00"
     },
-    "2428": {
+    "2426": {
         "id": 5406,
         "slug": "solicitar-capacitacao-sobre-qualidade-e-melhoria-de-servicos-publicos54",
         "agendavel": false,
@@ -206244,7 +206126,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-20T15:21:10.456951-03:00"
     },
-    "2429": {
+    "2427": {
         "id": 5407,
         "slug": "solicitar-apoio-para-da-transformacao-digital-de-servicos97",
         "agendavel": false,
@@ -206332,7 +206214,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-20T15:20:46.604902-03:00"
     },
-    "2430": {
+    "2428": {
         "id": 5408,
         "slug": "solicitar-apoio-para-pesquisa-com-usuarios-de-servicos-publicos114",
         "agendavel": false,
@@ -206429,7 +206311,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-20T15:08:45.250930-03:00"
     },
-    "2431": {
+    "2429": {
         "id": 5409,
         "slug": "solicitar-revisao-de-servico-publico-em-linguagem-simples184",
         "agendavel": false,
@@ -206517,7 +206399,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-20T15:48:12.487935-03:00"
     },
-    "2432": {
+    "2430": {
         "id": 5416,
         "slug": "oficina-memoria-e-arquivos-pessoais-em-perspectiva-de-futuro118",
         "agendavel": false,
@@ -206578,7 +206460,7 @@
         "aplicativo": true,
         "updated_at": "2025-10-24T16:01:45.320892-03:00"
     },
-    "2433": {
+    "2431": {
         "id": 5420,
         "slug": "solicitacao-de-acesso-a-versao-beta-radarrj101",
         "agendavel": false,
@@ -206638,7 +206520,7 @@
         "aplicativo": true,
         "updated_at": "2025-11-18T10:13:30.131739-03:00"
     },
-    "2434": {
+    "2432": {
         "id": 5421,
         "slug": "solicitar-conversao-de-ferias-em-pecunia138",
         "agendavel": false,
@@ -206699,7 +206581,7 @@
         "aplicativo": true,
         "updated_at": "2025-11-12T15:53:03.454320-03:00"
     },
-    "2435": {
+    "2433": {
         "id": 5422,
         "slug": "workshop-ia-criativa-e-cultura-viva-o-mis-que-vira76",
         "agendavel": false,
@@ -206760,7 +206642,7 @@
         "aplicativo": true,
         "updated_at": "2025-11-14T12:02:26.274272-03:00"
     },
-    "2436": {
+    "2434": {
         "id": 5424,
         "slug": "consulta-a-plataforma-dados-rj150",
         "agendavel": false,
@@ -206820,7 +206702,7 @@
         "aplicativo": true,
         "updated_at": "2025-11-17T13:33:48.765818-03:00"
     },
-    "2437": {
+    "2435": {
         "id": 5425,
         "slug": "verificacao-183",
         "agendavel": false,
@@ -206880,7 +206762,7 @@
         "aplicativo": true,
         "updated_at": "2026-01-05T20:27:16.809285-03:00"
     },
-    "2438": {
+    "2436": {
         "id": 5426,
         "slug": "verificacao-264",
         "agendavel": true,
@@ -206940,7 +206822,7 @@
         "aplicativo": true,
         "updated_at": "2026-01-05T20:26:16.859919-03:00"
     },
-    "2439": {
+    "2437": {
         "id": 5427,
         "slug": "verificacao-3154",
         "agendavel": true,
@@ -207000,7 +206882,7 @@
         "aplicativo": true,
         "updated_at": "2026-01-05T20:26:52.562473-03:00"
     },
-    "2440": {
+    "2438": {
         "id": 5431,
         "slug": "inscricao-para-o-i-simposio-tematico-da-fmis-mis-chama-para-sambar126",
         "agendavel": false,
@@ -207061,7 +206943,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-05T17:47:05.631908-03:00"
     },
-    "2441": {
+    "2439": {
         "id": 5433,
         "slug": "consultar-informacoes-sobre-projetos-da-turisrio108",
         "agendavel": false,
@@ -207078,7 +206960,7 @@
         "tipo_tempo": "Anos",
         "setor_id": 335,
         "servicosUnidade": [],
-        "total_avaliacao": 0,
+        "total_avaliacao": 5.0,
         "orgao_sigla": "TURISRIO",
         "orgao_slug": "turisriocompanhia-de-turismo-do-estado-do-rio-de-janeiro196",
         "orgao_nome": "Companhia de Turismo do Estado do Rio de Janeiro",
@@ -207131,7 +207013,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:42:29.160676-03:00"
     },
-    "2442": {
+    "2440": {
         "id": 5434,
         "slug": "consultar-informacoes-financeiras-da-turisrio42",
         "agendavel": false,
@@ -207219,7 +207101,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:40:32.913070-03:00"
     },
-    "2443": {
+    "2441": {
         "id": 5435,
         "slug": "acessar-noticias-da-turisrio189",
         "agendavel": false,
@@ -207289,7 +207171,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:41:12.261119-03:00"
     },
-    "2444": {
+    "2442": {
         "id": 5436,
         "slug": "acessar-estrutura-organizacional-da-turisrio27",
         "agendavel": false,
@@ -207377,7 +207259,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:41:55.623159-03:00"
     },
-    "2445": {
+    "2443": {
         "id": 5437,
         "slug": "acessar-cartilha-sos-turista-turisrio77",
         "agendavel": false,
@@ -207447,7 +207329,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:39:40.009923-03:00"
     },
-    "2446": {
+    "2444": {
         "id": 5438,
         "slug": "acessar-as-atribuicoes-da-turisrio85",
         "agendavel": false,
@@ -207529,7 +207411,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:37:49.325673-03:00"
     },
-    "2447": {
+    "2445": {
         "id": 5439,
         "slug": "acessar-fale-conosco-da-turisrio155",
         "agendavel": false,
@@ -207599,7 +207481,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:37:17.218565-03:00"
     },
-    "2448": {
+    "2446": {
         "id": 5440,
         "slug": "consultar-informacoes-sobre-assessoria-de-comunicacao-da-turisrio9",
         "agendavel": false,
@@ -207669,7 +207551,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-11T16:35:34.094143-03:00"
     },
-    "2449": {
+    "2447": {
         "id": 5443,
         "slug": "consulta-a-versao-beta-radar-rj75",
         "agendavel": false,
@@ -207730,7 +207612,7 @@
         "aplicativo": true,
         "updated_at": "2025-12-22T14:08:03.176407-03:00"
     },
-    "2450": {
+    "2448": {
         "id": 5444,
         "slug": "conversar-com-o-assistente-virtual-de-ipva72",
         "agendavel": false,
@@ -207833,5 +207715,232 @@
         "natureza_servico": null,
         "aplicativo": true,
         "updated_at": "2025-12-26T12:47:42.094004-03:00"
+    },
+    "2449": {
+        "id": 5445,
+        "slug": "consulta-publica-sobre-plano-de-inteligencia-artificial-fluminense75",
+        "agendavel": false,
+        "online": true,
+        "titulo": "Consulta pública sobre o Plano de Inteligência Artificial Fluminense",
+        "descricao": "<p>A consulta pública sobre a minuta do Decreto que institui o Plano de Inteligência Artificial Fluminense (PIAF) foi aberta com o objetivo de orientar, de forma participativa, as diretrizes para o desenvolvimento e o uso responsável de inteligência artificial no Estado do Rio de Janeiro. </p>\r\n\r\n<p>A iniciativa busca ampliar a transparência, incentivar a participação social e reunir contribuições de cidadãos, especialistas, setor produtivo, academia e organizações da sociedade civil sobre prioridades, princípios, riscos, salvaguardas e aplicações estratégicas de IA no setor público.</p>\r\n\r\n<p>Por meio desta consulta, pretende-se consolidar um plano alinhado às necessidades reais da população, promovendo inovação e desenvolvimento de forma responsável e inclusiva, e melhoria de serviços públicos com o auxílio da inteligência artificial.</p>",
+        "requisitos": "<p>Ser cadastrado na plataforma Gov.br<br />\r\n<a href=\"http://acesso.gov.br\">Acesso Gov.Br</a></p>",
+        "publico": "<p>Cidadãos interessados em colaborar com a elaboração e o aprimoramento do Plano de Inteligência Artificial Fluminense (PIAF).</p>",
+        "informacoes_extra": "<p>Não há. </p>",
+        "custo": "Gratuito",
+        "tempo": 0,
+        "tempo_online": 0,
+        "tempo_total": 0,
+        "tipo_tempo": "Horas",
+        "setor_id": 210,
+        "servicosUnidade": [],
+        "total_avaliacao": 0,
+        "orgao_sigla": "SETD",
+        "orgao_slug": "setdsecretaria-de-transformacao-digital91",
+        "orgao_nome": "Secretaria de Estado de Transformação Digital",
+        "jornada": [
+            {
+                "id": 6499,
+                "ordem": 1,
+                "titulo": "Entrar no conta Gov.br",
+                "conteudo": "<p>Primeiro, acesse a sua conta Gov.br</p>",
+                "tipo_atendimento": "Web",
+                "conteudo_web": "<p>Clique no &iacute;cone &quot;entrar&quot; no canto superior direito da tela, e fa&ccedil;a o log-in da sua conta Gov.br</p>",
+                "conteudo_presencial": null
+            },
+            {
+                "id": 6500,
+                "ordem": 2,
+                "titulo": "Realizar a consulta ao Plano de Inteligência Artificial Fluminense (PIAF)",
+                "conteudo": "<p>Responda as perguntas solicitadas</p>",
+                "tipo_atendimento": "Web",
+                "conteudo_web": "<p>Preencha o formul&aacute;rio da Consulta P&uacute;blica do Plano de Intelig&ecirc;ncia Artificial Fluminense (PIAF).</p>",
+                "conteudo_presencial": null
+            },
+            {
+                "id": 6501,
+                "ordem": 3,
+                "titulo": "Validar a consulta",
+                "conteudo": "<p>Insira o Token enviado ao seu email para validar a consulta<br />\r\n </p>",
+                "tipo_atendimento": "Web",
+                "conteudo_web": "<p>Ao finalizar o envio do formul&aacute;rio, informe o token de valida&ccedil;&atilde;o encaminhado para o e-mail cadastrado na sua conta Gov.br, confirmando a solicita&ccedil;&atilde;o.</p>",
+                "conteudo_presencial": null
+            }
+        ],
+        "acesso_externo": false,
+        "url_externo": "https://www.rj.gov.br/workspace/formularios/consulta-publica-sobre-plano-de-inteligencia-artificial-fluminense160",
+        "integrado_form_flow": true,
+        "publico_especifico": [
+            "Cidadão",
+            "Servidor",
+            "Empresa",
+            "Gestão Pública"
+        ],
+        "categoria_slug": [
+            "ciencia-tecnologia-e-inovacao"
+        ],
+        "subcategoria_slug": [
+            "informaces36"
+        ],
+        "solicitacao_simples": false,
+        "descricao_solicitacao": "",
+        "nivel": "Bronze",
+        "categoria_items": [
+            {
+                "slug": "ciencia-tecnologia-e-inovacao",
+                "titulo": "Ciência, Tecnologia e Inovação",
+                "icone": "ciencia_tec_ino"
+            }
+        ],
+        "subcategoria_items": [
+            {
+                "slug": "informaces36",
+                "titulo": "Informações",
+                "icone": "comunicacao"
+            }
+        ],
+        "servicos_relacionados": [],
+        "created_at": "2026-01-09T15:57:40.750222-03:00",
+        "servico_digital": true,
+        "poupatempo": false,
+        "cod_poupatempo": "",
+        "natureza_servico": null,
+        "aplicativo": true,
+        "updated_at": "2026-01-14T13:58:27.310520-03:00"
+    },
+    "2450": {
+        "id": 5446,
+        "slug": "consultar-calendario-ipva87",
+        "agendavel": false,
+        "online": false,
+        "titulo": "Consultar Calendário IPVA",
+        "descricao": "<p>Permite consultar o calendário de vencimentos do IPVA para pagamento integral ou em três parcelas de veículos automotores terrestres usados.</p>\r\n\r\n<p> </p>\r\n\r\n<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:550px\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td colspan=\"4\" style=\"text-align:center\">Calendário de vencimentos do IPVA/2026 para veículos automotores terrestres usados</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">Final da Placa</td>\r\n\t\t\t<td style=\"text-align:center\">1° parcela ou cota única</td>\r\n\t\t\t<td style=\"text-align:center\">2° Parcela</td>\r\n\t\t\t<td style=\"text-align:center\">3° Parcela</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">0</td>\r\n\t\t\t<td>21/jan</td>\r\n\t\t\t<td>20/fev</td>\r\n\t\t\t<td>23/mar</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">1</td>\r\n\t\t\t<td>22/jan</td>\r\n\t\t\t<td>23/fev</td>\r\n\t\t\t<td>26/mar</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">2</td>\r\n\t\t\t<td>23/jan</td>\r\n\t\t\t<td>24/fev</td>\r\n\t\t\t<td>27/mar</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">3</td>\r\n\t\t\t<td>26/jan</td>\r\n\t\t\t<td>25/fev</td>\r\n\t\t\t<td>30/mar</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">4</td>\r\n\t\t\t<td>27/jan</td>\r\n\t\t\t<td>26/fev</td>\r\n\t\t\t<td>31/mar</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">5</td>\r\n\t\t\t<td>28/jan</td>\r\n\t\t\t<td>27/fev</td>\r\n\t\t\t<td>01/abr</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">6</td>\r\n\t\t\t<td>29/jan</td>\r\n\t\t\t<td>02/mar</td>\r\n\t\t\t<td>06/abr</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">7</td>\r\n\t\t\t<td>30/jan</td>\r\n\t\t\t<td>03/mar</td>\r\n\t\t\t<td>07/abr</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">8</td>\r\n\t\t\t<td>02/fev</td>\r\n\t\t\t<td>04/mar</td>\r\n\t\t\t<td>08/abr</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"text-align:center\">9</td>\r\n\t\t\t<td>03/fev</td>\r\n\t\t\t<td>06/mar</td>\r\n\t\t\t<td>09/abr</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p> </p>",
+        "requisitos": "<p>Nenhuma.</p>",
+        "publico": "<p>Qualquer pessoa.</p>",
+        "informacoes_extra": "<p>Em caso de dúvida específica sobre a situação do seu veículo, envie um e-mail para ipva.atendimento@fazenda.rj.gov.br, informando no assunto o número do RENAVAM sem pontos ou traços. Não envie anexos, a menos que sejam solicitados.</p>",
+        "custo": "Gratuito",
+        "tempo": 0,
+        "tempo_online": 0,
+        "tempo_total": 0,
+        "tipo_tempo": "Anos",
+        "setor_id": 71,
+        "servicosUnidade": [],
+        "total_avaliacao": 5.0,
+        "orgao_sigla": "SEFAZ",
+        "orgao_slug": "secretaria-de-estado-de-fazenda35",
+        "orgao_nome": "Secretaria de Estado de Fazenda",
+        "jornada": [
+            {
+                "id": 6495,
+                "ordem": 1,
+                "titulo": "Consultar Calendário - IPVA",
+                "conteudo": "<p>Para consultar clique em “Calendário de vencimentos do IPVA/2026 para veículos automotores terrestres usados”.</p>",
+                "tipo_atendimento": "Web",
+                "conteudo_web": "<p><a href=\"https://portal.fazenda.rj.gov.br/ipva/\">https://portal.fazenda.rj.gov.br/ipva/</a></p>",
+                "conteudo_presencial": null
+            }
+        ],
+        "acesso_externo": true,
+        "url_externo": "https://portal.fazenda.rj.gov.br/ipva/",
+        "integrado_form_flow": false,
+        "publico_especifico": [
+            "Cidadão",
+            "Servidor",
+            "Empresa",
+            "Gestão Pública"
+        ],
+        "categoria_slug": [
+            "cidadania-e-direitos"
+        ],
+        "subcategoria_slug": [
+            "informaces27"
+        ],
+        "solicitacao_simples": false,
+        "descricao_solicitacao": "",
+        "nivel": "Bronze",
+        "categoria_items": [
+            {
+                "slug": "cidadania-e-direitos",
+                "titulo": "Cidadania e Direitos",
+                "icone": "cidadania"
+            }
+        ],
+        "subcategoria_items": [
+            {
+                "slug": "informaces27",
+                "titulo": "Informações",
+                "icone": "comunicacao"
+            }
+        ],
+        "servicos_relacionados": [],
+        "created_at": "2026-01-12T14:39:03.711493-03:00",
+        "servico_digital": false,
+        "poupatempo": false,
+        "cod_poupatempo": "",
+        "natureza_servico": null,
+        "aplicativo": true,
+        "updated_at": "2026-01-12T15:22:21.855923-03:00"
+    },
+    "2451": {
+        "id": 5447,
+        "slug": "consultar-o-portal-de-dados-abertos-rj73",
+        "agendavel": false,
+        "online": false,
+        "titulo": "Consultar o Portal de Dados Abertos RJ",
+        "descricao": "<p>Acessa o Portal de Dados Abertos do Estado do Rio de Janeiro, através do link: <span style=\"font-size:12pt\"><a href=\"https://www.rj.gov.br/dadosabertos\" style=\"color:#467886; text-decoration:underline\">https://www.rj.gov.br/dadosabertos</a></span></p>",
+        "requisitos": "<p>Não há.</p>",
+        "publico": "<p>Qualquer pessoa.</p>\r\n\r\n<p> </p>",
+        "informacoes_extra": "",
+        "custo": "Gratuito",
+        "tempo": null,
+        "tempo_online": null,
+        "tempo_total": 0,
+        "tipo_tempo": "Horas",
+        "setor_id": 225,
+        "servicosUnidade": [],
+        "total_avaliacao": 0,
+        "orgao_sigla": "SETD",
+        "orgao_slug": "setdsecretaria-de-transformacao-digital91",
+        "orgao_nome": "Secretaria de Estado de Transformação Digital",
+        "jornada": [],
+        "acesso_externo": true,
+        "url_externo": "https://www.rj.gov.br/dadosabertos",
+        "integrado_form_flow": false,
+        "publico_especifico": [
+            "Cidadão",
+            "Servidor",
+            "Empresa",
+            "Gestão Pública"
+        ],
+        "categoria_slug": [
+            "dados-boletins-e-informacoes"
+        ],
+        "subcategoria_slug": [
+            "dados-abertos"
+        ],
+        "solicitacao_simples": false,
+        "descricao_solicitacao": "",
+        "nivel": "Bronze",
+        "categoria_items": [
+            {
+                "slug": "dados-boletins-e-informacoes",
+                "titulo": "Dados, Boletins e Informações",
+                "icone": "dados"
+            }
+        ],
+        "subcategoria_items": [
+            {
+                "slug": "dados-abertos",
+                "titulo": "Dados abertos",
+                "icone": "Dados abertos"
+            }
+        ],
+        "servicos_relacionados": [],
+        "created_at": "2026-01-14T14:14:46.183521-03:00",
+        "servico_digital": true,
+        "poupatempo": false,
+        "cod_poupatempo": "",
+        "natureza_servico": null,
+        "aplicativo": true,
+        "updated_at": "2026-01-14T14:20:36.705486-03:00"
     }
 }

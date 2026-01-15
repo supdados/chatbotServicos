@@ -11,6 +11,9 @@ import faiss
 import time
 import datetime
 import pymysql
+import smtplib
+from email.message import EmailMessage
+from criarEmbeddingServicos import novo
 
 load_dotenv()
 
@@ -32,7 +35,7 @@ def pesquisar(embedded, embedding, newdict, index):
     
     return [D[0], I[0]]
 
-def retirarServicos():
+def retirarServicos(verbose=False):
     url_base = os.getenv("SERVICOS_URL")
     api_key = os.getenv("SERVICOS_KEY")
     
@@ -60,7 +63,8 @@ def retirarServicos():
         agora = 1
         ident = 0
         while agora < totalpag + 1:
-            print(agora, totalpag, end="\r")
+            if verbose:
+                print(agora, totalpag, end="\r")
             for servico in servicos.get("results"):
                 servicosGuardar[ident] = {}
                 atual = servicosGuardar[ident]
@@ -217,12 +221,12 @@ def fazerPergunta(pergunta,servicos, index, valor, idUser, idConversa):
         return texto, ids, valor
 
 
-def salvarServicos():
-    servicos = retirarServicos()
+def salvarServicos(novo):
+    servicos = novo
     with open("servicosApi.json", "w", encoding='UTF-8') as fp:
         json.dump(servicos, fp, indent=4, ensure_ascii=False)
 
-def main():
+def teste():
     fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
     servicos = json.load(fp)
     fp.close()
@@ -235,3 +239,43 @@ def main():
         print(fim-inicio)
         print(resp)
         print(ids, end="\n\n")
+
+def mandarEmail():
+    Email = os.getenv("EMAILSMTP")
+    para = os.getenv("EMAILPARA")
+    password = os.getenv("PSSWDSMTP")
+    host = os.getenv("HOSTSMTP")
+    port = os.getenv("PORTSMTP")
+   
+    print(Email, password, host, port)
+
+    msg = EmailMessage()
+    msg['Subject'] = "Arquivo com os serviços do Portal rj.gov"
+    msg['From'] = Email
+    msg['to'] = para
+    msg.set_content("Segue json com a relação de serviços.")
+
+    nomeArq = "ServicosApi.json"
+    with open(nomeArq, 'rb') as fp:
+        dados = fp.read()
+        
+    msg.add_attachment(dados, maintype = 'application', subtype='json', filename=nomeArq)
+
+    with smtplib.SMTP(host, port) as emailer: 
+        emailer.starttls()
+        emailer.login(Email, password)
+        emailer.send_message(msg)
+    
+    print("Enviado")
+
+def atualizarJson():
+    novos = retirarServicos()
+    with open("servicosApi.json", 'r', encoding='utf-8') as fp:
+        velhos = json.load(fp)
+    nom1 = json.loads(json.dumps(velhos))
+    nom2 = json.loads(json.dumps(novos))
+    if nom1 != nom2:
+        print(datetime.datetime.today(), 'Salvei')
+        salvarServicos(novos)
+        mandarEmail()
+        novo()

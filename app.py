@@ -28,7 +28,7 @@ BASE = os.getenv("DBBASE")
 fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
 SERVICOS = json.load(fp)
 fp.close()
-INDEX = faiss.read_index('testeApiServ.index')
+INDEX = faiss.read_index('servicosApi.index')
 
 def gerar_id_conversa():
     """Gera um ID único para a conversa"""
@@ -102,13 +102,11 @@ def create_app():
             session['CHAT'] = str(uuid.uuid1())
             session['DATA'] = str(datetime.today().date())
             session['ordem'] = 0
-        print(session)
         return render_template('chat.html')
     @app.route('/escrever', methods=['POST'])
     def escrever():
         data = request.json
         html = data.get("html")
-        print(html)
         cur = get_db()
         cur.execute("INSERT INTO historico (idUsuario, idConversa, ordemMensagem, html, dono) values (%s,%s,%s,%s,%s)", (session['USER'], session['CHAT'], session['ordem'], html, 1))
         cur.connection.commit()
@@ -159,7 +157,6 @@ def create_app():
                 conversa["interacoes"].append(nova_interacao)
                 salvar_conversa(conversa_id, conversa)
                 
-                print("cheguei ate aqui")
                 return jsonify({
                     'mensagem': "Encontrei os seguintes serviços que podem te ajudar:",
                     'texto':texto,
@@ -168,7 +165,6 @@ def create_app():
                     'ordem':session['ordem']
                 })
             else:
-                print("cheguei ate aqui 2")
                 return jsonify({
                     'texto':texto,
                     'servicos_encontrados': [],
