@@ -255,7 +255,7 @@ def mandarEmail():
     msg['to'] = para
     msg.set_content("Segue json com a relação de serviços.")
 
-    nomeArq = "ServicosApi.json"
+    nomeArq = "servicosApi.json"
     with open(nomeArq, 'rb') as fp:
         dados = fp.read()
         
