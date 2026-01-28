@@ -268,15 +268,18 @@ def mandarEmail():
     
 
 def atualizarJson():
-    novos = retirarServicos()
-    with open("servicosApi.json", 'r', encoding='utf-8') as fp:
-        velhos = json.load(fp)
-    nom1 = json.loads(json.dumps(velhos))
-    nom2 = json.loads(json.dumps(novos))
-    if nom1 != nom2:
-        salvarServicos(novos)
-        mandarEmail()
-        novo()
-        print(datetime.datetime.today(), 'Salvei')
-    else:
-        print(datetime.datetime.today(), 'Não salvei')
+    try:
+        novos = retirarServicos()
+        with open("servicosApi.json", 'r', encoding='utf-8') as fp:
+            velhos = json.load(fp)
+        nom1 = json.loads(json.dumps(velhos))
+        nom2 = json.loads(json.dumps(novos))
+        if nom1 != nom2 or not os.path.isfile("servicosApi.index"):
+            salvarServicos(novos)
+            mandarEmail()
+            novo()
+            print(datetime.datetime.today(), 'Salvei')
+        else:
+            print(datetime.datetime.today(), 'Não salvei')
+    except Exception as e:
+        print(datetime.datetime.today(), "tive problemas:", e)

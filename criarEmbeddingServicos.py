@@ -36,7 +36,8 @@ def antigo():
     faiss.write_index(index, "chat3/teste.index")
 
 def novo():
-    os.remove("servicosApi.index")
+    if os.path.isfile("servicosApi.index"):
+        os.remove("servicosApi.index")
     fp = open("servicosApi.json", 'r', encoding="utf-8")
     servicos = json.load(fp)
     fp.close()
