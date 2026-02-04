@@ -3,6 +3,7 @@ import json
 import faiss
 import numpy as np
 import os
+import tqdm
 
 def antigo():
     doc = open("chat3/servicos-com-embeddings.json", "rb")

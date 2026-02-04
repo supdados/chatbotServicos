@@ -88,8 +88,6 @@ def retirarServicos(verbose=False):
         print(f"Erro na requisição: {e}")
         return None
 
-
-
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 buscarNaBase_funcao = {
     "name":"pesquisar",
@@ -220,13 +218,113 @@ def fazerPergunta(pergunta,servicos, index, valor, idUser, idConversa):
         print(chat.get_history(True))
         return texto, ids, valor
 
+def importarPerguntasCsv():
+    import pandas as pd
+
+    # Lê o arquivo CSV
+    # O separador padrão é a vírgula (,), mas no Brasil é comum usarem ponto e vírgula (;)
+    try:
+        df = pd.read_csv('resposta_chatbot_servicos_pontuado_06.01.2026.xlsx - Dados.csv', sep=',', encoding='utf-8')
+        return df
+    except UnicodeDecodeError:
+        df = pd.read_csv('resposta_chatbot_servicos_pontuado_06.01.2026.xlsx - Dados.csv', sep=';', encoding='latin-1')
+        return df
+
+def perguntaSimplificada(pergunta):
+    fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
+    servicos = json.load(fp)
+    fp.close()
+    index = faiss.read_index('servicosApi.index')
+    servicosJaUsados = []
+    response = chat.send_message(f""" Decida se a pergunta "{pergunta}" tem sua resposta nos servicos ja carregados na conversa, disponiveis abaixo.
+                                      serviços retornados: {servicosJaUsados}
+
+                                      caso negativo decida se a pergunta faz referencia a alguma das competencias que a esfera Estadual de governo. Se sim pesquise,
+                                      Caso contrario não pesquise.
+                                      Retorne 1 frase explicativa da escolha e se necessario a chamada da função.""")
+    if len(response.candidates[0].content.parts) > 1:
+        a, b =pesquisar(response.candidates[0].content.parts[1].function_call.args['pergunta'], "bge-m3:latest", servicos, index=index)
+        servicosEscolhidos = []
+        for i in b:
+            escolhido = servicos[str(i)].copy() 
+            escolhido['id'] = str(i)
+            escolhido.pop("embedding")
+            servicosEscolhidos.append(escolhido)
+        response = chat.send_message(f"""
+                                     Com base nesses resultados da função pergunta: {servicosEscolhidos}, responda a pergunta: {pergunta}.
+                                     Sua resposta deve seguir as seguintes regras:
+                                        Se nenhum serviço se encaixa na demanda do usuário, não retorne nenhum deles e explique que não encontrou nenhum que se encaixe na demanda, além de direciona-lo a entrar em contato com o OuveRJ.
+                                        Se tiver serviços compativeis com a demanda do usuário, caso seja a primeria vez expressando uma demanda e que tenha serviços relevantes, retorne apenas o serviço que mais se encaixa a ela.
+                                        Caso não seja a primeira demanda com retorno relevante, retorne até 3 serviços.
+                                        Em nenhum caso deve-se retornar mais de 3 serviços.
+                                        A resposta sera em duas partes. Primeiro um texto explicando a escolha dos serviços em HTML. Segundo a ULTIMA LINHA da resposta deve conter: "-ids: [ARRAY DOS SERVIÇOS UTILIZADOS NA RESPOSTA]", seguindo o exemplo abaixo.
+                                        Não retorne os Ids dos serviços no corpo da mensgem, apenas o coloque no lugar indicado!
+                                        Nessa resposta você esta probido de utilizar a função de busca.
+                                        Não retorne os ids no corpo do html, apenas os coloque na parte reservada a eles da mensagem.
+                                        Exemplo:
+                                            "
+                                            <div>
+                                            <p> Este e um modelo para a resposta.</p>
+                                            <p> Multiplas linhas devem ser separados por diferentes tags p</p>
+                                            <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
+                                            <p> NÃO RESPONDA NADA SEM SER NA FORMATAÇÃO PASSADA</p>
+                                            </div>
+
+                                            -ids:[11, 3, 44]
+                                            "
+                                     """) 
+        texto = response.text
+        frases = texto.split('\n')
+        ids = ''
+        array = []
+        for i in frases:
+            if "-id" in i:
+                ids = i
+            if "<" in i or len(texto) == 1:
+                array.append(i)
+        texto = "\n".join(array)
+        ids = ids.split(":")[1].strip('\n') if ids != '' else []
+        ids_nome = []
+        if '[' in ids and ']' in ids and "[]" not in ids:
+            ids = ids[1:-1] 
+            ids = ids.split(", ")
+            for j in ids:
+                ids_nome.append(j + " - " + servicos[j]['titulo'])
+        else:
+            ids = []
+        return texto, ids_nome, 
+    else:
+        response = chat.send_message(f"""Responda a frase "{pergunta}" sem utilizar a função de pesquisa.
+                                     Se a frase não for um pedido ou algo proibido pelo prompt responda cordialmente seguindo o modelo.
+                                     Se a frase for uma pergunta e não for competencia da esfera Estadual, avise ao usuário.
+                                     Se a frase não tiver haver com um possível serviço ou não for algo relacionado a algum serviço se recuse a responder cordialmente.
+                                     Quando falando sobre serviços ja mencionados, não retorne o id deles.
+                                     lembre de basear a resposta nas mensagens trocadas durante essa conversa sem transparecer para o usuário quando necessário.
+                                     Nessa resposta você esta probido de utilizar a função de busca.
+                                     seguindo o modelo: 
+                                     "
+                                        <div>
+                                        <p> Este e um modelo para a resposta.</p>
+                                        <p> Multiplas linhas devem ser separados por diferentes tags p</p>
+                                        <p> NÃO RESPONDA NADA SEM SER NA FORMATAÇÃO PASSADA</p>
+                                        <p> para dar enfaze em certas palavras usar <span style="{'{'+'font-weight:bold'+'}'}">negrito</span></p>
+                                        </div>
+                                     " """)
+        texto = response.text.split("\n")
+        array = []
+        for i in texto:
+            if "<" in i or len(texto) == 1:
+                array.append(i)
+        texto = "\n".join(array)
+        ids = []
+        return texto, ids
 
 def salvarServicos(novo):
     servicos = novo
     with open("servicosApi.json", "w", encoding='UTF-8') as fp:
         json.dump(servicos, fp, indent=4, ensure_ascii=False)
 
-def teste():
+def teste(verbose = False):
     fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
     servicos = json.load(fp)
     fp.close()
@@ -236,9 +334,10 @@ def teste():
         inicio = time.time()
         resp, ids = fazerPergunta(pergun, servicos)
         fim = time.time()
-        print(fim-inicio)
-        print(resp)
-        print(ids, end="\n\n")
+        if (verbose):
+            print(resp)
+            print(ids, end="\n\n")
+        return resp
 
 def mandarEmail():
     Email = os.getenv("EMAILSMTP")
