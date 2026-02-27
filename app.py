@@ -2,14 +2,14 @@ import json
 import faiss
 import signal
 import sys
-import time
 import uuid
 from datetime import datetime
 from pathlib import Path
-from novoMetodo import fazerPergunta
+from novoMetodo import fazerPergunta, fazerPerguntaIbm, pegarToken
 import os
 from dotenv import load_dotenv
 import pymysql
+import markdown
 
 from flask import Flask, request, jsonify, render_template, session, Response, g
 
@@ -25,10 +25,15 @@ PASS = os.getenv("DBPASS")
 ADDR = os.getenv("DBIPV4")
 BASE = os.getenv("DBBASE")
 
+IBMID = os.getenv("IBMID")
+IBMURL = os.getenv("IBMURL")
+IBMAPI = os.getenv("IBMAPI")
+
 fp = open("servicosApiEmbedding.json", 'r', encoding="utf-8")
 SERVICOS = json.load(fp)
 fp.close()
 INDEX = faiss.read_index('servicosApi.index')
+
 
 def gerar_id_conversa():
     """Gera um ID único para a conversa"""
@@ -75,10 +80,6 @@ Se for APENAS uma saudação: responda de forma educada e explique que este é u
 Se NÃO for apenas uma saudação (contiver qualquer outro conteúdo): responda exatamente '[CONTINUAR]'.
 
 """
-def agente_resposta(consulta) -> str:
-    resp, ids, session['ordem'] = fazerPergunta(consulta, SERVICOS, INDEX, session['ordem'], session['USER'], session['CHAT'] ) 
-    return resp, ids
-
 def signal_handler(sig, frame):
     print('\nEncerrando o programa graciosamente...')
     sys.exit(0)
@@ -95,14 +96,20 @@ def create_app():
             g.db = cur
         return g.db
 
+    @app.route("/chat2")
+    def chat2():
+        return render_template("chat2.html")
+
     @app.route('/')
     def home():
-        if "UUID" not in session:
+        if "CHAT" not in session:
             session['USER'] = str(uuid.uuid1())
             session['CHAT'] = str(uuid.uuid1())
             session['DATA'] = str(datetime.today().date())
+            session['token'] = pegarToken(IBMAPI)
             session['ordem'] = 0
         return render_template('chat.html')
+    
     @app.route('/escrever', methods=['POST'])
     def escrever():
         data = request.json
@@ -138,24 +145,24 @@ def create_app():
                 "tipo": "consulta"
             }
             
-            texto, ids = agente_resposta(consulta) 
-            print(texto, ids, session['ordem'])
-            if ids != []:
+            texto, referencias, thread = fazerPerguntaIbm(session['token'],IBMURL,  consulta, session['thread'] if 'thread' in session else '') 
+            texto = markdown.markdown(texto)
+            if 'thread' not in session:
+                session['thread'] = thread
+            if referencias != []:
                 servicos_encontrados = []
-                for servi in ids:
-                    aux = servi.lstrip()
+                for servi in referencias:
                     servico_dict = {
-                        "titulo": SERVICOS[aux]["titulo"],
-                        "urlServ": "https://www.rj.gov.br/servico/" + SERVICOS[aux]["slug"],
-                        "descricao": SERVICOS[aux]["descricao"],
-                        "orgao": SERVICOS[aux]["orgao_sigla"],
-                        "url": SERVICOS[aux]["url_externo"],
+                        "titulo": servi["title"],
+                        "urlServ": "https://www.rj.gov.br/servico/" + servi["url"],
+                        "descricao": servi["body"],
                     }
                     servicos_encontrados.append(servico_dict)
                 
                 nova_interacao["servicos_encontrados"] = servicos_encontrados
                 conversa["interacoes"].append(nova_interacao)
                 salvar_conversa(conversa_id, conversa)
+
                 
                 return jsonify({
                     'mensagem': "Encontrei os seguintes serviços que podem te ajudar:",

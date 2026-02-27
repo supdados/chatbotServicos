@@ -146,8 +146,7 @@ async function mostrarResposta(data) {
       htmlContent += `
         <div class="servico-item servico-principal">
           <h3>${primeiroServico['titulo']}</h3>
-          <p class="orgao-text">Órgão: ${primeiroServico['descricao']}</p>
-          <p class="descricao-text">${primeiroServico['orgao']}</p>
+          <p class="descricao-text">${primeiroServico['descricao']}</p>
           <button class="botao-acesso" onclick="registrarCliqueServico('${primeiroServico['titulo']}'); window.open('${primeiroServico['urlServ']}', '_blank', 'noopener,noreferrer')">
             Acessar informações do serviço
           </button>
@@ -169,7 +168,6 @@ async function mostrarResposta(data) {
           htmlContent += `
             <div class="servico-item servico-secundario">
               <h3>${servicoRelacionado['titulo']}</h3>
-              <p class="orgao-text">Órgão: ${servicoRelacionado['orgao']}</p>
               <p class="descricao-text">${servicoRelacionado['descricao']}</p>
               <button class="botao-acesso botao-secundario" onclick="registrarCliqueServico('${servicoRelacionado['titulo']}'); window.open('${servicoRelacionado['urlServ']}', '_blank', 'noopener,noreferrer')">
                 Acessar informações do serviço

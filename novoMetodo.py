@@ -12,6 +12,7 @@ import time
 import datetime
 import pymysql
 import smtplib
+import elasticsearch
 from email.message import EmailMessage
 from criarEmbeddingServicos import novo
 
@@ -114,7 +115,7 @@ config = types.GenerateContentConfig(tools=[ferramentas], system_instruction=f""
 """)
 chat = client.chats.create(model="gemini-2.5-flash-lite", config=config)
 
-def fazerPergunta(pergunta,servicos, index, valor, idUser, idConversa):
+def fazerPergunta(pergunta,servicos, index, valor, idUser, idConversa, token):
     try:
         cur.execute("SELECT arrayServicos FROM servicosRetornados WHERE idConversa = %s AND idUsuario = %s", [idConversa, idUser])
         carregando = cur.fetchone()
@@ -364,7 +365,6 @@ def mandarEmail():
         emailer.starttls()
         emailer.login(Email, password)
         emailer.send_message(msg)
-    
 
 def atualizarJson():
     try:
@@ -382,3 +382,66 @@ def atualizarJson():
             print(datetime.datetime.today(), 'Não salvei')
     except Exception as e:
         print(datetime.datetime.today(), "tive problemas:", e)
+
+def conectarElasticSearch():
+    from elasticsearch import Elasticsearch
+    # 1. Defina os dados da sua instância
+    ELASTIC_PASSWORD = "MOCli9c2ktkXNI9tS0yUIOsrsuxEBBqV"
+    HOST = "https://98a689dd-5b0d-49bf-a46c-c1a46954b986.c38qvnlz04atmdpus310.private.databases.appdomain.cloud:31208"
+
+    # 2. Configuração do cliente
+    # Se você baixou o certificado da IBM (ca.crt), aponte para o caminho dele
+    es = Elasticsearch(
+        "https://98a689dd-5b0d-49bf-a46c-c1a46954b986.c38qvnlz04atmdpus310.private.databases.appdomain.cloud:31208",
+        ca_certs="./ac848ea9-9205-43ad-a6c8-84f8fea13c50.crt", # Caminho para o certificado baixado da IBM
+        basic_auth=("ibm_cloud_200b8f23_3b60_46cc_9f0f_08e69a6326a2", "MOCli9c2ktkXNI9tS0yUIOsrsuxEBBqV")
+    )
+
+    # 3. Teste a conexão
+    info = es.info()
+    print("Conectado com sucesso!")
+    print(f"Versão do Cluster: {info['version']['number']}")
+    
+def testeChatbot():
+    r = requests.post("https://iam.cloud.ibm.com/identity/token", data="grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=r9BmWOgsDGVh0CBIlSyhhCS0ZcOBgr076GS4IOB59osC", headers={'accept': 'application/json', 'content-type':'application/x-www-form-urlencoded'})
+    token = json.loads(r.content)['access_token']
+    print(token)
+    chat = True
+    thread = ""
+    while chat == True:
+        mensagem = input("pergunte: ")
+        data = {"message":{"role":"user", "content":mensagem}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9"} if thread == '' else {"message":{"role":"user", "content":mensagem}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9",'thread_id':thread}
+        r = requests.post("https://api.br-sao.watson-orchestrate.cloud.ibm.com/instances/5286e9ef-3e3a-4961-b202-35375894503f/v1/orchestrate/runs?stream=true&stream_timeout=120000&multiple_content=true", headers={"Authorization": f"Bearer {token}", "IAM-API_KEY":"r9BmWOgsDGVh0CBIlSyhhCS0ZcOBgr076GS4IOB59osC", "accept":"application/json", "Content-Type":"application/json"}, data=json.dumps(data))
+        jsons = r.content.decode("utf-8").strip()
+        total = ''
+        for linhas in jsons.split('\n'):
+            print(linhas)
+            convertido = json.loads(linhas)
+            if thread == '' and "thread_id" in convertido['data']:
+                thread = convertido['data']['thread_id']
+            if convertido['event'] == 'message.created':
+                total+=convertido['data']['message']['content'][0]['text']
+
+
+def pegarToken(api):
+    r = requests.post("https://iam.cloud.ibm.com/identity/token", data=f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={api}", headers={'accept': 'application/json', 'content-type':'application/x-www-form-urlencoded'})
+    token = json.loads(r.content)['access_token']
+    return token
+
+
+def fazerPerguntaIbm(token,url, pergunta, thread_id = ""):
+        data = {"message":{"role":"user", "content":pergunta}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9"} if thread_id == '' else {"message":{"role":"user", "content":pergunta}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9",'thread_id':thread_id}
+        r = requests.post(url, headers={"Authorization": f"Bearer {token}", "IAM-API_KEY":"r9BmWOgsDGVh0CBIlSyhhCS0ZcOBgr076GS4IOB59osC", "accept":"application/json", "Content-Type":"application/json"}, data=json.dumps(data))
+        jsons = r.content.decode("utf-8").strip()
+        total = ''
+        referencias = []
+        thread = ''
+        for linhas in jsons.split('\n'):
+            convertido = json.loads(linhas)
+            if thread == '' and "thread_id" in convertido['data']:
+                thread = convertido['data']['thread_id']
+            if convertido['event'] == 'message.created':
+                total = convertido['data']['message']['content'][0]['text']
+                referencias = convertido['data']['message']['content'][0]['citations'] if 'citations' in convertido['data']['message']['content'][0] else []
+            
+        return total, referencias, thread
