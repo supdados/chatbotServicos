@@ -12,7 +12,6 @@ import time
 import datetime
 import pymysql
 import smtplib
-import elasticsearch
 from email.message import EmailMessage
 from criarEmbeddingServicos import novo
 
