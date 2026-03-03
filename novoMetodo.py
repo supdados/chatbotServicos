@@ -424,6 +424,7 @@ def testeChatbot():
 
 def pegarToken(api):
     r = requests.post("https://iam.cloud.ibm.com/identity/token", data=f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={api}", headers={'accept': 'application/json', 'content-type':'application/x-www-form-urlencoded'})
+    print(r.content)
     token = json.loads(r.content)['access_token']
     return token
 
@@ -434,6 +435,7 @@ def fazerPerguntaIbm(token,url, pergunta, thread_id = ""):
         jsons = r.content.decode("utf-8").strip()
         total = ''
         referencias = []
+        ordenado = []
         thread = ''
         for linhas in jsons.split('\n'):
             convertido = json.loads(linhas)
@@ -442,5 +444,12 @@ def fazerPerguntaIbm(token,url, pergunta, thread_id = ""):
             if convertido['event'] == 'message.created':
                 total = convertido['data']['message']['content'][0]['text']
                 referencias = convertido['data']['message']['content'][0]['citations'] if 'citations' in convertido['data']['message']['content'][0] else []
-            
-        return total, referencias, thread
+                for j in referencias:
+                    agora = j
+                    agora['body'] = agora['body'].split("|")[0]
+                    if j['title'] in total:
+                        ordenado.insert(0, agora)
+                    else:
+                        ordenado.append(agora)
+
+        return total, ordenado, thread
