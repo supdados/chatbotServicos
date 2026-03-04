@@ -102,12 +102,11 @@ def create_app():
 
     @app.route('/')
     def home():
-        if "CHAT" not in session:
-            session['USER'] = str(uuid.uuid1())
-            session['CHAT'] = str(uuid.uuid1())
-            session['DATA'] = str(datetime.today().date())
-            session['token'] = pegarToken(IBMAPI)
-            session['ordem'] = 0
+        session['USER'] = str(uuid.uuid1())
+        session['CHAT'] = str(uuid.uuid1())
+        session['DATA'] = str(datetime.today().date())
+        session['token'] = pegarToken(IBMAPI)
+        session['ordem'] = 0
         return render_template('chat.html')
     
     @app.route('/escrever', methods=['POST'])
@@ -145,7 +144,7 @@ def create_app():
                 "tipo": "consulta"
             }
             
-            texto, referencias, thread = fazerPerguntaIbm(session['token'],IBMURL,  consulta, session['thread'] if 'thread' in session else '') 
+            texto, referencias, thread = fazerPerguntaIbm(session['token'],IBMURL,  consulta, session['thread'] if 'thread' in session else '', IBMID) 
             texto = markdown.markdown(texto)
             if 'thread' not in session:
                 session['thread'] = thread
