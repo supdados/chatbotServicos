@@ -144,7 +144,7 @@ def create_app():
                 "tipo": "consulta"
             }
             
-            texto, referencias, thread = fazerPerguntaIbm(session['token'],IBMURL,  consulta, session['thread'] if 'thread' in session else '') 
+            texto, referencias, thread = fazerPerguntaIbm(session['token'],IBMURL,  consulta, session['thread'] if 'thread' in session else '', IBMID) 
             texto = markdown.markdown(texto)
             if 'thread' not in session:
                 session['thread'] = thread

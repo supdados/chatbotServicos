@@ -429,8 +429,8 @@ def pegarToken(api):
     return token
 
 
-def fazerPerguntaIbm(token,url, pergunta, thread_id = ""):
-        data = {"message":{"role":"user", "content":pergunta}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9"} if thread_id == '' else {"message":{"role":"user", "content":pergunta}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9",'thread_id':thread_id}
+def fazerPerguntaIbm(token,url, pergunta, thread_id = "", agentId = ""):
+        data = {"message":{"role":"user", "content":pergunta}, "agent_id":agentId} if thread_id == '' else {"message":{"role":"user", "content":pergunta}, "agent_id":"9dfcd4c7-8ff5-4b53-8378-2a18038462d9",'thread_id':thread_id}
         r = requests.post(url, headers={"Authorization": f"Bearer {token}", "IAM-API_KEY":"r9BmWOgsDGVh0CBIlSyhhCS0ZcOBgr076GS4IOB59osC", "accept":"application/json", "Content-Type":"application/json"}, data=json.dumps(data))
         jsons = r.content.decode("utf-8").strip()
         total = ''
