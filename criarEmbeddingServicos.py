@@ -3,7 +3,6 @@ import json
 import faiss
 import numpy as np
 import os
-import tqdm
 
 def antigo():
     doc = open("chat3/servicos-com-embeddings.json", "rb")
@@ -17,7 +16,7 @@ def antigo():
     array["embedding_text"] =array["embedding_text"][0:divi]
     array["embedding_text"] = array["embedding_text"] + " " + url
     aux[137] = array
-    for i in tqdm(aux):
+    for i in aux:
         if len(i["embedding_text"]) < 10:
             print(i["embedding_text"])
             input()
